@@ -1,0 +1,9 @@
+diff a/DEMO ONE/DEMO ONE/Content/Animation/AnimationManager.cs b/DEMO ONE/DEMO ONE/Content/Animation/AnimationManager.cs	(rejected hunks)
+@@ -0,6 +0,7 @@
+ using System.Threading.Tasks;
+ 
+ namespace DEMO_ONe.Content.Animation
++{
+     class AnimationManager
+     {
+     }

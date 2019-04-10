@@ -1,0 +1,15 @@
+diff a/DEMO ONE/DEMO ONE/Content/Animation/Animation.cs b/DEMO ONE/DEMO ONE/Content/Animation/Animation.cs	(rejected hunks)
+@@ -0,0 +1,13 @@
++﻿using System;
++using System.Collections.Generic;
++using System.Linq;
++using System.Text;
++using System.Threading.Tasks;
++
++namespace DEMO_ONe.Content.Animation
++{
++    class Animation
++    {
++
++    }
++}
