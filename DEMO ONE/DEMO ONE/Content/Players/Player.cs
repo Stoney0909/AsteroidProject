@@ -11,8 +11,7 @@ namespace DEMO_ONe.Content.Players
 {
     public class Player : Sprite
     {
-        public new float angle;
-        public int health;
+        public new double angle;
         public int damage;
         public int coolDown;
         public int fireRate;
@@ -22,18 +21,17 @@ namespace DEMO_ONe.Content.Players
 
      
 
-        public Player(float newX, float newY, Texture2D newImage)
-            : base(newX, newY, newImage)
+        public Player(float newX, float newY, Texture2D newImage, int newHealth)
+            : base(newX, newY, newImage, newHealth)
         { }
         
-        public Player(float x = 0, float y = 0, int health = 0, float angle = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0)
+        public Player(float x = 0, float y = 0, double angle = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0)
         {
             position.X = x;
             position.Y = y;
             this.fireRate = fireRate;
             this.coolDown = coolDown;
             this.angle = angle;
-            this.health = health;
             image = newImage;
             this.damage = damage;
             velocity.Y = velY;
