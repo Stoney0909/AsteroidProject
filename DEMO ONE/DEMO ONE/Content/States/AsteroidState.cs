@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using DEMO_ONe.Content;
+using DEMO_ONe.Content.Enemy;
 using DEMO_ONe.Content.Physicss;
 using DEMO_ONe.Content.Sprites;
 
@@ -15,7 +16,7 @@ namespace DEMO_ONe.Content.States
     {
         Texture2D[] AsteroidSize = new Texture2D[6];
         List<Sprite> Asteroids;
-        //Asteroid Asteroid = new Asteroid();
+        Asteroid Asteroid = new Asteroid();
 
         public AsteroidState()
         {

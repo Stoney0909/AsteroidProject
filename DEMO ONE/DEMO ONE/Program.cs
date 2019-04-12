@@ -14,8 +14,18 @@ namespace DEMO_ONe
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            
+            Form1 Form1 = new Form1();
+            Form1.ShowDialog();
+
+            if (Form1.startGame())
+            {
+                using (var game = new Game1())
                 game.Run();
+            }
+           
+               
+           
         }
     }
 #endif

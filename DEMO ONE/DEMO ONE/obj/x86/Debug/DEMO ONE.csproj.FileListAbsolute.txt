@@ -1,39 +1,3 @@
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.pdb
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.dll
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojResolveAssemblyReference.cache
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Instructions.resources
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.Cache
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
-C:\Users\Aaron Bennett\Documents\Source\Repos\FG\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.cache
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
-C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
@@ -54,4 +18,13 @@ C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.cache
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache

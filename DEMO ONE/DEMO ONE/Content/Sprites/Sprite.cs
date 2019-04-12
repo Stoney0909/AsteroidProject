@@ -10,10 +10,10 @@ namespace DEMO_ONe.Content.Sprites
 {
     public class Sprite
     {
-        protected Vector2 position;
+        public Vector2 position;
         protected Texture2D image;
         private SpriteBatch spriteBatch;
-        int health;
+        public int health;
 
         public Sprite()
         {
@@ -31,6 +31,10 @@ namespace DEMO_ONe.Content.Sprites
         {
             spriteBatch.Draw(image, position, Color.White);
             
+        }
+        public void Update(float dt)
+        {
+
         }
 
 

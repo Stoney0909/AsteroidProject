@@ -18,7 +18,7 @@ namespace DEMO_ONe
         Input input = new Input();
         public const int ScreenX = 1200;
         public const int ScreenY = 800;
-        
+        double timeSinceLastFrame;
 
         public Game1()
         {
@@ -56,6 +56,7 @@ namespace DEMO_ONe
 
         protected override void Update(GameTime gameTime)
         {
+            timeSinceLastFrame += gameTime.ElapsedGameTime.Milliseconds;
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             input.KeyDown(player);
