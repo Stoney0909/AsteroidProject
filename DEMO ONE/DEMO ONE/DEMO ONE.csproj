@@ -54,11 +54,15 @@
     <Compile Include="Content\InputHandle\Input.cs" />
     <Compile Include="Content\Level\Level.cs" />
     <Compile Include="Content\Players\Player.cs" />
-    <Compile Include="LEADERBOARDS.cs" />
+    <Compile Include="LEADERBOARDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LEADERBOARDS.designer.cs">
       <DependentUpon>LEADERBOARDS.cs</DependentUpon>
     </Compile>
-    <Compile Include="MAIN MENU.cs" />
+    <Compile Include="MAIN MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MAIN MENU.designer.cs">
       <DependentUpon>MAIN MENU.cs</DependentUpon>
     </Compile>
@@ -71,6 +75,9 @@
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>

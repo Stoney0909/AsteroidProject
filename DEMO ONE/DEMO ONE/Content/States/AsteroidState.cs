@@ -15,7 +15,7 @@ namespace DEMO_ONe.Content.States
     {
         Texture2D[] AsteroidSize = new Texture2D[6];
         List<Sprite> Asteroids;
-        Asteroid Asteroid = new Asteroid();
+        //Asteroid Asteroid = new Asteroid();
 
         public AsteroidState()
         {
