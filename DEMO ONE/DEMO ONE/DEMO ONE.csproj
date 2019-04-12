@@ -50,6 +50,12 @@
     <Compile Include="Content\States\AsteroidState.cs" />
     <Compile Include="Content\States\PlayerState.cs" />
     <Compile Include="Content\States\State.cs" />
+    <Compile Include="CU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU.Designer.cs">
+      <DependentUpon>CU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game1.cs" />
     <Compile Include="Content\InputHandle\Input.cs" />
     <Compile Include="Content\Level\Level.cs" />

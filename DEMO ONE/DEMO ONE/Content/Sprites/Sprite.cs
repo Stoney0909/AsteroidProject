@@ -32,6 +32,10 @@ namespace DEMO_ONe.Content.Sprites
             spriteBatch.Draw(image, position, Color.White);
             
         }
+        public void Update(float dt)
+        {
+
+        }
 
 
     }
