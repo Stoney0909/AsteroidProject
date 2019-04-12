@@ -13,7 +13,7 @@ namespace DEMO_ONe.Content.Physicss
 
         public void Mover(Player player,Array Direction)
         {
-            player.position.X = Math.Sin(player.angle)+(player.acceleration*);
+           // player.position.X = Math.Sin(player.angle)+(player.acceleration*);
 
         }
 

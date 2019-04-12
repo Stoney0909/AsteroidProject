@@ -13,7 +13,7 @@ namespace DEMO_ONe.Content.Sprites
         public Vector2 position;
         protected Texture2D image;
         private SpriteBatch spriteBatch;
-        int health;
+        public int health;
 
         public Sprite()
         {

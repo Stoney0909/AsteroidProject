@@ -4,13 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-<<<<<<< HEAD
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/Astriod/DEMO ONE/DEMO ONe/Content/dont.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/Astriod/DEMO ONE/DEMO ONe/Content/Ship.png</File>
-=======
     <File>C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
     <File>C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
->>>>>>> 50f63f571d108b791768d1505cd9f36a85942733
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

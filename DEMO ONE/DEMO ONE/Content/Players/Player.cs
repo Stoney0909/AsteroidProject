@@ -17,6 +17,8 @@ namespace DEMO_ONe.Content.Players
         public int fireRate;
         public Vector2 velocity;
         public Vector2 acceleration;
+        public double score;
+        public double money;
 
 
      

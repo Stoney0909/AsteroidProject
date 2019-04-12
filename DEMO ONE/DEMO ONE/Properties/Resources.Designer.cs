@@ -59,18 +59,5 @@ namespace DEMO_ONe.Properties {
                 resourceCulture = value;
             }
         }
-<<<<<<< HEAD
-=======
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap characterupgradeback {
-            get {
-                object obj = ResourceManager.GetObject("characterupgradeback", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
->>>>>>> 7b8574fd753dd14ade23e06070f7d9e410fe577e
     }
 }

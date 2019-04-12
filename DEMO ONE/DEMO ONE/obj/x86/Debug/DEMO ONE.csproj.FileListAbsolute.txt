@@ -86,3 +86,5 @@ C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
 >>>>>>> 50f63f571d108b791768d1505cd9f36a85942733
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
