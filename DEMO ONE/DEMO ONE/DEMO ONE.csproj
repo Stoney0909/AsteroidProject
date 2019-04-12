@@ -45,7 +45,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Content\Animation\Animation.cs" />
-    <Compile Include="Content\Animation\AnimationManager.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
     <Compile Include="Content\Physicss\Physics.cs" />
     <Compile Include="Content\Rnd.cs" />
