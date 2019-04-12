@@ -46,7 +46,9 @@
   <ItemGroup>
     <Compile Include="Content\Animation\Animation.cs" />
     <Compile Include="Content\Animation\AnimationManager.cs" />
+    <Compile Include="Content\Enemy\Asteroid.cs" />
     <Compile Include="Content\Physicss\Physics.cs" />
+    <Compile Include="Content\Rnd.cs" />
     <Compile Include="Content\States\AsteroidState.cs" />
     <Compile Include="Content\States\PlayerState.cs" />
     <Compile Include="Content\States\State.cs" />
@@ -54,11 +56,15 @@
     <Compile Include="Content\InputHandle\Input.cs" />
     <Compile Include="Content\Level\Level.cs" />
     <Compile Include="Content\Players\Player.cs" />
-    <Compile Include="LEADERBOARDS.cs" />
+    <Compile Include="LEADERBOARDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LEADERBOARDS.designer.cs">
       <DependentUpon>LEADERBOARDS.cs</DependentUpon>
     </Compile>
-    <Compile Include="MAIN MENU.cs" />
+    <Compile Include="MAIN MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MAIN MENU.designer.cs">
       <DependentUpon>MAIN MENU.cs</DependentUpon>
     </Compile>
@@ -71,6 +77,9 @@
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +91,6 @@
     <None Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\Enemy\" />
     <Folder Include="Content\ImageHandler\" />
     <Folder Include="Content\Images\Asteroid\" />
     <Folder Include="Content\Images\Lazer\" />

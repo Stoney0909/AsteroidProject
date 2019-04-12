@@ -10,7 +10,7 @@ namespace DEMO_ONe.Content.Sprites
 {
     public class Sprite
     {
-        protected Vector2 position;
+        public Vector2 position;
         protected Texture2D image;
         protected float angle;
         private SpriteBatch spriteBatch;

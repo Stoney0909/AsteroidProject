@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DEMO_ONe.Content.Animation
+{ 
     class AnimationManager
     {
     }
