@@ -49,7 +49,7 @@ namespace DEMO_ONe
             // TODO: use this.Content to load your game content here
 
             var EnemyProjectile = Content.Load<Texture2D>("Ship");
-            player = new Player(300,300,EnemyProjectile);
+            player = new Player(300,300,EnemyProjectile, 100);
 
         }
 

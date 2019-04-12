@@ -12,20 +12,20 @@ namespace DEMO_ONe.Content.Sprites
     {
         protected Vector2 position;
         protected Texture2D image;
-        protected float angle;
         private SpriteBatch spriteBatch;
-
+        int health;
 
         public Sprite()
         {
             position.X = 300;
             position.Y = 300;
         }
-        public Sprite(float newX, float newY, Texture2D newImage)
+        public Sprite(float newX, float newY, Texture2D newImage, int newHealth)
         {
             position.X = newX;
             position.Y = newY;
             image = newImage;
+            health = newHealth;
         }
         public void Draw(SpriteBatch spriteBatch)
         {
