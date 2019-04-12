@@ -17,7 +17,6 @@ namespace DEMO_ONe.Content.States
 
        public PlayerState(float newX , float newY ,Texture2D newimage)
         {
-            
             Player player = new Player(newX, newY, image, 100);
         }
 

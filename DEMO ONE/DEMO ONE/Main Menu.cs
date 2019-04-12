@@ -12,8 +12,10 @@ namespace DEMO_ONe
 {
     public partial class Form1 : Form
     {
+        private bool game = false;
         public Form1()
         {
+            
             InitializeComponent();
         }
 
@@ -24,19 +26,28 @@ namespace DEMO_ONe
 
         private void button1_Click(object sender, EventArgs e) //new game
         {
-
+            game = true;
+            this.Hide();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) //the top ten
         {
+            this.Hide();   
             Leaderboards Form1 = new Leaderboards();
-            Form1.Show();
+            Form1.ShowDialog();
+            this.Close();
+            
         }
 
         private void button3_Click(object sender, EventArgs e) //instructions
         {
             //Form1 Form1 = new Form1();
             //Form1.Show();
+        }
+        public bool startGame()
+        {
+            return game;
         }
     }
 }
