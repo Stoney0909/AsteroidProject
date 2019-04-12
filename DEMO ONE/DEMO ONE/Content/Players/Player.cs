@@ -15,8 +15,8 @@ namespace DEMO_ONe.Content.Players
         public int damage;
         public int coolDown;
         public int fireRate;
-        Vector2 velocity;
-        Vector2 acceleration;
+        public Vector2 velocity;
+        public Vector2 acceleration;
 
 
      
