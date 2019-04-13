@@ -27,3 +27,4 @@ C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ON
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
