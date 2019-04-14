@@ -1,5 +1,7 @@
 ﻿using DEMO_ONe.Content.States;
 using DEMO_ONe.Content.Players;
+using DEMO_ONe.Content.Animations;
+using DEMO_ONe.Content.Sprites;
 
 using DEMO_ONe.Content.InputHandle;
 using Microsoft.Xna.Framework;
@@ -11,14 +13,17 @@ namespace DEMO_ONe
 {
     public class Game1 : Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        Player player = new Player();
-
-        Input input = new Input();
         public const int ScreenX = 1200;
         public const int ScreenY = 800;
-        double timeSinceLastFrame;
+        public const int ScreenOffSet = 150;
+
+        GraphicsDeviceManager graphics;
+        SpriteBatch spriteBatch;
+
+        List<Sprite> Allobject= new List<Sprite> { };
+        PlayerState ship = new PlayerState();
+
+
 
         public Game1()
         {
@@ -27,10 +32,9 @@ namespace DEMO_ONe
         }
         
 
+
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             graphics.PreferredBackBufferWidth = ScreenX;
             graphics.PreferredBackBufferHeight = ScreenY;
 
@@ -43,27 +47,58 @@ namespace DEMO_ONe
 
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            
+            //SHIP IMPIMINTATION
+            Texture2D Ship = Content.Load<Texture2D>("Ship");
+            ship.Load(300, 300, 2, 2, Ship, 100);
+            //END SHIP IMP
 
-            var EnemyProjectile = Content.Load<Texture2D>("Ship");
-            player = new Player(300,300,EnemyProjectile, 100);
+            Sprite player = ship.GetSprite();
+            LoadObjects(player);
+        }
 
+        void LoadObjects(Sprite Obj)
+        {
+            Allobject.Add(Obj);
         }
 
 
         protected override void Update(GameTime gameTime)
         {
-            timeSinceLastFrame += gameTime.ElapsedGameTime.Milliseconds;
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            input.KeyDown(player);
-            
+
+            ship.Update(gameTime);
+
+
+            for (int i = 0; i < Allobject.Count; i++)
+            {
+                if (Allobject[i].position.X > ScreenX + ScreenOffSet)
+                {
+                    Allobject[i].SetPostionX(-ScreenOffSet);
+                }
+
+                else if (Allobject[i].position.X < -ScreenOffSet)
+                {
+                    Allobject[i].SetPostionX(ScreenX + ScreenOffSet);
+                }
+
+                if (Allobject[i].position.Y > ScreenY + ScreenOffSet)
+                {
+                    Allobject[i].SetPostionY(-ScreenOffSet);
+                }
+                else if (Allobject[i].position.Y < -ScreenOffSet)
+                {
+                    Allobject[i].SetPostionY(ScreenY + ScreenOffSet);
+                }
+            }
 
             base.Update(gameTime);
         }
+
+
 
         protected override void Draw(GameTime gameTime)
         {
@@ -75,21 +110,18 @@ namespace DEMO_ONe
 
             spriteBatch.Begin();
 
-
-
-            player.Draw(spriteBatch);
-
-
+            ship.Draw(spriteBatch,gameTime);
 
             spriteBatch.End();
-            // test.Draw(GraphicsDevice);
 
             base.Draw(gameTime);
         }
 
+
+
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+
         }
     }
 }

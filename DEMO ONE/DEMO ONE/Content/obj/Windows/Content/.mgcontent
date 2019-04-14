@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
-    <File>C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+    <File>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/Ship.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

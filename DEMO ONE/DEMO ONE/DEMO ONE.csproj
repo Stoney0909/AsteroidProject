@@ -44,9 +44,11 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Content\Animation\Animation.cs" />
+    <Compile Include="Content\Animations\Animation.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
-    <Compile Include="Content\Physicss\Physics.cs" />
+    <Compile Include="Content\Movement\LinearMover.cs" />
+    <Compile Include="Content\Movement\ObjectMover.cs" />
+    <Compile Include="Content\Movement\Physics.cs" />
     <Compile Include="Content\Rnd.cs" />
     <Compile Include="Content\States\AsteroidState.cs" />
     <Compile Include="Content\States\PlayerState.cs" />

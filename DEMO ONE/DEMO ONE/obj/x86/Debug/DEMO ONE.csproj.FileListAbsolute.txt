@@ -28,3 +28,33 @@ C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ON
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.pdb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.dll
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.cache
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb

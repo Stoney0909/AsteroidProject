@@ -11,7 +11,7 @@ namespace DEMO_ONe.Content.Sprites
     public class Sprite
     {
         public Vector2 position;
-        protected Texture2D image;
+        public Texture2D image;
         private SpriteBatch spriteBatch;
         public int health;
 
@@ -32,11 +32,21 @@ namespace DEMO_ONe.Content.Sprites
             spriteBatch.Draw(image, position, Color.White);
             
         }
-        public void Update(float dt)
+        public virtual void Update(GameTime dt)
         {
 
         }
 
+
+        public void SetPostionX(float newX)
+        {
+            position.X = newX;
+        }
+
+        public void SetPostionY(float newY)
+        {
+            position.Y = newY;
+        }
 
     }
 }

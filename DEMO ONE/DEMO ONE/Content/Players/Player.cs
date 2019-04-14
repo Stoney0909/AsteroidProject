@@ -41,13 +41,20 @@ namespace DEMO_ONe.Content.Players
             acceleration.X = accelX;
             acceleration.Y = accelY;
         }
-        public void Update(float dt)
-        {
-            velocity.X = acceleration.X * dt;
-            velocity.Y = acceleration.Y * dt;
 
-            position.X = velocity.X * dt;
-            position.Y = velocity.Y * dt;
+        public override void Update(GameTime dt)
+        {
+            velocity.X = acceleration.X * dt.ElapsedGameTime.Milliseconds;
+            velocity.Y = acceleration.Y * dt.ElapsedGameTime.Milliseconds;
+
+            position.X = velocity.X * dt.ElapsedGameTime.Milliseconds;
+            position.Y = velocity.Y * dt.ElapsedGameTime.Milliseconds;
         }
+
+
+
+
+
+
     }
 }
