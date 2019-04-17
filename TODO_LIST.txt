@@ -1,5 +1,5 @@
 Game Engine:
-Collision
-Animation
-Loop screen
 
+Collision
+shooting
+physics

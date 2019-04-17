@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-
+using DEMO_ONe.Content.Players;
 
 namespace DEMO_ONe.Content.Animations
 {
@@ -33,7 +33,7 @@ namespace DEMO_ONe.Content.Animations
             totalFrames = rows * columns;
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(Player player,GameTime gameTime)
         {
 
             width = image.Width / Columns;
@@ -47,18 +47,29 @@ namespace DEMO_ONe.Content.Animations
                 timeSinceLastFrame -= millisecondsPerFrame;
 
                 timeSinceLastFrame = 0;
-                if (true)
-                {
+
+                //TODO
+                //STOP ANIMATION WHEN NOT MOVING
+
                     currentFrame++;
 
                     if (currentFrame == totalFrames)
                     {
                         currentFrame = 0;
                     }
-                }
+                
             }
         }
 
+        public void SetCurrentFrame(int newCurrentFrame)
+        {
+            width = image.Width / Columns;
+            height = image.Height / Rows;
+            row = (int)((float)currentFrame / Columns);
+            column = currentFrame % Columns;
+            timeSinceLastFrame = 0;
+            currentFrame = newCurrentFrame;
+        }
 
 
         public Rectangle GetSourceRectangle()

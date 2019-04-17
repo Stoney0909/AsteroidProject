@@ -11,9 +11,10 @@ namespace DEMO_ONe.Content.Movement
 {
     class LinearMover : ObjectMover
     {
-        public override void Move(Sprite obj, float dt)
+        public override void Move(Sprite obj, GameTime gameTime)
         {
-            obj.position += velocity * dt;
+            obj.position.X += obj.velocity.X * gameTime.ElapsedGameTime.Milliseconds;
+            obj.position.X += obj.velocity.Y * gameTime.ElapsedGameTime.Milliseconds;
         }
     }
 }

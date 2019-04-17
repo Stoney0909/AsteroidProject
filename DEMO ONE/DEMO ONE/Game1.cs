@@ -15,7 +15,7 @@ namespace DEMO_ONe
     {
         public const int ScreenX = 1200;
         public const int ScreenY = 800;
-        public const int ScreenOffSet = 150;
+        public const int ScreenOffSet = 50;
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;

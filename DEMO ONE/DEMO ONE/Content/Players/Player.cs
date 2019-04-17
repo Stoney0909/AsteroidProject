@@ -11,12 +11,11 @@ namespace DEMO_ONe.Content.Players
 {
     public class Player : Sprite
     {
-        public new double angle;
+        public float angle;
         public int damage;
         public int coolDown;
         public int fireRate;
-        public Vector2 velocity;
-        public Vector2 acceleration;
+
         public double score;
         public double money;
 
@@ -27,7 +26,7 @@ namespace DEMO_ONe.Content.Players
             : base(newX, newY, newImage, newHealth)
         { }
         
-        public Player(float x = 0, float y = 0, double angle = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0)
+        public Player(float x = 0, float y = 0, float angle = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0)
         {
             position.X = x;
             position.Y = y;
@@ -42,13 +41,13 @@ namespace DEMO_ONe.Content.Players
             acceleration.Y = accelY;
         }
 
-        public override void Update(GameTime dt)
+        public override void Update(GameTime gameTime)
         {
-            velocity.X = acceleration.X * dt.ElapsedGameTime.Milliseconds;
-            velocity.Y = acceleration.Y * dt.ElapsedGameTime.Milliseconds;
+            //velocity.X = acceleration.X * dt.ElapsedGameTime.Milliseconds;
+            //velocity.Y = acceleration.Y * dt.ElapsedGameTime.Milliseconds;
 
-            position.X = velocity.X * dt.ElapsedGameTime.Milliseconds;
-            position.Y = velocity.Y * dt.ElapsedGameTime.Milliseconds;
+            position.X += velocity.X;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
+            position.Y += velocity.Y; //* (gameTime.ElapsedGameTime.Milliseconds / 100);
         }
 
 

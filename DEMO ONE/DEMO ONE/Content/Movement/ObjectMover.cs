@@ -10,8 +10,6 @@ namespace DEMO_ONe.Content.Movement
 {
     public abstract class ObjectMover
     {
-        public Vector2 velocity;
-
-        public abstract void Move(Sprite obj, float gameTime);
+        public abstract void Move(Sprite obj, GameTime gameTime);
     }
 }

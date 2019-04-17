@@ -14,11 +14,10 @@ namespace DEMO_ONe.Content.States
 
         Animation animation;
         Input input = new Input();
-
+        Vector2 Origin;
 
         public PlayerState()
-        {
-        }
+        { }
 
 
 
@@ -26,20 +25,32 @@ namespace DEMO_ONe.Content.States
         {
             player = new Player(newX, newY, newimage, newHealth);
             animation = new Animation(newimage, Rows, Columns);
+            Origin.X = player.image.Width / (animation.Columns * 2);
             
+            Origin.Y = player.image.Height / (animation.Rows * 2);
         }
         
         public void Update(GameTime gameTime)
         {
             input.KeyDown(player,gameTime);
-            animation.Update(gameTime);
+
+            if (player.velocity.X!=0 || player.velocity.Y !=0)
+            {
+                animation.Update(player,gameTime);
+            }
+            else
+            {
+                 animation.SetCurrentFrame(0);
+            }
+
+            player.Update(gameTime);
         }
 
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
 
-            spriteBatch.Draw(player.image, animation.GetDestinationRectangle(player.position), animation.GetSourceRectangle(), Color.White);
+            spriteBatch.Draw(player.image, animation.GetDestinationRectangle(player.position), animation.GetSourceRectangle(), Color.White, player.angle, Origin, SpriteEffects.None, 1);
 
         }
 
