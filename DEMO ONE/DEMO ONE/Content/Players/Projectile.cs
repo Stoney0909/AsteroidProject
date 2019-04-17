@@ -7,24 +7,30 @@ using Microsoft.Xna.Framework;
 
 namespace DEMO_ONe.Content.Players
 {
-    class Projectile
+    class Projectile : Sprite
     {
-        Sprite sprite;
+        public float angle;
+        public int damage;
 
-        Texture2D image;
-        Vector2 position;
+        public Projectile(float newX, float newY, Texture2D newImage, int newHealth)
+            : base(newX, newY, newImage, newHealth)
+        { }
 
-
-        public Projectile(Sprite sprite, Texture2D newImage)
+        public Projectile(float x = 0, float y = 0, float angle = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0)
         {
-
+            position.X = x;
+            position.Y = y;
+            this.angle = angle;
+            image = newImage;
+            this.damage = damage;
+            velocity.Y = velY;
+            velocity.X = velX;
         }
 
-        public void FireProjectile()
+        public override void Update(GameTime gameTime)
         {
-
+            position.X += velocity.X;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
+            position.Y += velocity.Y; //* (gameTime.ElapsedGameTime.Milliseconds / 100);
         }
-        //I just realized this aint my job.
-        //goodluck nerds
     }
 }

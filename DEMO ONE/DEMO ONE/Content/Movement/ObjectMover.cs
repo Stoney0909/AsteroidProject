@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DEMO_ONe.Content.Movement
 {
-    public abstract class ObjectMover
+    abstract class ObjectMover
     {
         public abstract void Move(Sprite obj, GameTime gameTime);
     }

@@ -9,28 +9,24 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace DEMO_ONe.Content.Players
 {
-    public class Player : Sprite
+     class Player : Sprite
     {
         public float angle;
         public int damage;
         public int coolDown;
-        public int fireRate;
-
+        public int timer;
         public double score;
         public double money;
-
-
-     
+        public float maxVel;
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
         { }
-        
-        public Player(float x = 0, float y = 0, float angle = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0)
+
+        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0, float maxVel = 0)
         {
             position.X = x;
             position.Y = y;
-            this.fireRate = fireRate;
             this.coolDown = coolDown;
             this.angle = angle;
             image = newImage;
@@ -39,6 +35,8 @@ namespace DEMO_ONe.Content.Players
             velocity.X = velX;
             acceleration.X = accelX;
             acceleration.Y = accelY;
+            timer = 0;
+            this.maxVel = maxVel;
         }
 
         public override void Update(GameTime gameTime)
@@ -47,13 +45,22 @@ namespace DEMO_ONe.Content.Players
             //velocity.Y = acceleration.Y * dt.ElapsedGameTime.Milliseconds;
 
             position.X += velocity.X;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
-            position.Y += velocity.Y; //* (gameTime.ElapsedGameTime.Milliseconds / 100);
+            position.Y += velocity.Y;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
+
+            timer += 1;
         }
-
-
-
-
-
-
+        
+        public bool Fire()
+        {
+            if(timer >= coolDown)
+            {
+                timer = 0; 
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

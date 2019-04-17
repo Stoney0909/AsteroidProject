@@ -13,19 +13,29 @@ namespace DEMO_ONe
 {
     public partial class CU : Form
     {
-        Player player;
-        public CU(Player newPlayer)
+        int health, damage, coolDown;
+        float maxVel;
+        bool upgraded;
+        public CU(int newHealth, int newDamage, float newMaxVel, int newCoolDown)
         {
-            player = newPlayer;
+            health = newHealth;
+            damage = newDamage;
+            maxVel = newMaxVel;
+            coolDown = newCoolDown;
+            
             InitializeComponent();
         }
-
+        public bool isUpgraded()
+        {
+            if (upgraded)
+            {
+                return true;
+            }
+            return false;
+        }
         private void addHeatlh_Click(object sender, EventArgs e)
         {
-            if (player.health < 7)
-            {
-                player.health ++;
-            }
+            
         }
 
         private void addSpeed_Click(object sender, EventArgs e)
