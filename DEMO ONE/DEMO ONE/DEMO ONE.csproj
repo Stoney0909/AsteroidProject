@@ -45,17 +45,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Content\Animation\Animation.cs" />
-    <Compile Include="Content\Enemy\Asteroid.cs" />
+    <Compile Include="Content\Animation\AnimationManager.cs" />
     <Compile Include="Content\Physicss\Physics.cs" />
-    <Compile Include="Content\Rnd.cs" />
     <Compile Include="Content\States\AsteroidState.cs" />
     <Compile Include="Content\States\PlayerState.cs" />
     <Compile Include="Content\States\State.cs" />
-    <Compile Include="CU.cs">
+    <Compile Include="HOWTOPLAY.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU.Designer.cs">
-      <DependentUpon>CU.cs</DependentUpon>
+    <Compile Include="HOWTOPLAY.Designer.cs">
+      <DependentUpon>HOWTOPLAY.cs</DependentUpon>
     </Compile>
     <Compile Include="Game1.cs" />
     <Compile Include="Content\InputHandle\Input.cs" />
@@ -101,6 +100,7 @@
     <None Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Enemy\" />
     <Folder Include="Content\ImageHandler\" />
     <Folder Include="Content\Images\Asteroid\" />
     <Folder Include="Content\Images\Lazer\" />
@@ -108,8 +108,8 @@
     <Folder Include="Content\Images\Ship\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CU.resx">
-      <DependentUpon>CU.cs</DependentUpon>
+    <EmbeddedResource Include="HOWTOPLAY.resx">
+      <DependentUpon>HOWTOPLAY.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LEADERBOARDS.resx">
       <DependentUpon>LEADERBOARDS.cs</DependentUpon>

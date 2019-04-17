@@ -28,3 +28,12 @@ C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ON
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojResolveAssemblyReference.cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HOWTOPLAY.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.Cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
