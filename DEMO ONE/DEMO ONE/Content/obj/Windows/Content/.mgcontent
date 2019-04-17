@@ -4,8 +4,18 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/dont.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+<<<<<<< HEAD
+    <File>C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+=======
+<<<<<<< HEAD
+    <File>C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+=======
+    <File>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+>>>>>>> 713f1b34564735e0440ad1d489aa5bf5fd32e31e
+>>>>>>> fe5b024606d872b5175a3e585133612a8f800cde
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
