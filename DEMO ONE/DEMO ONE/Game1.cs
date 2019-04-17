@@ -103,9 +103,9 @@ namespace DEMO_ONe
 
         protected override void Draw(GameTime gameTime)
         {
-         
+
             //makes the background a color
-            GraphicsDevice.Clear(Color.DarkCyan);
+            GraphicsDevice.Clear(new Color(20, 24, 28, 255));
             float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
 

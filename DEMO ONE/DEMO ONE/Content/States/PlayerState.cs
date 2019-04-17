@@ -11,10 +11,11 @@ namespace DEMO_ONe.Content.States
     class PlayerState
     {
         Player player = new Player();
+        Input input = new Input();
 
         Animation animation;
-        Input input = new Input();
         Vector2 Origin;
+
 
         public PlayerState()
         { }
@@ -30,6 +31,8 @@ namespace DEMO_ONe.Content.States
             Origin.Y = player.image.Height / (animation.Rows * 2);
         }
         
+
+
         public void Update(GameTime gameTime)
         {
             input.KeyDown(player,gameTime);
@@ -47,12 +50,14 @@ namespace DEMO_ONe.Content.States
         }
 
 
+
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
 
             spriteBatch.Draw(player.image, animation.GetDestinationRectangle(player.position), animation.GetSourceRectangle(), Color.White, player.angle, Origin, SpriteEffects.None, 1);
 
         }
+
 
 
         public Sprite GetSprite()
