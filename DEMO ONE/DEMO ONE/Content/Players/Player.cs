@@ -46,7 +46,7 @@ namespace DEMO_ONe.Content.Players
             //velocity.X = acceleration.X * dt.ElapsedGameTime.Milliseconds;
             //velocity.Y = acceleration.Y * dt.ElapsedGameTime.Milliseconds;
 
-            position.X += velocity.X;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
+            position.X += velocity.X; //* (gameTime.ElapsedGameTime.Milliseconds / 100);
             position.Y += velocity.Y; //* (gameTime.ElapsedGameTime.Milliseconds / 100);
         }
 

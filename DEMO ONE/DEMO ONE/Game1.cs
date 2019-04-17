@@ -55,6 +55,7 @@ namespace DEMO_ONe
             ship.Load(300, 300, 2, 2, Ship, 100);
             //END SHIP IMP
 
+
             Sprite player = ship.GetSprite();
             LoadObjects(player);
         }

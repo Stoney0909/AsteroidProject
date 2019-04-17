@@ -16,6 +16,7 @@ namespace DEMO_ONe.Content.Movement
             // player.position.X = Math.Sin(player.angle)+(player.acceleration*);
             if (Direction[0] == true)
             {
+
                 player.velocity.X = 75*(Convert.ToSingle(Math.Sin(Convert.ToDouble(player.angle))) * (gameTime.ElapsedGameTime.Milliseconds) / 100);
                 player.velocity.Y = -75*(Convert.ToSingle(Math.Cos(Convert.ToDouble(player.angle))) * (gameTime.ElapsedGameTime.Milliseconds) / 100);
 
@@ -23,6 +24,7 @@ namespace DEMO_ONe.Content.Movement
                 player.velocity.X += 75 * (Convert.ToSingle(Math.Sin(Convert.ToDouble(player.angle))) * (gameTime.ElapsedGameTime.Milliseconds) / 100);
                 player.velocity.Y -= 75 * (Convert.ToSingle(Math.Cos(Convert.ToDouble(player.angle))) * (gameTime.ElapsedGameTime.Milliseconds) / 100);
                 */
+
             }
             else
             {

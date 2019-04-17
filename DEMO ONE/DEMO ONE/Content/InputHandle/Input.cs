@@ -19,7 +19,7 @@ namespace DEMO_ONe.Content.InputHandle
 
         bool[] Direction = new bool[] {false,//UP
                                        false,//LEFT
-                                       false };//RIGHT
+                                       false};//RIGHT
 
 
 
@@ -44,6 +44,12 @@ namespace DEMO_ONe.Content.InputHandle
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 Direction[2] = true;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                //TODO
+                //ADD PROJECTILE FIRING HERE
+
             }
             Console.WriteLine(Direction[0] + " | " + Direction[1] + " | " + Direction[2] + " | " + newState.X + " | " + newState.Y);
             Movement(player,gameTime);
@@ -74,7 +80,5 @@ namespace DEMO_ONe.Content.InputHandle
                 Direction[2] = false;
             }
         }
-
-
     }
 }
