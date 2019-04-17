@@ -28,6 +28,17 @@ C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ON
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 C:\Users\samue\Documents\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+<<<<<<< HEAD
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojResolveAssemblyReference.cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HOWTOPLAY.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.Cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+C:\Users\Aaron Bennett\Documents\CS114\FP\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+=======
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
@@ -58,3 +69,4 @@ F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\o
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\Asteroid\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+>>>>>>> 713f1b34564735e0440ad1d489aa5bf5fd32e31e
