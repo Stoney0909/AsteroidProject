@@ -10,7 +10,6 @@ namespace DEMO_ONe.Content.Movement
 {
     class Physics
     {
-
         public void Mover(Player player, bool[] Direction,GameTime gameTime)
         {
             // player.position.X = Math.Sin(player.angle)+(player.acceleration*);
