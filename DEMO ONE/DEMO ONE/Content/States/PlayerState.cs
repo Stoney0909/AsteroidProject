@@ -25,10 +25,9 @@ namespace DEMO_ONe.Content.States
         public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)
         {
             player = new Player(newX, newY, newimage, newHealth);
-
             animation = new Animation(newimage, Rows, Columns);
-
             Origin.X = player.image.Width / (animation.Columns * 2);
+            
             Origin.Y = player.image.Height / (animation.Rows * 2);
         }
         

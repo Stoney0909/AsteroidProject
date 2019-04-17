@@ -8,7 +8,7 @@ using System;
 
 namespace DEMO_ONe.Content.Movement
 {
-    class ObjectMover
+    class Physics
     {
         public void Mover(Player player, bool[] Direction,GameTime gameTime)
         {

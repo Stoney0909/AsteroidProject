@@ -42,10 +42,8 @@ namespace DEMO_ONe
 
         private void button3_Click(object sender, EventArgs e) //instructions
         {
-            this.Hide();
-            HOWTOPLAY Form1 = new HOWTOPLAY();
-            Form1.ShowDialog();
-            this.Close();
+            //Form1 Form1 = new Form1();
+            //Form1.Show();
         }
         public bool startGame()
         {

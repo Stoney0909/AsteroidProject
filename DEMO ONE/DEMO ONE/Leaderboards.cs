@@ -17,14 +17,12 @@ namespace DEMO_ONe
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e) //back to main menu
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainMenu Leaderboards = new MainMenu();
-            this.Close();
+
         }
 
-        private void button2_Click(object sender, EventArgs e) //opens instructions
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

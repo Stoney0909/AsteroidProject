@@ -1,13 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-<<<<<<< HEAD
 "C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png","C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/dont.xnb","TextureProcessor","Texture2DContent",933,23493,0.2702789
 "C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png","C:/Users/samue/Documents/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.0063792
-=======
-<<<<<<< HEAD
-"C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/dont.png","C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/dont.xnb","TextureProcessor","Texture2DContent",933,23493,1.393857
-"C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/Ship.png","C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.0596503
-=======
-"F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/dont.png","F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/dont.xnb","TextureProcessor","Texture2DContent",933,23493,0.474333
-"F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/Ship.png","F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.0179472
->>>>>>> 713f1b34564735e0440ad1d489aa5bf5fd32e31e
->>>>>>> fe5b024606d872b5175a3e585133612a8f800cde
