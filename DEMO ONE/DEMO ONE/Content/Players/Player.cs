@@ -23,6 +23,8 @@ namespace DEMO_ONe.Content.Players
             : base(newX, newY, newImage, newHealth)
         { }
 
+
+
         public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float velX = 0, float velY = 0, float accelX = 0, float accelY = 0, float maxVel = 0)
         {
             position.X = x;
