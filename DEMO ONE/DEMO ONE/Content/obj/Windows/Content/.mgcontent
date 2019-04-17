@@ -4,8 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/dont.png</File>
     <File>C:/Users/Aaron Bennett/Documents/CS114/FP/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+=======
+    <File>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/Asteroid/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+>>>>>>> 713f1b34564735e0440ad1d489aa5bf5fd32e31e
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

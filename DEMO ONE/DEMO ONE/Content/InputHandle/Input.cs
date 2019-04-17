@@ -1,4 +1,4 @@
-﻿using DEMO_ONe.Content.Physicss;
+﻿using DEMO_ONe.Content.Movement;
 using DEMO_ONe.Content.Players;
 using System;
 using System.Collections.Generic;
@@ -13,12 +13,13 @@ namespace DEMO_ONe.Content.InputHandle
     class Input
     {
         MouseState newState;
+        
 
         Physics physics= new Physics();
 
         bool[] Direction = new bool[] {false,//UP
                                        false,//LEFT
-                                       false };//RIGHT
+                                       false};//RIGHT
 
 
 
@@ -27,7 +28,7 @@ namespace DEMO_ONe.Content.InputHandle
 
 
 
-        public void KeyDown(Player player)
+        public void KeyDown(Player player,GameTime gameTime)
         {
             newState = Mouse.GetState();
 
@@ -44,15 +45,21 @@ namespace DEMO_ONe.Content.InputHandle
             {
                 Direction[2] = true;
             }
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                //TODO
+                //ADD PROJECTILE FIRING HERE
+
+            }
             Console.WriteLine(Direction[0] + " | " + Direction[1] + " | " + Direction[2] + " | " + newState.X + " | " + newState.Y);
-            Movement(player);
+            Movement(player,gameTime);
         }
 
 
 
-        private void Movement(Player player)
+        private void Movement(Player player, GameTime gameTime)
         {
-            physics.Mover(player, Direction);
+            physics.Mover(player, Direction, gameTime);
             KeyUp();
         }
 
@@ -73,7 +80,5 @@ namespace DEMO_ONe.Content.InputHandle
                 Direction[2] = false;
             }
         }
-
-
     }
 }
