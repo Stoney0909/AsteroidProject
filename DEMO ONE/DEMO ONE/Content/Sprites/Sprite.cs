@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace DEMO_ONe.Content.Sprites
 {
-     class Sprite
+     public class Sprite
     {
         public Vector2 velocity;
         public Vector2 acceleration;
