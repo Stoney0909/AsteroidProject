@@ -12,16 +12,21 @@ namespace DEMO_ONe.Content.Enemy
 {
     class Asteroid : Sprite
     {
-        public float velocity;
-        public Texture2D image; // small, medium, or large
+        Random rnd = new Random();
 
-         public Asteroid()
-         {
-            //health = 1;
-            position.X = 800;
-            position.Y = 600;
-            velocity = 100;
-         }
+        public Asteroid()
+        {
+           health = 1;
+           if (rnd.Next(0,1) == 1)
+            {
+                position.X = rnd.Next(0,1200);
+                position.Y = 0;
+            }
+           position.X = 800;
+           position.Y = 600;
+           velocity.X = 15;
+           velocity.Y = 15;
+        }
 
         public Asteroid(float x, float y, Texture2D image)
         {
