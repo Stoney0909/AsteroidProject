@@ -34,7 +34,6 @@ namespace DEMO_ONe.Content.InputHandle
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
-                Console.WriteLine(Direction[0]);
                 Direction[0] = true;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.A))
