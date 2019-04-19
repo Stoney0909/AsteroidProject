@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace DEMO_ONe.Content.Players
 {
-     class Player : Sprite
+     public class Player : Sprite
     {
         public float angle;
         public int damage;
@@ -18,6 +18,7 @@ namespace DEMO_ONe.Content.Players
         public double score;
         public double money;
         public float maxVel;
+        public int level = 1;
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
@@ -62,5 +63,23 @@ namespace DEMO_ONe.Content.Players
                 return false;
             }
         }
+        public void PlayerUpgrade()
+        {
+            Player playercopy = new Player();//sends another player through
+            playercopy.health = health;
+            playercopy.damage = damage;
+            playercopy.coolDown = coolDown;
+
+            CU characterupgrade = new CU(playercopy);
+            characterupgrade.ShowDialog();
+            
+            health = playercopy.health;// change this player stats
+            damage = playercopy.damage;
+            coolDown = playercopy.coolDown;
+            level++;
+            
+
+        }
+
     }
 }
