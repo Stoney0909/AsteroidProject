@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DEMO_ONe
 {
-    public partial class Form2 : Form
+    public partial class HowToPlay : Form
     {
-        public Form2()
+        public HowToPlay()
         {
             InitializeComponent();
         }

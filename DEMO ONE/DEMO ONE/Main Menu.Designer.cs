@@ -45,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(220, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(715, 113);
+            this.label1.Size = new System.Drawing.Size(709, 112);
             this.label1.TabIndex = 0;
             this.label1.Text = "MASTEROIDS";
             // 

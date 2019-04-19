@@ -44,6 +44,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Validators.cs" />
     <Compile Include="Content\Animations\Animation.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
     <Compile Include="Content\Movement\LinearMover.cs" />
