@@ -76,9 +76,7 @@ namespace DEMO_ONe.Content.Players
             health = playercopy.health;// change this player stats
             damage = playercopy.damage;
             coolDown = playercopy.coolDown;
-            level++;
-            
-
+            level++;        
         }
 
     }

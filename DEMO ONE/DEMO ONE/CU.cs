@@ -36,6 +36,7 @@ namespace DEMO_ONe
             {
                 addAmountofPro.Hide();
             }
+            NextLevel();
         }
         private void addHeatlh_Click(object sender, EventArgs e)
         {
@@ -43,6 +44,8 @@ namespace DEMO_ONe
             {
                 player.health++;
                 minusHealth.Show();
+                upgrades--;
+                NextLevel();
             }
         }
 
@@ -53,7 +56,9 @@ namespace DEMO_ONe
             if (player.coolDown == 2)
             {
                 addAmountofPro.Hide();
+                            
             }
+            NextLevel();
         }
 
         private void addDamage_Click(object sender, EventArgs e)
@@ -62,6 +67,8 @@ namespace DEMO_ONe
             {
                 player.health += 10;
                 minusProDamage.Show();
+                upgrades--;
+                NextLevel();
             }
         }
 
@@ -70,8 +77,11 @@ namespace DEMO_ONe
             if (upgrades > 0)
             {
                player.coolDown -= 10;
-                minusAmountOfPro.Show();
+               minusAmountOfPro.Show();
+               upgrades--;
+               NextLevel();
             }
+         
         }
 
         private void minusHealth_Click(object sender, EventArgs e)
@@ -82,6 +92,7 @@ namespace DEMO_ONe
             {
                 minusHealth.Hide();
             }
+            NextLevel();
         }
 
         private void minusShipSpeed_Click(object sender, EventArgs e)
@@ -96,7 +107,9 @@ namespace DEMO_ONe
             if (player.damage == 10)
             {
                 minusProDamage.Hide();
+               
             }
+            NextLevel();
         }
 
         private void minusAmountOfPro_Click(object sender, EventArgs e)
@@ -105,6 +118,8 @@ namespace DEMO_ONe
             {
                 player.coolDown -= 10;
                 addAmountofPro.Show();
+                upgrades--;
+                NextLevel();
             }
            
         }
@@ -113,6 +128,10 @@ namespace DEMO_ONe
             if (upgrades == 0)
             {
                 nextlev.Show();
+            }
+            else
+            {
+                nextlev.Hide();
             }
         }
 

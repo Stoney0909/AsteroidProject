@@ -45,9 +45,9 @@
             // 
             this.minusProDamage.BackColor = System.Drawing.Color.Black;
             this.minusProDamage.ForeColor = System.Drawing.Color.White;
-            this.minusProDamage.Location = new System.Drawing.Point(261, 210);
+            this.minusProDamage.Location = new System.Drawing.Point(177, 210);
             this.minusProDamage.Name = "minusProDamage";
-            this.minusProDamage.Size = new System.Drawing.Size(75, 52);
+            this.minusProDamage.Size = new System.Drawing.Size(132, 61);
             this.minusProDamage.TabIndex = 1;
             this.minusProDamage.Text = "-";
             this.minusProDamage.UseVisualStyleBackColor = false;
@@ -57,9 +57,9 @@
             // 
             this.minusAmountOfPro.BackColor = System.Drawing.Color.Black;
             this.minusAmountOfPro.ForeColor = System.Drawing.Color.White;
-            this.minusAmountOfPro.Location = new System.Drawing.Point(261, 268);
+            this.minusAmountOfPro.Location = new System.Drawing.Point(177, 277);
             this.minusAmountOfPro.Name = "minusAmountOfPro";
-            this.minusAmountOfPro.Size = new System.Drawing.Size(75, 52);
+            this.minusAmountOfPro.Size = new System.Drawing.Size(132, 61);
             this.minusAmountOfPro.TabIndex = 2;
             this.minusAmountOfPro.Text = "-";
             this.minusAmountOfPro.UseVisualStyleBackColor = false;
@@ -69,9 +69,9 @@
             // 
             this.addHeatlh.BackColor = System.Drawing.Color.Black;
             this.addHeatlh.ForeColor = System.Drawing.Color.White;
-            this.addHeatlh.Location = new System.Drawing.Point(448, 143);
+            this.addHeatlh.Location = new System.Drawing.Point(487, 143);
             this.addHeatlh.Name = "addHeatlh";
-            this.addHeatlh.Size = new System.Drawing.Size(75, 61);
+            this.addHeatlh.Size = new System.Drawing.Size(132, 61);
             this.addHeatlh.TabIndex = 3;
             this.addHeatlh.Text = "+";
             this.addHeatlh.UseVisualStyleBackColor = false;
@@ -81,9 +81,9 @@
             // 
             this.addDamage.BackColor = System.Drawing.Color.Black;
             this.addDamage.ForeColor = System.Drawing.Color.White;
-            this.addDamage.Location = new System.Drawing.Point(448, 210);
+            this.addDamage.Location = new System.Drawing.Point(487, 210);
             this.addDamage.Name = "addDamage";
-            this.addDamage.Size = new System.Drawing.Size(75, 52);
+            this.addDamage.Size = new System.Drawing.Size(132, 61);
             this.addDamage.TabIndex = 5;
             this.addDamage.Text = "+";
             this.addDamage.UseVisualStyleBackColor = false;
@@ -93,9 +93,9 @@
             // 
             this.addAmountofPro.BackColor = System.Drawing.Color.Black;
             this.addAmountofPro.ForeColor = System.Drawing.Color.White;
-            this.addAmountofPro.Location = new System.Drawing.Point(448, 268);
+            this.addAmountofPro.Location = new System.Drawing.Point(487, 277);
             this.addAmountofPro.Name = "addAmountofPro";
-            this.addAmountofPro.Size = new System.Drawing.Size(75, 52);
+            this.addAmountofPro.Size = new System.Drawing.Size(132, 61);
             this.addAmountofPro.TabIndex = 6;
             this.addAmountofPro.Text = "+";
             this.addAmountofPro.UseVisualStyleBackColor = false;
@@ -105,9 +105,9 @@
             // 
             this.minusHealth.BackColor = System.Drawing.Color.Black;
             this.minusHealth.ForeColor = System.Drawing.Color.White;
-            this.minusHealth.Location = new System.Drawing.Point(261, 143);
+            this.minusHealth.Location = new System.Drawing.Point(177, 143);
             this.minusHealth.Name = "minusHealth";
-            this.minusHealth.Size = new System.Drawing.Size(75, 61);
+            this.minusHealth.Size = new System.Drawing.Size(132, 61);
             this.minusHealth.TabIndex = 7;
             this.minusHealth.Text = "-";
             this.minusHealth.UseVisualStyleBackColor = false;
@@ -118,16 +118,16 @@
             this.healthTextBox.BackColor = System.Drawing.Color.Black;
             this.healthTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.healthTextBox.ForeColor = System.Drawing.Color.White;
-            this.healthTextBox.Location = new System.Drawing.Point(342, 143);
+            this.healthTextBox.Location = new System.Drawing.Point(315, 143);
             this.healthTextBox.Name = "healthTextBox";
-            this.healthTextBox.Size = new System.Drawing.Size(100, 61);
+            this.healthTextBox.Size = new System.Drawing.Size(166, 61);
             this.healthTextBox.TabIndex = 8;
             // 
             // nextlev
             // 
             this.nextlev.BackColor = System.Drawing.Color.Black;
             this.nextlev.ForeColor = System.Drawing.Color.White;
-            this.nextlev.Location = new System.Drawing.Point(306, 386);
+            this.nextlev.Location = new System.Drawing.Point(315, 344);
             this.nextlev.Name = "nextlev";
             this.nextlev.Size = new System.Drawing.Size(166, 61);
             this.nextlev.TabIndex = 9;
@@ -141,9 +141,9 @@
             this.damageTextBox.BackColor = System.Drawing.Color.Black;
             this.damageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.damageTextBox.ForeColor = System.Drawing.Color.White;
-            this.damageTextBox.Location = new System.Drawing.Point(342, 210);
+            this.damageTextBox.Location = new System.Drawing.Point(315, 210);
             this.damageTextBox.Name = "damageTextBox";
-            this.damageTextBox.Size = new System.Drawing.Size(100, 61);
+            this.damageTextBox.Size = new System.Drawing.Size(166, 61);
             this.damageTextBox.TabIndex = 10;
             // 
             // ProTextBox
@@ -151,9 +151,9 @@
             this.ProTextBox.BackColor = System.Drawing.Color.Black;
             this.ProTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProTextBox.ForeColor = System.Drawing.Color.White;
-            this.ProTextBox.Location = new System.Drawing.Point(342, 277);
+            this.ProTextBox.Location = new System.Drawing.Point(315, 277);
             this.ProTextBox.Name = "ProTextBox";
-            this.ProTextBox.Size = new System.Drawing.Size(100, 61);
+            this.ProTextBox.Size = new System.Drawing.Size(166, 61);
             this.ProTextBox.TabIndex = 11;
             // 
             // CU
