@@ -13,8 +13,7 @@ namespace DEMO_ONe.Content.Movement
     {
         public override void Move(Sprite obj, GameTime gameTime)
         {
-            obj.position.X += obj.velocity.X * gameTime.ElapsedGameTime.Milliseconds;
-            obj.position.X += obj.velocity.Y * gameTime.ElapsedGameTime.Milliseconds;
+            //obj.position.X += obj.velocity * gameTime.ElapsedGameTime.Milliseconds;
         }
     }
 }

@@ -50,7 +50,7 @@ namespace DEMO_ONe.Content.InputHandle
                 //ADD PROJECTILE FIRING HERE
 
             }
-            Console.WriteLine(Direction[0] + " | " + Direction[1] + " | " + Direction[2] + " | " + newState.X + " | " + newState.Y);
+            
             Movement(player,gameTime);
         }
 
