@@ -42,7 +42,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(151, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(749, 113);
+            this.label1.Size = new System.Drawing.Size(737, 112);
             this.label1.TabIndex = 1;
             this.label1.Text = "THE TOP TEN";
             // 
