@@ -11,13 +11,11 @@ namespace DEMO_ONe.Content.Players
 {
      public class Player : Sprite
     {
-        public float angle;
         public int damage;
         public int coolDown;
         public int timer;
         public double score;
         public double money;
-        public float maxVel;
         public float rotationSpeed, maxSpeed, speedUpRate, slowDownRate;
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth)
@@ -42,7 +40,7 @@ namespace DEMO_ONe.Content.Players
             //velocity = vel;
             //acceleration = accel;
             timer = 0;
-            this.maxVel = maxVel;
+            //this.maxVel = maxVel;
         }
 
         public override void Update(GameTime gameTime)

@@ -26,6 +26,8 @@ namespace DEMO_ONe
 
         private void button1_Click(object sender, EventArgs e) //new game
         {
+            //TOOK OUT THIS CODE WOULD NOT ALLOW THE PROGRAM TO RUN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            /*
             Validators myForm = new Validators(name.Text);
 
             if (myForm.nameValidator() == false)//first name error
@@ -36,6 +38,7 @@ namespace DEMO_ONe
             game = true;
             this.Hide();
             this.Close();
+            */
         }
 
         private void button2_Click(object sender, EventArgs e) //the top ten
@@ -49,7 +52,7 @@ namespace DEMO_ONe
 
         private void button3_Click(object sender, EventArgs e) //instructions
         {
-            this.Hide()
+            this.Hide();
         }
         public bool startGame()
         {
