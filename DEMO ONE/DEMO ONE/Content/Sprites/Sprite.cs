@@ -11,7 +11,7 @@ namespace DEMO_ONe.Content.Sprites
      class Sprite
     {
         public Vector2 velocity;
-        public Vector2 acceleration;
+        public float acceleration;
         public Vector2 position;
         public Texture2D image;
         private SpriteBatch spriteBatch;

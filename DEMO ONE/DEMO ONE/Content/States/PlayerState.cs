@@ -37,7 +37,7 @@ namespace DEMO_ONe.Content.States
         {
             input.KeyDown(player,gameTime);
 
-            if (player.velocity.X!=0 || player.velocity.Y !=0)
+            if (player.acceleration!=0)
             {
                 animation.Update(player,gameTime);
             }
