@@ -17,8 +17,8 @@ namespace DEMO_ONe.Content.Players
         public int timer;
         public double score;
         public double money;
-        public float maxVel;
         public float rotationSpeed, maxSpeed, speedUpRate, slowDownRate;
+        public int level;
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
@@ -31,7 +31,7 @@ namespace DEMO_ONe.Content.Players
 
         }
 
-        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, float maxVel = 0)
+        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
         {
             position.X = x;
             position.Y = y;
@@ -42,7 +42,7 @@ namespace DEMO_ONe.Content.Players
             //velocity = vel;
             //acceleration = accel;
             timer = 0;
-            this.maxVel = maxVel;
+            level = newlevel;
         }
 
         public override void Update(GameTime gameTime)

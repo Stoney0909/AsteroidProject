@@ -26,7 +26,7 @@ namespace DEMO_ONe
 
         private void button1_Click(object sender, EventArgs e) //new game
         {
-            Validators myForm = new Validators(name.Text);
+            Validators myForm = new Validators(Name);
 
             if (myForm.nameValidator() == false)//first name error
             {
@@ -49,7 +49,7 @@ namespace DEMO_ONe
 
         private void button3_Click(object sender, EventArgs e) //instructions
         {
-            this.Hide()
+            this.Hide();
         }
         public bool startGame()
         {

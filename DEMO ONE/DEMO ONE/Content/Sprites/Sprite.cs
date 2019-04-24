@@ -39,7 +39,6 @@ namespace DEMO_ONe.Content.Sprites
 
         }
 
-
         public void SetPostionX(float newX)
         {
             position.X = newX;

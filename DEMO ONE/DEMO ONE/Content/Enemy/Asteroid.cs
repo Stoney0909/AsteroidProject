@@ -34,5 +34,9 @@ namespace DEMO_ONe.Content.Enemy
             this.position.Y = y;
             this.image = image;
         }
+        public override void Update(GameTime dt)
+        {
+            position.X = velocity.X; 
+        }
     }
 }
