@@ -17,13 +17,19 @@ namespace DEMO_ONe.Content.States
         Texture2D[] AsteroidSize = new Texture2D[6];
         List<Sprite> Asteroids;
         Asteroid Asteroid = new Asteroid();
+        Game1 Game = new Game1();
+        Rnd rnd = new Rnd();
+        int screenX;
+        int screenY;
+        int screenOffset;
 
         public AsteroidState()
         {
-            
+            screenX = Game.GetScreenX();
+            screenY = Game.GetScreenY();
+            screenOffset = Game.GetScreenOffset();
         }
-
-        void Update()
+            void Update()
         {
             //TO DO
             /*for (int i = 0; i < Asteroids.Count(); i++)
@@ -47,6 +53,48 @@ namespace DEMO_ONe.Content.States
             {
                 
             }*/
+        }
+
+        void Spawn()
+        {
+            Asteroid Asteroid = new Asteroid();
+            Asteroid.image = AsteroidSize[5];
+            Asteroid.angle = rnd.Range(0, 360);//FIX ME
+
+            int side = rnd.Range(0, 4);
+
+            switch (side)
+            {
+                case 0:
+                    {
+                        Asteroid.position.X = -screenOffset;
+                        Asteroid.position.Y = rnd.Range(-screenOffset, screenY + screenOffset);
+                        break;
+                    }
+                case 1:
+                    {
+                        Asteroid.position.X = screenX + screenOffset;
+                        Asteroid.position.Y = rnd.Range(-screenOffset, screenY + screenOffset);
+                        break;
+                    }
+                case 2:
+                    {
+                        Asteroid.position.X = rnd.Range(-screenOffset, screenX + screenOffset);
+                        Asteroid.position.Y = screenY - screenOffset;
+                        break;
+                    }
+                case 3:
+                    {
+                        Asteroid.position.X = rnd.Range(-screenOffset, screenX + screenOffset);
+                        Asteroid.position.Y = -screenOffset;
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Asteroid spawn out of range.");
+                        break;
+                    }
+            }
         }
     }
 }

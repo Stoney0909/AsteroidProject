@@ -44,7 +44,20 @@ namespace DEMO_ONe
             base.Initialize();
         }
 
+        public int GetScreenOffset()
+        {
+            return ScreenOffSet;
+        }
 
+        public int GetScreenX()
+        {
+            return ScreenX;
+        }
+
+        public int GetScreenY()
+        {
+            return ScreenY;
+        }
 
         protected override void LoadContent()
         {
