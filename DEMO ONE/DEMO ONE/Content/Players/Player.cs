@@ -26,7 +26,7 @@ namespace DEMO_ONe.Content.Players
             rotationSpeed = 0.6f;
             speedUpRate = 3.0f;
             slowDownRate = 0.5f;
-            maxSpeed = 100;
+            maxSpeed = 50;
             acceleration = 1;
 
         }
@@ -90,7 +90,7 @@ namespace DEMO_ONe.Content.Players
             health = playercopy.health;// change this player stats
             damage = playercopy.damage;
             coolDown = playercopy.coolDown;
-            level++;        
+            //level++;        
         }
 
     }
