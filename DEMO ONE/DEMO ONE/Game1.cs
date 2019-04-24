@@ -22,6 +22,7 @@ namespace DEMO_ONe
 
         List<Sprite> Allobject= new List<Sprite> { };
         PlayerState ship = new PlayerState();
+        Projectile projectile = new Projectile();
 
 
 
@@ -55,6 +56,13 @@ namespace DEMO_ONe
             ship.Load(300, 300, 2, 2, Ship, 100);
             //END SHIP IMP
 
+            //Player Projectile
+            Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile");
+            projectile.image = PlayerLazer;
+
+            //ship.LoadProjectile(projectile);
+
+
 
             Sprite player = ship.GetSprite();
             LoadObjects(player);
@@ -78,21 +86,21 @@ namespace DEMO_ONe
             {
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
-                    Allobject[i].SetPostionX(-ScreenOffSet);
+                    Allobject[i].position.X=-ScreenOffSet;
                 }
 
                 else if (Allobject[i].position.X < -ScreenOffSet)
                 {
-                    Allobject[i].SetPostionX(ScreenX + ScreenOffSet);
+                    Allobject[i].position.X=ScreenX + ScreenOffSet;
                 }
 
                 if (Allobject[i].position.Y > ScreenY + ScreenOffSet)
                 {
-                    Allobject[i].SetPostionY(-ScreenOffSet);
+                    Allobject[i].position.Y=-ScreenOffSet;
                 }
                 else if (Allobject[i].position.Y < -ScreenOffSet)
                 {
-                    Allobject[i].SetPostionY(ScreenY + ScreenOffSet);
+                    Allobject[i].position.Y=ScreenY + ScreenOffSet;
                 }
             }
 

@@ -1,6 +1,7 @@
 ﻿using DEMO_ONe.Content.Movement;
 using DEMO_ONe.Content.Players;
 using DEMO_ONe.Content.States;
+using DEMO_ONe.Content.Sprites;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,9 @@ namespace DEMO_ONe.Content.InputHandle
     class Input
     {
         MouseState newState;
-        
-        Physics physics= new Physics();
-        
+
+        LinearMover linearMover = new LinearMover();
+        Physics physics = new Physics();
 
         bool[] Direction = new bool[] {false,//UP
                                        false,//LEFT
@@ -29,50 +30,57 @@ namespace DEMO_ONe.Content.InputHandle
 
 
 
-        public void KeyDown(Player player,GameTime gameTime)
+        public void KeyDown(PlayerState player,GameTime gameTime)
         {
             newState = Mouse.GetState();
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
                 Direction[0] = true;
-                player.moving = true;
-            }
-            else
-            {
-                Direction[0] = false;
-                player.moving = false;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
                 Direction[1] = true;
             }
-            else
-            {
-                Direction[1] = false;
-            }
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 Direction[2] = true;
-            }
-            else
-            {
-                Direction[2] = false;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 //TODO
                 //ADD PROJECTILE FIRING HERE
-                
+
+                linearMover.Move(player.FireProjectile(),gameTime);
             }
+            Console.WriteLine(Direction[0] + " | " + Direction[1] + " | " + Direction[2] + " | " + newState.X + " | " + newState.Y);
             Movement(player,gameTime);
         }
 
 
 
-        private void Movement(Player player, GameTime gameTime)
+        private void Movement(PlayerState player, GameTime gameTime)
         {
             physics.Mover(player, Direction, gameTime);
+            KeyUp();
+        }
+
+
+
+        private void KeyUp()
+        {
+            if (Keyboard.GetState().IsKeyUp(Keys.W))
+            {
+                Direction[0] = false;
+            }
+            if (Keyboard.GetState().IsKeyUp(Keys.A))
+            {
+                Direction[1] = false;
+            }
+            if (Keyboard.GetState().IsKeyUp(Keys.D))
+            {
+                Direction[2] = false;
+            }
         }
     }
 }

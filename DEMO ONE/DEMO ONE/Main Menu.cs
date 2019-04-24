@@ -15,7 +15,7 @@ namespace DEMO_ONe
         private bool game = false;
         public Form1()
         {
-            
+
             InitializeComponent();
         }
 
@@ -36,15 +36,16 @@ namespace DEMO_ONe
             game = true;
             this.Hide();
             this.Close();
+            */
         }
 
         private void button2_Click(object sender, EventArgs e) //the top ten
         {
-            this.Hide();   
+            this.Hide();
             Leaderboards Form1 = new Leaderboards();
             Form1.ShowDialog();
             this.Close();
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e) //instructions

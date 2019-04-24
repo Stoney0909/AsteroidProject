@@ -44,17 +44,20 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Collision.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="Content\States\ProjectileState.cs" />
     <Compile Include="Validators.cs" />
     <Compile Include="Content\Animations\Animation.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
     <Compile Include="Content\Movement\LinearMover.cs" />
     <Compile Include="Content\Movement\ObjectMover.cs" />
     <Compile Include="Content\Movement\Physics.cs" />
+    <Compile Include="Content\Players\PlayerUpgrades.cs" />
     <Compile Include="Content\Players\Projectile.cs" />
     <Compile Include="Content\Rnd.cs" />
     <Compile Include="Content\States\AsteroidState.cs" />
     <Compile Include="Content\States\PlayerState.cs" />
-    <Compile Include="Content\States\State.cs" />
     <Compile Include="CU.cs">
       <SubType>Form</SubType>
     </Compile>
