@@ -4,9 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+    <File>C:/Users/samue/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>C:/Users/samue/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile.png</File>
+    <File>C:/Users/samue/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

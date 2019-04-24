@@ -36,7 +36,6 @@ namespace DEMO_ONe
             game = true;
             this.Hide();
             this.Close();
-            */
         }
 
         private void button2_Click(object sender, EventArgs e) //the top ten

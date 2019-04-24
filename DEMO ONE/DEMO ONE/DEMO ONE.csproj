@@ -47,6 +47,10 @@
     <Compile Include="Collision.cs" />
     <Compile Include="Component.cs" />
     <Compile Include="Content\States\ProjectileState.cs" />
+    <Compile Include="CU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CU.Designer.cs" />
     <Compile Include="Validators.cs" />
     <Compile Include="Content\Animations\Animation.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
@@ -58,12 +62,6 @@
     <Compile Include="Content\Rnd.cs" />
     <Compile Include="Content\States\AsteroidState.cs" />
     <Compile Include="Content\States\PlayerState.cs" />
-    <Compile Include="CU.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CU.Designer.cs">
-      <DependentUpon>CU.cs</DependentUpon>
-    </Compile>
     <Compile Include="Game1.cs" />
     <Compile Include="Content\InputHandle\Input.cs" />
     <Compile Include="Content\Level\Level.cs" />
@@ -122,9 +120,7 @@
     <Folder Include="Content\Images\Ship\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CU.resx">
-      <DependentUpon>CU.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="CU.resx" />
     <EmbeddedResource Include="HOWTOPLAY.resx">
       <DependentUpon>HOWTOPLAY.cs</DependentUpon>
     </EmbeddedResource>

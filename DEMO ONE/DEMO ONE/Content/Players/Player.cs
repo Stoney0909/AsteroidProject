@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace DEMO_ONe.Content.Players
 {
-     class Player : Sprite
+     public class Player : Sprite
     {
         public int damage;
         public int coolDown;
