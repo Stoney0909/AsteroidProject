@@ -15,16 +15,22 @@ namespace DEMO_ONe
         public Leaderboards()
         {
             InitializeComponent();
+
         }
 
         private void button1_Click(object sender, EventArgs e) //main menu
         {
-
+            this.Hide();
+            MainMenu mainMenu = new MainMenu();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) //instructions
         {
-
+            this.Hide();
+            HowToPlay Form1 = new HowToPlay();
+            Form1.ShowDialog();
+            this.Close();
         }
     }
 }
