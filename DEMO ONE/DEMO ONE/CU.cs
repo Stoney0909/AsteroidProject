@@ -18,10 +18,13 @@ namespace DEMO_ONe
         Player player;
         public CU(Player player)
         {
-            this.player = player;
+            InitiliazeComponent();
+
+
+            /*this.player = player;
             upgrades += 2;
 
-            InitiliazeComponent();
+            
 
             healthTextBox.Text = player.health.ToString();
             damageTextBox.Text = player.damage.ToString();
@@ -39,7 +42,7 @@ namespace DEMO_ONe
             {
                 addAmountofPro.Hide();
             }
-            NextLevel();
+            NextLevel();*/
         }
         private void addHeatlh_Click(object sender, EventArgs e)
         {

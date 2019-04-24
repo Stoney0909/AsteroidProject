@@ -50,7 +50,12 @@
     <Compile Include="CU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CU.Designer.cs" />
+	
+    <Compile Include="CU.Designer.cs" >
+	  <DependentUpon>CU.cs</DependentUpon>
+    </Compile>
+	
+	
     <Compile Include="Validators.cs" />
     <Compile Include="Content\Animations\Animation.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
@@ -119,7 +124,9 @@
     <Folder Include="Content\Images\Ship\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CU.resx" />
+    <EmbeddedResource Include="CU.resx" >
+		<DependentUpon>CU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HOWTOPLAY.resx">
       <DependentUpon>HOWTOPLAY.cs</DependentUpon>
     </EmbeddedResource>
