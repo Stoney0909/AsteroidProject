@@ -18,12 +18,18 @@ namespace DEMO_ONe
         Player player;
         public CU(Player player)
         {
-            this.player = player;
+            InitiliazeComponent();
+
+
+            /*this.player = player;
             upgrades += 2;
-            InitializeComponent();
+
+            
+
             healthTextBox.Text = player.health.ToString();
             damageTextBox.Text = player.damage.ToString();
             ProTextBox.Text = player.coolDown.ToString();
+
             if(player.health == 1)
             {
                 minusHealth.Hide();
@@ -36,7 +42,7 @@ namespace DEMO_ONe
             {
                 addAmountofPro.Hide();
             }
-            NextLevel();
+            NextLevel();*/
         }
         private void addHeatlh_Click(object sender, EventArgs e)
         {
@@ -138,6 +144,18 @@ namespace DEMO_ONe
         private void nextlev_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void InitiliazeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // CU
+            // 
+            this.ClientSize = new System.Drawing.Size(861, 513);
+            this.Name = "CU";
+            this.ResumeLayout(false);
+
         }
     }
 }

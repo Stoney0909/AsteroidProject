@@ -91,7 +91,6 @@ F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEM
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
-C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form2.resources
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
@@ -120,33 +119,69 @@ C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x8
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojResolveAssemblyReference.cache
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.Cache
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.pdb
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.dll
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-C:\Users\Aaron Bennett\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.cache
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile.xnb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.pdb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile.xnb
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.pdb
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.cache
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache

@@ -11,11 +11,16 @@ namespace DEMO_ONe.Content.Sprites
      public class Sprite
     {
         public Vector2 velocity;
-        public Vector2 acceleration;
+        public float acceleration;
         public Vector2 position;
         public Texture2D image;
         private SpriteBatch spriteBatch;
-        public int health;
+        public float health;
+        public float angle;
+        public Vector2 Origin;
+        public bool moving = false;
+
+
 
         public Sprite()
         {
@@ -32,13 +37,22 @@ namespace DEMO_ONe.Content.Sprites
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, position, Color.White);
-            
+
         }
         public virtual void Update(GameTime dt)
         {
 
         }
 
+        public Matrix Transform
+        {
+            get
+            {
+                return Matrix.CreateTranslation(new Vector3(-Origin, 0)) *
+                  Matrix.CreateRotationZ(angle) *
+                  Matrix.CreateTranslation(new Vector3(position, 0));
+            }
+        }
 
         public void SetPostionX(float newX)
         {

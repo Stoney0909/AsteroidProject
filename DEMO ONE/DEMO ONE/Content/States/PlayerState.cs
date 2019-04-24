@@ -14,11 +14,24 @@ namespace DEMO_ONe.Content.States
         Input input = new Input();
 
         Animation animation;
-        Vector2 Origin;
+        
 
 
         public PlayerState()
         { }
+
+
+        public Matrix Transform
+        {
+            get
+            {
+                return Matrix.CreateTranslation(new Vector3(-player.Origin, 0)) * 
+                    Matrix.CreateRotationZ(player.angle) *
+                    Matrix.CreateTranslation(new Vector3(player.position, 0));
+            }
+        }
+
+
 
 
 
@@ -26,9 +39,11 @@ namespace DEMO_ONe.Content.States
         {
             player = new Player(newX, newY, newimage, newHealth);
             animation = new Animation(newimage, Rows, Columns);
-            Origin.X = player.image.Width / (animation.Columns * 2);
+            player.Origin.X = player.image.Width / (animation.Columns * 2);
             
-            Origin.Y = player.image.Height / (animation.Rows * 2);
+            player.Origin.Y = player.image.Height / (animation.Rows * 2);
+
+
         }
         
 
@@ -37,7 +52,7 @@ namespace DEMO_ONe.Content.States
         {
             input.KeyDown(player,gameTime);
 
-            if (player.velocity.X!=0 || player.velocity.Y !=0)
+            if (player.moving)
             {
                 animation.Update(player,gameTime);
             }
@@ -54,7 +69,7 @@ namespace DEMO_ONe.Content.States
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
 
-            spriteBatch.Draw(player.image, animation.GetDestinationRectangle(player.position), animation.GetSourceRectangle(), Color.White, player.angle, Origin, SpriteEffects.None, 1);
+            spriteBatch.Draw(player.image, animation.GetDestinationRectangle(player.position), animation.GetSourceRectangle(), Color.White, player.angle, player.Origin, SpriteEffects.None, 1);
 
         }
 

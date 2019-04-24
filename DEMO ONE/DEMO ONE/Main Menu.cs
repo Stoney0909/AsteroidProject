@@ -48,7 +48,7 @@ namespace DEMO_ONe
 
         private void button2_Click(object sender, EventArgs e) //the top ten
         {
-            this.Hide();   
+            this.Hide();
             Leaderboards Form1 = new Leaderboards();
             Form1.ShowDialog();
             this.Show();
