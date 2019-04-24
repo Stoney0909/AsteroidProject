@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace DEMO_ONe.Content.Players
 {
-     public class Player : Sprite
+     class Player : Sprite
     {
         public int damage;
         public int coolDown;
@@ -62,12 +62,12 @@ namespace DEMO_ONe.Content.Players
 
             timer += 1;
         }
-        
+
         public bool Fire()
         {
             if(timer >= coolDown)
             {
-                timer = 0; 
+                timer = 0;
                 return true;
             }
             else
@@ -84,11 +84,11 @@ namespace DEMO_ONe.Content.Players
 
             CU characterupgrade = new CU(playercopy);
             characterupgrade.ShowDialog();
-            
+
             health = playercopy.health;// change this player stats
             damage = playercopy.damage;
             coolDown = playercopy.coolDown;
-            //level++;        
+            //level++;
         }
 
     }
