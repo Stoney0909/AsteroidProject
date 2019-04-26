@@ -11,10 +11,17 @@ namespace DEMO_ONe.Content.Movement
 {
     class LinearMover : ObjectMover
     {
+        public LinearMover()
+        {
+
+        }
+
         public override void Move(Sprite obj, GameTime gameTime)
         {
-            obj.position.X += (obj.velocity.X * Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle)))) * (gameTime.ElapsedGameTime.Milliseconds/100.0f);
-            obj.position.Y += (obj.velocity.Y * Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle)))) * (gameTime.ElapsedGameTime.Milliseconds/100.0f);
+            //obj.position.X += (obj.velocity.X * Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle)))) * (gameTime.ElapsedGameTime.Milliseconds/100.0f);
+            //obj.position.Y += (obj.velocity.Y * Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle)))) * (gameTime.ElapsedGameTime.Milliseconds/100.0f);
+            obj.velocity.X = (Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle))) * obj.acceleration) * (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
+            obj.velocity.Y = -((Convert.ToSingle(Math.Cos(Convert.ToDouble(obj.angle))) * obj.acceleration) * (gameTime.ElapsedGameTime.Milliseconds / 100.0f));
         }
     }
 }

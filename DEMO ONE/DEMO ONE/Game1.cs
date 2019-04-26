@@ -23,8 +23,12 @@ namespace DEMO_ONe
         List<Sprite> Allobject= new List<Sprite> { };
         PlayerState ship = new PlayerState();
         Projectile projectile = new Projectile();
+        AsteroidState asteroid = new AsteroidState(ScreenX,ScreenY,ScreenOffSet);
 
+        public Game1(int ay)
+        {
 
+        }
 
         public Game1()
         {
@@ -75,8 +79,9 @@ namespace DEMO_ONe
 
             //ship.LoadProjectile(projectile);
 
-
-
+            Texture2D enemy = Content.Load<Texture2D>("dont");
+            
+            
             Sprite player = ship.GetSprite();
             LoadObjects(player);
         }
@@ -127,7 +132,7 @@ namespace DEMO_ONe
 
             //makes the background a color
             GraphicsDevice.Clear(new Color(20, 24, 28, 255));
-            float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            //float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
 
             spriteBatch.Begin();

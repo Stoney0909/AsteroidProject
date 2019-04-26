@@ -1,4 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/dont.xnb","TextureProcessor","Texture2DContent",933,23493,0.1955246
-"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile.png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/PlayerProjectile.xnb","TextureProcessor","Texture2DContent",513,36949,0.0029565
-"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.004967
+"C:/Users/timjd/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png","C:/Users/timjd/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/dont.xnb","TextureProcessor","Texture2DContent",933,23493,1.118053
+"C:/Users/timjd/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile.png","C:/Users/timjd/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/PlayerProjectile.xnb","TextureProcessor","Texture2DContent",513,36949,0.0351681
+"C:/Users/timjd/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png","C:/Users/timjd/Documents/GitHub/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.0470192
