@@ -23,6 +23,8 @@ namespace DEMO_ONe
         List<Sprite> Allobject= new List<Sprite> { };
         PlayerState ship = new PlayerState();
         Projectile projectile = new Projectile();
+        Sprite test = new Sprite();
+
 
 
 
@@ -73,17 +75,11 @@ namespace DEMO_ONe
             Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile");
             projectile.image = PlayerLazer;
 
-            //ship.LoadProjectile(projectile);
+            Texture2D delete = Content.Load<Texture2D>("dont");
+            
 
-
-
-            Sprite player = ship.GetSprite();
-            LoadObjects(player);
-        }
-
-        void LoadObjects(Sprite Obj)
-        {
-            Allobject.Add(Obj);
+            Allobject.Add(ship.GetSprite());
+            Allobject.Add(ship.GetPlayer().Shoot());
         }
 
 
@@ -93,6 +89,11 @@ namespace DEMO_ONe
                 Exit();
 
             ship.Update(gameTime);
+
+            //foreach (var sprite in Allobject)
+            //    sprite.Update(gameTime);
+
+            PostUpdate(gameTime);
 
 
             for (int i = 0; i < Allobject.Count; i++)
@@ -118,6 +119,22 @@ namespace DEMO_ONe
             }
 
             base.Update(gameTime);
+        }
+
+        protected void PostUpdate(GameTime gameTime)
+        {
+            // 1. Check collision between all current "Sprites"
+            // 2. Add "Children" to the list of "_sprites" and clear
+            // 3. Remove all "IsRemoved" sprites
+
+
+            for (int i = 0; i < Allobject.Count; i++)
+            {
+                if (Allobject[i].IsRemoved)
+                {
+                    Allobject.RemoveAt(i);
+                }
+            }
         }
 
 

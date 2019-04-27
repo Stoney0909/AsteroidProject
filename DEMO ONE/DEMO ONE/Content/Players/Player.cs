@@ -18,6 +18,8 @@ namespace DEMO_ONe.Content.Players
         public double money;
         public float rotationSpeed, maxSpeed, speedUpRate, slowDownRate;
         public int level;
+        Projectile projectile = new Projectile();
+
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
@@ -27,6 +29,7 @@ namespace DEMO_ONe.Content.Players
             slowDownRate = 0.5f;
             maxSpeed = 50;
             acceleration = 1;
+            
 
         }
 
@@ -92,5 +95,18 @@ namespace DEMO_ONe.Content.Players
             //level++;
         }
 
+        public Sprite Shoot()
+        {
+            var bullet = projectile.Clone() as Projectile;
+
+            bullet.position.X = 300;
+            bullet.position.Y = 300;
+            bullet.Colour = Color.Yellow;
+            bullet.Parent = this;
+
+            //Children.Add(bullet);
+
+            return this;
+        }
     }
 }

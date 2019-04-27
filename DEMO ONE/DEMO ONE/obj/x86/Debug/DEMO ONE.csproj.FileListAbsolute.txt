@@ -80,7 +80,6 @@ F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEM
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form2.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
@@ -185,3 +184,4 @@ D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyCompl
 D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile.xnb

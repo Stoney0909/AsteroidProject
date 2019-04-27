@@ -12,7 +12,7 @@ namespace DEMO_ONe.Content.States
     {
         Player player = new Player();
         Input input = new Input();
-
+        
         Animation animation;
         
 
@@ -38,6 +38,7 @@ namespace DEMO_ONe.Content.States
         public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)
         {
             player = new Player(newX, newY, newimage, newHealth);
+            //Children.Add(player);
             animation = new Animation(newimage, Rows, Columns);
             player.Origin.X = player.image.Width / (animation.Columns * 2);
             
@@ -73,7 +74,10 @@ namespace DEMO_ONe.Content.States
 
         }
 
-
+        public Player GetPlayer()
+        {
+            return player;
+        }
 
         public Sprite GetSprite()
         {
