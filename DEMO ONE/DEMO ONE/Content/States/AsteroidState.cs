@@ -16,28 +16,36 @@ namespace DEMO_ONe.Content.States
     {
         Texture2D[] AsteroidSize = new Texture2D[6];
         List<Sprite> Asteroids;
-        Asteroid Asteroid = new Asteroid();
-        Game1 Game = new Game1();
+        Asteroid asteroid = new Asteroid();
+        //Game1 Game = new Game1();
         Rnd rnd = new Rnd();
         int screenX;
         int screenY;
         int screenOffset;
 
-        public AsteroidState()
+        public AsteroidState(int newScreenX,int newScreenY, int newScreenOffset)
         {
-            screenX = Game.GetScreenX();
-            screenY = Game.GetScreenY();
-            screenOffset = Game.GetScreenOffset();
+            screenX = newScreenX;
+            screenY = newScreenY;
+            screenOffset = newScreenOffset;
         }
-            void Update()
+
+        public void Load(float newX, float newY, Texture2D newimage)
         {
+            asteroid = new Asteroid(newX, newY, newimage);
+        }
+
+        void Update(GameTime gameTime)
+        {
+            asteroid.Update(gameTime);
+
             //TO DO
             /*for (int i = 0; i < Asteroids.Count(); i++)
             {
-                Asteroids[i].draw(gameTime, );
+                    Asteroids[i].draw(gameTime, );
             }*/
         }
-
+        
         void Draw(SpriteBatch spriteBatch)
         {
             for (int i = 0; i < Asteroids.Count(); i++)

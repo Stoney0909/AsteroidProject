@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DEMO_ONe.Content.Sprites;
-using DEMO_ONe.Content;
+using DEMO_ONe.Content.Movement;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -13,6 +13,7 @@ namespace DEMO_ONe.Content.Enemy
     class Asteroid : Sprite
     {
         Random rnd = new Random();
+        LinearMover movement;
 
         public Asteroid()
         {
@@ -34,9 +35,16 @@ namespace DEMO_ONe.Content.Enemy
             this.position.Y = y;
             this.image = image;
         }
-        public override void Update(GameTime dt)
+
+        public override void Update(GameTime gameTime)
         {
-            position.X = velocity.X; 
+            movement.Move(this, gameTime);
+             
+        
+            position.X += velocity.X;
+            position.Y += velocity.Y;
         }
+
+
     }
 }
