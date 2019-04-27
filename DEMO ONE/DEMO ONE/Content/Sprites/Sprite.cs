@@ -10,19 +10,25 @@ namespace DEMO_ONe.Content.Sprites
 {
      public class Sprite
     {
+        public bool moving = false;
+        public bool IsRemoved = false;
+
+        public Sprite Parent;
+
         public Vector2 velocity;
-        public float acceleration;
         public Vector2 position;
+        public Vector2 Origin;
+
         public Texture2D image;
         private SpriteBatch spriteBatch;
+
+        public float acceleration;
         public float health;
         public float angle;
-        public Sprite Parent;
-        public Vector2 Origin;
-        public bool moving = false;
+        public float rotationSpeed, maxSpeed;
+
         public readonly Color[] TextureData;
 
-        public bool IsRemoved = false;
 
         public List<Sprite> Children { get; set; }
 
@@ -45,7 +51,7 @@ namespace DEMO_ONe.Content.Sprites
 
             //end of collision you may touch now
         }
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, position, Color.White);
 

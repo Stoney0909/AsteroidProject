@@ -13,38 +13,57 @@ namespace DEMO_ONe.Content.Enemy
     class Asteroid : Sprite
     {
         Random rnd = new Random();
-        LinearMover movement;
+        LinearMover movement = new LinearMover();
+        public float rotation;
+        public Rectangle sourceRectangle, destinationRectangle;
 
         public Asteroid()
         {
-           health = 1;
-           if (rnd.Next(0,1) == 1)
-            {
-                position.X = rnd.Next(0,1200);
-                position.Y = 0;
-            }
-           position.X = 800;
-           position.Y = 600;
-           velocity.X = 15;
-           velocity.Y = 15;
+
         }
 
-        public Asteroid(float x, float y, Texture2D image)
+        public Asteroid(float newX, float newY, Texture2D newImage)
         {
-            this.position.X = x;
-            this.position.Y = y;
-            this.image = image;
+            health = 1;
+            rotationSpeed = 10f;
+            maxSpeed = 50;
+            position.X = newX;
+            position.Y = newY;
+            image = newImage;
+        }
+
+        public Asteroid(Texture2D newImage)
+        {
+            image = newImage;
         }
 
         public override void Update(GameTime gameTime)
         {
-            movement.Move(this, gameTime);
-             
-        
-            position.X += velocity.X;
-            position.Y += velocity.Y;
+            //movement.Move(this, gameTime);
+
+            sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+            destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+            Origin.X = image.Width / (2);
+            Origin.Y = image.Height / (2);
+
+            //position.X += velocity.X;
+            //position.Y += velocity.Y;
+
+            rotation += rotationSpeed;
+            position.X += 5;
+            position.Y += 5;
         }
 
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+
+
+            spriteBatch.Draw(image, destinationRectangle, sourceRectangle, Color.White, rotation, Origin, SpriteEffects.None, 1);
+
+
+
+        }
 
     }
 }

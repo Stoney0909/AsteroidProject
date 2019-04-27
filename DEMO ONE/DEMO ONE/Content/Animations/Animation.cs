@@ -5,7 +5,7 @@ using DEMO_ONe.Content.Players;
 
 namespace DEMO_ONe.Content.Animations
 {
-    class Animation
+    public class Animation
     {
 
         //SET HOW THE IMAGES ARE CALCULATED

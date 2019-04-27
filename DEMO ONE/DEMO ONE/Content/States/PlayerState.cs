@@ -12,10 +12,7 @@ namespace DEMO_ONe.Content.States
     {
         Player player = new Player();
         Input input = new Input();
-        
-        Animation animation;
-        
-
+         
 
         public PlayerState()
         { }
@@ -31,20 +28,11 @@ namespace DEMO_ONe.Content.States
             }
         }
 
-
-
-
+        
 
         public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)
         {
-            player = new Player(newX, newY, newimage, newHealth);
-            //Children.Add(player);
-            animation = new Animation(newimage, Rows, Columns);
-            player.Origin.X = player.image.Width / (animation.Columns * 2);
-            
-            player.Origin.Y = player.image.Height / (animation.Rows * 2);
-
-
+            player = new Player(newX, newY, newimage, newHealth, Rows, Columns);
         }
         
 
@@ -52,34 +40,11 @@ namespace DEMO_ONe.Content.States
         public void Update(GameTime gameTime)
         {
             input.KeyDown(player,gameTime);
-
-            if (player.moving)
-            {
-                animation.Update(player,gameTime);
-            }
-            else
-            {
-                 animation.SetCurrentFrame(0);
-            }
-
-            player.Update(gameTime);
         }
 
 
-
-        public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
-        {
-
-            spriteBatch.Draw(player.image, animation.GetDestinationRectangle(player.position), animation.GetSourceRectangle(), Color.White, player.angle, player.Origin, SpriteEffects.None, 1);
-
-        }
 
         public Player GetPlayer()
-        {
-            return player;
-        }
-
-        public Sprite GetSprite()
         {
             return player;
         }
