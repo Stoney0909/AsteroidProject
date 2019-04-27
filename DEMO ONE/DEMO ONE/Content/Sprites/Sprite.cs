@@ -37,8 +37,16 @@ namespace DEMO_ONe.Content.Sprites
             position.X = 300;
             position.Y = 300;
             Children = new List<Sprite>();
+
         }
-        public Sprite(float newX, float newY, Texture2D newImage, int newHealth)
+
+        public Sprite(float newX, float newY, Texture2D newImage)
+        {
+            TextureData = new Color[newImage.Width * newImage.Height];
+            newImage.GetData(TextureData);
+        }
+
+            public Sprite(float newX, float newY, Texture2D newImage, int newHealth)
         {
             position.X = newX;
             position.Y = newY;
@@ -51,6 +59,9 @@ namespace DEMO_ONe.Content.Sprites
 
             //end of collision you may touch now
         }
+
+
+
         public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, position, Color.White);
@@ -82,10 +93,12 @@ namespace DEMO_ONe.Content.Sprites
                 return new Rectangle((int)position.X - (int)Origin.X, (int)position.Y - (int)Origin.Y, image.Width, image.Height);
             }
         }
-        
+
 
         public bool Intersects(Sprite sprite)
         {
+
+
             // Calculate a matrix which transforms from A's local space into
             // world space and then into B's local space
             var transformAToB = this.Transform * Matrix.Invert(sprite.Transform);
@@ -140,7 +153,7 @@ namespace DEMO_ONe.Content.Sprites
 
         public virtual void OnCollide(Sprite sprite)
         {
-            Console.WriteLine("FLIIP");
+
         }
 
 
@@ -153,6 +166,10 @@ namespace DEMO_ONe.Content.Sprites
                   Matrix.CreateTranslation(new Vector3(position, 0));
             }
         }
+
+
+
+
 //END OF COLLISION CODE YOU SAW NOTHING
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

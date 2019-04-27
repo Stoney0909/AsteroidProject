@@ -1,5 +1,7 @@
 ﻿using DEMO_ONe.Content.Sprites;
 using DEMO_ONe.Content.Animations;
+using DEMO_ONe.Content.Enemy;
+
 
 using System;
 using System.Collections.Generic;
@@ -20,6 +22,7 @@ namespace DEMO_ONe.Content.Players
         public double money;
         public float speedUpRate, slowDownRate;
         public int level;
+        int collisions;
 
         Animation animation;
 
@@ -54,12 +57,14 @@ namespace DEMO_ONe.Content.Players
             level = newlevel;
         }
 
+
+
         public override void Update(GameTime gameTime)
         {
 
             position.X += velocity.X ;
             position.Y += velocity.Y ;
-
+            
 
             if (moving)
             {
@@ -77,6 +82,9 @@ namespace DEMO_ONe.Content.Players
 
             timer += 1;
         }
+
+
+
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, animation.GetDestinationRectangle(position), animation.GetSourceRectangle(), Color.White, angle, Origin, SpriteEffects.None, 1);
@@ -110,18 +118,18 @@ namespace DEMO_ONe.Content.Players
             //level++;
         }
 
-        public Sprite Shoot()
+
+
+        public override void OnCollide(Sprite sprite)
         {
-            var bullet = projectile.Clone() as Projectile;
-
-            bullet.position.X = 300;
-            bullet.position.Y = 300;
-            bullet.Colour = Color.Yellow;
-            bullet.Parent = this;
-
-            //Children.Add(bullet);
-
-            return this;
+            if (sprite is Asteroid)
+            {
+                Console.WriteLine("Frick" + collisions);
+                collisions++;
+            }
+            
         }
+
+
     }
 }

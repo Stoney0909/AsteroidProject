@@ -40,9 +40,10 @@ namespace DEMO_ONe.Content.States
         public void Update(GameTime gameTime)
         {
             input.KeyDown(player,gameTime);
+
         }
 
-
+        
 
         public Player GetPlayer()
         {
