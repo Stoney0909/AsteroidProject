@@ -26,8 +26,7 @@ namespace DEMO_ONe.Content.InputHandle
 
         public Input()
         {}
-
-
+        
 
         public void KeyDown(Player player,GameTime gameTime)
         {

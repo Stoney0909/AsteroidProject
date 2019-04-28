@@ -26,14 +26,14 @@ namespace DEMO_ONe
         PlayerState ship = new PlayerState();
         AsteroidState asteroid = new AsteroidState(ScreenX,ScreenY,ScreenOffSet);
 
-       
+
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
-        
+
 
 
         protected override void Initialize()
@@ -58,25 +58,24 @@ namespace DEMO_ONe
 
             //Player Projectile
             Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile");
-          
 
+
+            //loads astriod
             Texture2D delete = Content.Load<Texture2D>("dont");
             asteroid.Load(delete);
             asteroid.Spawn();
-            //ship.LoadProjectile(projectile);
-
-            
 
 
-            //LoadObjects(player);
+
+
+            Allobject.Add(ship.GetPlayer());
 
             foreach (var obj in asteroid.GetSprite())
             {
                 Allobject.Add(obj);
             }
 
-            Allobject.Add(ship.GetPlayer());
-            
+
         }
 
 
@@ -85,22 +84,28 @@ namespace DEMO_ONe
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+
+
             ship.Update(gameTime);
 
+            //updates code
             for (int i = 0; i < Allobject.Count; i++)
             {
                 Allobject[i].Update(gameTime);
             }
-           
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+
+            //Collisiont system
+            for (int i = 1; i < Allobject.Count; i++)
             {
-                ProjectileState projectile = new ProjectileState();
-                projectile.Spawn(ship.GetPlayer());
-                foreach (var obj in projectile.GetSprite())
+                if (Allobject[0].Intersects(Allobject[i]))
                 {
-                    Allobject.Add(obj);
+                    Allobject[0].OnCollide(Allobject[i]);
                 }
             }
+
+
+
+
 
             PostUpdate(gameTime);
 
