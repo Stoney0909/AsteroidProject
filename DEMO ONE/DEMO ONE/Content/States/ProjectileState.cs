@@ -18,7 +18,7 @@ namespace DEMO_ONe.Content.States
         List<Projectile> lazer = new List<Projectile> { };
         
         LinearMover linearMover;
-        Texture2D image;
+        public Texture2D image;
 
         public void Load(Texture2D newimage)
         {
@@ -28,7 +28,7 @@ namespace DEMO_ONe.Content.States
 
         public void Spawn(Player player)
         {
-            if (player.Fire())
+            if (player.Fire() == true)
             {
                 Projectile projectile = new Projectile(player.position.X, player.position.Y, image, 1);
                 projectile.angle = player.angle;

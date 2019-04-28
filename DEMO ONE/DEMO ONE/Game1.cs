@@ -26,7 +26,7 @@ namespace DEMO_ONe
         PlayerState ship = new PlayerState();
         AsteroidState asteroid = new AsteroidState(ScreenX,ScreenY,ScreenOffSet);
 
-
+        ProjectileState projectile = new ProjectileState();
 
         public Game1()
         {
@@ -58,7 +58,7 @@ namespace DEMO_ONe
 
             //Player Projectile
             Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile");
-
+            projectile.image = PlayerLazer;
 
             //loads astriod
             Texture2D delete = Content.Load<Texture2D>("dont");
@@ -103,7 +103,16 @@ namespace DEMO_ONe
                 }
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                System.Console.WriteLine("SpaceBar");
+                projectile.Spawn(ship.GetPlayer());
+                foreach (var obj in projectile.GetSprite())
+                {
+                    Allobject.Add(obj);
+                }
 
+            }
 
 
 

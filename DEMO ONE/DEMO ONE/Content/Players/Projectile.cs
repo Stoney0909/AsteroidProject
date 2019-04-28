@@ -44,7 +44,8 @@ namespace DEMO_ONe.Content.Players
 
         public override void Update(GameTime gameTime)
         {
-
+            position.X += velocity.x;
+            position.Y += 5;
         }
     }
 }

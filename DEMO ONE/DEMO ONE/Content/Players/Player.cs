@@ -37,13 +37,13 @@ namespace DEMO_ONe.Content.Players
             slowDownRate = 0.5f;
             maxSpeed = 50;
             acceleration = 1;
-
+            coolDown = 50;
             animation = new Animation(newImage, Rows, Columns);
             Origin.X = image.Width / (animation.Columns * 2);
             Origin.Y = image.Height / (animation.Rows * 2);
         }
 
-        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
+        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 5000, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
         {
             position.X = x;
             position.Y = y;
