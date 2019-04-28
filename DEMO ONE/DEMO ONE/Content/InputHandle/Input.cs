@@ -59,12 +59,7 @@ namespace DEMO_ONe.Content.InputHandle
             {
                 Direction[2] = false;
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
-            {
-                //TODO
-                //ADD PROJECTILE FIRING HERE
-                
-            }
+            
             Movement(player,gameTime);
         }
 
