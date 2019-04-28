@@ -12,7 +12,7 @@ namespace DEMO_ONe.Content.States
     {
         Player player = new Player();
         Input input = new Input();
-         
+        public bool canFire;
 
         public PlayerState()
         { }

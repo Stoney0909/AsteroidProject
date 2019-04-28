@@ -26,17 +26,14 @@ namespace DEMO_ONe
         PlayerState ship = new PlayerState();
         AsteroidState asteroid = new AsteroidState(ScreenX,ScreenY,ScreenOffSet);
 
-        Projectile projectile = new Projectile();
-
-
-       
+        ProjectileState projectile = new ProjectileState();
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
-        
+
 
 
         protected override void Initialize()
@@ -68,9 +65,9 @@ namespace DEMO_ONe
             asteroid.Load(delete);
             asteroid.Spawn();
 
-            
 
-            
+
+
             Allobject.Add(ship.GetPlayer());
 
             foreach (var obj in asteroid.GetSprite())
@@ -78,7 +75,7 @@ namespace DEMO_ONe
                 Allobject.Add(obj);
             }
 
-            
+
         }
 
 
@@ -106,7 +103,16 @@ namespace DEMO_ONe
                 }
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                System.Console.WriteLine("SpaceBar");
+                projectile.Spawn(ship.GetPlayer());
+                foreach (var obj in projectile.GetSprite())
+                {
+                    Allobject.Add(obj);
+                }
 
+            }
 
 
 

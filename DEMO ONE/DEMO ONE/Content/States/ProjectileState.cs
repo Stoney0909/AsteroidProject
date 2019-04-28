@@ -15,11 +15,10 @@ namespace DEMO_ONe.Content.States
     class ProjectileState
     {
         //Projectile projectile = new Projectile();
-        List<Projectile> lazer;
+        List<Projectile> lazer = new List<Projectile> { };
+        
         LinearMover linearMover;
-        Texture2D image;
-        public int health;
-
+        public Texture2D image;
 
         public void Load(Texture2D newimage)
         {
@@ -29,9 +28,14 @@ namespace DEMO_ONe.Content.States
 
         public void Spawn(Player player)
         {
-            Projectile projectile = new Projectile(player.position.X, player.position.Y, image, health);
-            projectile.angle = player.angle;
-            lazer.Add(projectile);
+            if (player.Fire() == true)
+            {
+                Projectile projectile = new Projectile(player.position.X, player.position.Y, image, 1);
+                projectile.angle = player.angle;
+                projectile.damage = player.damage;
+                lazer.Add(projectile);
+            }
+            
         }
 
         public void Update(GameTime gameTime)
@@ -39,13 +43,23 @@ namespace DEMO_ONe.Content.States
             for (int i = 0; i < lazer.Count; i++)
             {
                 lazer[i].health -= (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
-                if (lazer[i].health <=0)
+                if (lazer[i].health <= 0)
                 {
                     lazer.RemoveAt(i);
                 }
+                lazer[i].Update(gameTime);
             }
         }
+        public List<Sprite> GetSprite()
+        {
+            List<Sprite> sprites = new List<Sprite> { };
 
+            foreach (var c in lazer)
+            {
+                sprites.Add(c);
+            }
+            return sprites;
+        }
 
     }
 }
