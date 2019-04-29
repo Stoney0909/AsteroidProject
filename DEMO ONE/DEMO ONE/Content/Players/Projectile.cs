@@ -48,11 +48,11 @@ namespace DEMO_ONe.Content.Players
         public override void Update(GameTime gameTime)
         {
             health -= (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
-            if (health >= 0)
-            {
+            //if (health >= 0)
+            //{
                 position.X += 5;
                 position.Y += 5;
-            }
+            //}
         }
     }
 }

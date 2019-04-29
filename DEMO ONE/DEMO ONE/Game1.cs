@@ -9,6 +9,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
+using System.Threading;
+
 
 namespace DEMO_ONe
 {
@@ -40,7 +42,8 @@ namespace DEMO_ONe
         {
             graphics.PreferredBackBufferWidth = ScreenX;
             graphics.PreferredBackBufferHeight = ScreenY;
-
+            Thread thread = new Thread(new ThreadStart(TestColide));
+            thread.Start();
             this.IsMouseVisible = true;
             graphics.ApplyChanges();
             base.Initialize();
@@ -97,10 +100,7 @@ namespace DEMO_ONe
 
 
                 Allobject[i].Update(gameTime);
-
-
-
-
+                
 
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
@@ -122,25 +122,18 @@ namespace DEMO_ONe
                 }
 
 
-                if (Allobject[i] is Projectile)
+                /*if (Allobject[i] is Projectile)
                 {
                     if (Allobject[i].health <= 0)
                     {
                         Allobject.RemoveAt(i);
                     }
                 }
-
+                */
 
             }
 
-            //Collisiont system
-            for (int i = 1; i < Allobject.Count; i++)
-            {
-                if (Allobject[0].Intersects(Allobject[i]))
-                {
-                    Allobject[0].OnCollide(Allobject[i]);
-                }
-            }
+  
 
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
@@ -151,6 +144,21 @@ namespace DEMO_ONe
             
 
             base.Update(gameTime);
+        }
+
+        protected void TestColide()
+        {
+            //Collisiont system
+            while (true)
+            {
+                for (int i = 1; i < Allobject.Count; i++)
+                {
+                    if (Allobject[0].Intersects(Allobject[i]))
+                    {
+                        Allobject[0].OnCollide(Allobject[i]);
+                    }
+                }
+            }
         }
 
 
