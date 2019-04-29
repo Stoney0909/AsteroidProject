@@ -44,31 +44,28 @@ namespace DEMO_ONe.Content.Enemy
         {
             //movement.Move(this, gameTime);
 
-            sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
-            destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+                sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+                destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
 
 
 
-            Origin.X = image.Width / (2);
-            Origin.Y = image.Height / (2);
+                Origin.X = image.Width / (2);
+                Origin.Y = image.Height / (2);
 
-            //position.X += velocity.X;
-            //position.Y += velocity.Y;
+                //position.X += velocity.X;
+                //position.Y += velocity.Y;
 
-            rotation += rotationSpeed;
-            position.X += 5;
-            position.Y += 5;
+                rotation += rotationSpeed;
+                position.X += 5;
+                position.Y += 5;
+            
+
         }
 
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-
-
-            spriteBatch.Draw(image, destinationRectangle, sourceRectangle, Color.White, rotation, Origin, SpriteEffects.None, 1);
-
-
-
+            spriteBatch.Draw(image, position, sourceRectangle, Color.White, rotation, Origin, 1.0f, SpriteEffects.None, 1);
         }
 
     }

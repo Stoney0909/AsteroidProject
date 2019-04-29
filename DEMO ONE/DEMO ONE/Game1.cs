@@ -78,20 +78,61 @@ namespace DEMO_ONe
 
         }
 
+        public List<Sprite> GetAllobj()
+        {
+            return Allobject;
+        }
+
 
         protected override void Update(GameTime gameTime)
         {
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-
-
             ship.Update(gameTime);
 
             //updates code
             for (int i = 0; i < Allobject.Count; i++)
             {
+
+
                 Allobject[i].Update(gameTime);
+
+
+                //if (Allobject[i].IsRemoved)
+                //{
+                //    Allobject.RemoveAt(i);
+                //}
+
+
+                if (Allobject[i].position.X > ScreenX + ScreenOffSet)
+                {
+                    Allobject[i].position.X = -ScreenOffSet;
+                }
+
+                else if (Allobject[i].position.X < -ScreenOffSet)
+                {
+                    Allobject[i].position.X = ScreenX + ScreenOffSet;
+                }
+
+                if (Allobject[i].position.Y > ScreenY + ScreenOffSet)
+                {
+                    Allobject[i].position.Y = -ScreenOffSet;
+                }
+                else if (Allobject[i].position.Y < -ScreenOffSet)
+                {
+                    Allobject[i].position.Y = ScreenY + ScreenOffSet;
+                }
+
+
+                if (Allobject[i] is Projectile)
+                {
+                    if (Allobject[i].health <= 0)
+                    {
+                        Allobject.RemoveAt(i);
+                    }
+                }
+
             }
 
             //Collisiont system
@@ -105,60 +146,16 @@ namespace DEMO_ONe
 
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
-                System.Console.WriteLine("SpaceBar");
-                projectile.Spawn(ship.GetPlayer());
-                foreach (var obj in projectile.GetSprite())
-                {
-                    Allobject.Add(obj);
-                }
-
+                System.Console.WriteLine(Allobject.Count);
+                projectile.Spawn(ship.GetPlayer(),Allobject);
             }
 
-
-
-            PostUpdate(gameTime);
-
-
-            for (int i = 0; i < Allobject.Count; i++)
-            {
-                if (Allobject[i].position.X > ScreenX + ScreenOffSet)
-                {
-                    Allobject[i].position.X=-ScreenOffSet;
-                }
-
-                else if (Allobject[i].position.X < -ScreenOffSet)
-                {
-                    Allobject[i].position.X=ScreenX + ScreenOffSet;
-                }
-
-                if (Allobject[i].position.Y > ScreenY + ScreenOffSet)
-                {
-                    Allobject[i].position.Y=-ScreenOffSet;
-                }
-                else if (Allobject[i].position.Y < -ScreenOffSet)
-                {
-                    Allobject[i].position.Y=ScreenY + ScreenOffSet;
-                }
-            }
+            
 
             base.Update(gameTime);
         }
 
-    protected void PostUpdate(GameTime gameTime)
-    {
-        // 1. Check collision between all current "Sprites"
-        // 2. Add "Children" to the list of "_sprites" and clear
-        // 3. Remove all "IsRemoved" sprites
 
-
-        for (int i = 0; i < Allobject.Count; i++)
-        {
-            if (Allobject[i].IsRemoved)
-            {
-                Allobject.RemoveAt(i);
-            }
-        }
-    }
 
 
 

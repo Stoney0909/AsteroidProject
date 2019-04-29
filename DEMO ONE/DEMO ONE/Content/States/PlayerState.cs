@@ -12,23 +12,11 @@ namespace DEMO_ONe.Content.States
     {
         Player player = new Player();
         Input input = new Input();
-        public bool canFire;
+
 
         public PlayerState()
         { }
 
-
-        public Matrix Transform
-        {
-            get
-            {
-                return Matrix.CreateTranslation(new Vector3(-player.Origin, 0)) * 
-                    Matrix.CreateRotationZ(player.angle) *
-                    Matrix.CreateTranslation(new Vector3(player.position, 0));
-            }
-        }
-
-        
 
         public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)
         {

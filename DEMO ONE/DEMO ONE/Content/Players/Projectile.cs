@@ -42,10 +42,17 @@ namespace DEMO_ONe.Content.Players
             IsRemoved = true;
         }
 
+        
+
+
         public override void Update(GameTime gameTime)
         {
-            position.X += velocity.x;
-            position.Y += 5;
+            health -= (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
+            if (health >= 0)
+            {
+                position.X += 5;
+                position.Y += 5;
+            }
         }
     }
 }

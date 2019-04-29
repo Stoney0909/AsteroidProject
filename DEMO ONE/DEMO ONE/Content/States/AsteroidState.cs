@@ -18,7 +18,9 @@ namespace DEMO_ONe.Content.States
         Rnd rnd = new Rnd();
 
         Texture2D[] AsteroidSize = new Texture2D[6];
+
         List<Asteroid> asteroids = new List<Asteroid> { };
+
         float asteroidPositionX, asteroidPositionY;
 
         int screenX, screenY, screenOffset;
@@ -92,24 +94,17 @@ namespace DEMO_ONe.Content.States
         public void Update(GameTime gameTime)
         {
             //DELETE FROM LIST
-            for (int i = 0; i < asteroids.Count; i++)
-            {
-                asteroids[i].Update(gameTime);
-                asteroids[i].rotation += asteroids[i].rotationSpeed;
-            }
+
+            asteroid.Update(gameTime);
+            asteroid.rotation += asteroid.rotationSpeed;
+            
         }
 
 
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-            for (int i = 0; i < asteroids.Count; i++)
-            {
-
-                spriteBatch.Draw(asteroids[i].image, asteroids[i].position, asteroids[i].sourceRectangle, Color.White, asteroids[i].rotation, asteroids[i].Origin, 1.0f, SpriteEffects.None, 1);
-
-            }
-
+                
         }
 
         public List<Sprite> GetSprite()

@@ -20,13 +20,14 @@ namespace DEMO_ONe.Content.States
         LinearMover linearMover;
         public Texture2D image;
 
+
         public void Load(Texture2D newimage)
         {
             image = newimage;
         }
 
 
-        public void Spawn(Player player)
+        public void Spawn(Player player,List<Sprite> Obj)
         {
             if (player.Fire() == true)
             {
@@ -34,10 +35,12 @@ namespace DEMO_ONe.Content.States
                 projectile.angle = player.angle;
                 projectile.damage = player.damage;
                 lazer.Add(projectile);
+                Obj.Add(projectile);
             }
             
         }
 
+        /*
         public void Update(GameTime gameTime)
         {
             for (int i = 0; i < lazer.Count; i++)
@@ -60,6 +63,6 @@ namespace DEMO_ONe.Content.States
             }
             return sprites;
         }
-
+        */
     }
 }
