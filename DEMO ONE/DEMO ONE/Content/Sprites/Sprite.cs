@@ -76,7 +76,7 @@ namespace DEMO_ONe.Content.Sprites
 
 
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        //DO NOT FUCKING TOUCH THIS IF YOU VALUE YOUR LIFE 
+        //DO NOT FLIPPING TOUCH THIS IF YOU VALUE YOUR LIFE 
         //THIS IS COLLISION
         //TOUCH NOTHING READ NOTHING
 
