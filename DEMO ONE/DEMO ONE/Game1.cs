@@ -99,10 +99,7 @@ namespace DEMO_ONe
                 Allobject[i].Update(gameTime);
 
 
-                //if (Allobject[i].IsRemoved)
-                //{
-                //    Allobject.RemoveAt(i);
-                //}
+
 
 
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
@@ -132,6 +129,7 @@ namespace DEMO_ONe
                         Allobject.RemoveAt(i);
                     }
                 }
+
 
             }
 

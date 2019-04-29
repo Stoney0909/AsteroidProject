@@ -26,39 +26,42 @@ namespace DEMO_ONe.Content.Enemy
             :base(newX,newY,newImage)
         {
             health = 1;
-            rotationSpeed = 5f;
+            rotationSpeed = .1f;
             maxSpeed = 5;
             position.X = newX;
             position.Y = newY;
             image = newImage;
-
+            sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+            destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
         }
 
         public Asteroid(Texture2D newImage)
         {
             image = newImage;
+            sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+            destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
 
         }
 
         public override void Update(GameTime gameTime)
         {
-            //movement.Move(this, gameTime);
-
-                sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
-                destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
+            movement.Move(this, gameTime);
 
 
 
-                Origin.X = image.Width / (2);
-                Origin.Y = image.Height / (2);
 
+            Origin.X = image.Width / (2);
+            Origin.Y = image.Height / (2);
+
+
+            rotation += rotationSpeed;
                 //position.X += velocity.X;
                 //position.Y += velocity.Y;
 
-                rotation += rotationSpeed;
-                position.X += 5;
-                position.Y += 5;
-            
+
+            position.X += velocity.X;
+            position.Y += velocity.Y;
+
 
         }
 
