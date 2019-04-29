@@ -50,12 +50,16 @@
     <Compile Include="CU.cs">
       <SubType>Form</SubType>
     </Compile>
-	
-    <Compile Include="CU.Designer.cs" >
-	  <DependentUpon>CU.cs</DependentUpon>
+    <Compile Include="CU.Designer.cs">
+      <DependentUpon>CU.cs</DependentUpon>
     </Compile>
-	
-	
+    <Compile Include="ENDGAME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENDGAME.Designer.cs">
+      <DependentUpon>ENDGAME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Save_Load.cs" />
     <Compile Include="Validators.cs" />
     <Compile Include="Content\Animations\Animation.cs" />
     <Compile Include="Content\Enemy\Asteroid.cs" />
@@ -124,8 +128,11 @@
     <Folder Include="Content\Images\Ship\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CU.resx" >
-		<DependentUpon>CU.cs</DependentUpon>
+    <EmbeddedResource Include="CU.resx">
+      <DependentUpon>CU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENDGAME.resx">
+      <DependentUpon>ENDGAME.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HOWTOPLAY.resx">
       <DependentUpon>HOWTOPLAY.cs</DependentUpon>

@@ -12,11 +12,22 @@ namespace DEMO_ONe
 {
     public partial class Leaderboards : Form
     {
+        List<Save_Load> topScoreList;
         public Leaderboards()
         {
             InitializeComponent();
+            for (int i = 0; i < 10; i++)
+            {
+                Save_Load account = new Save_Load("top scores", i);
+                topScoreList.Insert(i, account);
+                
+            }
+
+            //topScoreList.elementat(i).score
 
         }
+
+
 
         private void button1_Click(object sender, EventArgs e) //main menu
         {
