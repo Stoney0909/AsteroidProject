@@ -57,7 +57,7 @@ namespace DEMO_ONe
             //END SHIP IMP
 
             //Player Projectile
-            Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile");
+            Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile clone (5)");
             projectile.image = PlayerLazer;
 
             //loads astriod
