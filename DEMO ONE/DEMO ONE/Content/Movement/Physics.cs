@@ -8,8 +8,10 @@ using System;
 
 namespace DEMO_ONe.Content.Movement
 {
+    
     class Physics
     {
+       
         public void Mover(Player player, bool[] Direction, GameTime gameTime)
         {
             // player.position.X = Math.Sin(player.angle)+(player.acceleration*);
@@ -63,6 +65,7 @@ namespace DEMO_ONe.Content.Movement
             {
                 player.angle += player.rotationSpeed * (gameTime.ElapsedGameTime.Milliseconds) / 100;
             }
+            double PlayerCosine = Math.Cos(player.angle);
         }
     }
 }

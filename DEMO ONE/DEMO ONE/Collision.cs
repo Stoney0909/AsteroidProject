@@ -16,18 +16,18 @@ using System.Threading.Tasks;
 
 namespace DEMO_ONe
 {
-   /* 
     class Collision
     {
-        Player player;
+        /*
+        Sprite sprite;
 
         public Matrix Transform
         {
             get
             {
-                return Matrix.CreateTranslation(new Vector3(-player.Origin, 0)) *
-                  Matrix.CreateRotationZ(player.angle) *
-                  Matrix.CreateTranslation(new Vector3(player.position, 0));
+                return Matrix.CreateTranslation(new Vector3(-sprite.Origin, 0)) *
+                  Matrix.CreateRotationZ(sprite.angle) *
+                  Matrix.CreateTranslation(new Vector3(sprite.position, 0));
             }
         }
     
@@ -92,6 +92,6 @@ namespace DEMO_ONe
         }
 
 
-    }
     */
+    }
 }

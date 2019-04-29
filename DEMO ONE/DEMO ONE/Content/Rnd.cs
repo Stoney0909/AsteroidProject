@@ -19,5 +19,10 @@ namespace DEMO_ONe.Content
         {
             return rnds.Next(min, max);
         }
+
+        public int Range(int min, int max)
+        {
+            return rnds.Next(min, max);
+        }
     }
 }

@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png","C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/dont.xnb","TextureProcessor","Texture2DContent",933,23493,0.1176502
-"C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile.png","C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/PlayerProjectile.xnb","TextureProcessor","Texture2DContent",513,36949,0.0049886
-"C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png","C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.0089759
+"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/dont.xnb","TextureProcessor","Texture2DContent",933,23493,0.2333825
+"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile clone (5).png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/PlayerProjectile clone (5).xnb","TextureProcessor","Texture2DContent",945,102485,0.0089785
+"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile.png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/PlayerProjectile.xnb","TextureProcessor","Texture2DContent",513,36949,0.0059807
+"D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png","D:/GIT/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Ship.xnb","TextureProcessor","Texture2DContent",2553,147541,0.0122713

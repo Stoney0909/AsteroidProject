@@ -1,4 +1,8 @@
 ﻿using DEMO_ONe.Content.Sprites;
+using DEMO_ONe.Content.Animations;
+using DEMO_ONe.Content.Enemy;
+
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +20,16 @@ namespace DEMO_ONe.Content.Players
         public int timer;
         public double score;
         public double money;
-        public float rotationSpeed, maxSpeed, speedUpRate, slowDownRate;
+        public float speedUpRate, slowDownRate;
         public int level;
+        int collisions;
 
-        public Player(float newX, float newY, Texture2D newImage, int newHealth)
+        Animation animation;
+
+        Projectile projectile = new Projectile();
+
+
+        public Player(float newX, float newY, Texture2D newImage, int newHealth, int Rows, int Columns)
             : base(newX, newY, newImage, newHealth)
         {
             rotationSpeed = 0.6f;
@@ -27,10 +37,13 @@ namespace DEMO_ONe.Content.Players
             slowDownRate = 0.5f;
             maxSpeed = 50;
             acceleration = 1;
-
+            coolDown = 50;
+            animation = new Animation(newImage, Rows, Columns);
+            Origin.X = image.Width / (animation.Columns * 2);
+            Origin.Y = image.Height / (animation.Rows * 2);
         }
 
-        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
+        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 5000, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
         {
             position.X = x;
             position.Y = y;
@@ -44,24 +57,37 @@ namespace DEMO_ONe.Content.Players
             level = newlevel;
         }
 
+
+
         public override void Update(GameTime gameTime)
         {
-            position.X += velocity.X;
-            position.Y += velocity.Y;
 
+            position.X += velocity.X ;
+            position.Y += velocity.Y ;
+            
 
+            if (moving)
+            {
+                animation.Update(this, gameTime);
+            }
+            else
+            {
+                animation.SetCurrentFrame(0);
+            }
+ 
 
-            //position.X = velocity.X * acceleration.X * gameTime.ElapsedGameTime.Milliseconds;
-            //position.Y = velocity.Y * acceleration.Y * gameTime.ElapsedGameTime.Milliseconds;
+            Origin.X = image.Width / (animation.Columns * 2);
+            Origin.Y = image.Height / (animation.Rows * 2);
 
-            //velocity.X *= acceleration.X * gameTime.ElapsedGameTime.Milliseconds;
-            //velocity.Y *= acceleration.Y * gameTime.ElapsedGameTime.Milliseconds;
-
-
-            //position.X += velocity.X;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
-            //position.Y += velocity.Y;//* (gameTime.ElapsedGameTime.Milliseconds / 100);
 
             timer += 1;
+        }
+
+
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(image, animation.GetDestinationRectangle(position), animation.GetSourceRectangle(), Color.White, angle, Origin, SpriteEffects.None, 1);
         }
 
         public bool Fire()
@@ -91,6 +117,19 @@ namespace DEMO_ONe.Content.Players
             coolDown = playercopy.coolDown;
             //level++;
         }
+
+
+
+        public override void OnCollide(Sprite sprite)
+        {
+            if (sprite is Asteroid)
+            {
+                Console.WriteLine("Frick" + collisions);
+                collisions++;
+            }
+            
+        }
+
 
     }
 }

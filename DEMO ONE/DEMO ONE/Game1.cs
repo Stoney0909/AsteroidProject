@@ -2,6 +2,7 @@
 using DEMO_ONe.Content.Players;
 using DEMO_ONe.Content.Animations;
 using DEMO_ONe.Content.Sprites;
+using DEMO_ONe.Content.Enemy;
 
 using DEMO_ONe.Content.InputHandle;
 using Microsoft.Xna.Framework;
@@ -21,17 +22,18 @@ namespace DEMO_ONe
         SpriteBatch spriteBatch;
 
         List<Sprite> Allobject= new List<Sprite> { };
+
         PlayerState ship = new PlayerState();
-        Projectile projectile = new Projectile();
+        AsteroidState asteroid = new AsteroidState(ScreenX,ScreenY,ScreenOffSet);
 
-
+        ProjectileState projectile = new ProjectileState();
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
-        
+
 
 
         protected override void Initialize()
@@ -44,33 +46,41 @@ namespace DEMO_ONe
             base.Initialize();
         }
 
-
-
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            
+
             //SHIP IMPIMINTATION
             Texture2D Ship = Content.Load<Texture2D>("Ship");
             ship.Load(300, 300, 2, 2, Ship, 100);
             //END SHIP IMP
 
             //Player Projectile
-            Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile");
+            Texture2D PlayerLazer = Content.Load<Texture2D>("PlayerProjectile clone (5)");
             projectile.image = PlayerLazer;
 
-            //ship.LoadProjectile(projectile);
+            //loads astriod
+            Texture2D delete = Content.Load<Texture2D>("dont");
+            asteroid.Load(delete);
+            asteroid.Spawn();
 
 
 
-            Sprite player = ship.GetSprite();
-            LoadObjects(player);
+
+            Allobject.Add(ship.GetPlayer());
+
+            foreach (var obj in asteroid.GetSprite())
+            {
+                Allobject.Add(obj);
+            }
+
+
         }
 
-        void LoadObjects(Sprite Obj)
+        public List<Sprite> GetAllobj()
         {
-            Allobject.Add(Obj);
+            return Allobject;
         }
 
 
@@ -81,31 +91,69 @@ namespace DEMO_ONe
 
             ship.Update(gameTime);
 
-
+            //updates code
             for (int i = 0; i < Allobject.Count; i++)
             {
+
+
+                Allobject[i].Update(gameTime);
+
+
+
+
+
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
-                    Allobject[i].position.X=-ScreenOffSet;
+                    Allobject[i].position.X = -ScreenOffSet;
                 }
 
                 else if (Allobject[i].position.X < -ScreenOffSet)
                 {
-                    Allobject[i].position.X=ScreenX + ScreenOffSet;
+                    Allobject[i].position.X = ScreenX + ScreenOffSet;
                 }
 
                 if (Allobject[i].position.Y > ScreenY + ScreenOffSet)
                 {
-                    Allobject[i].position.Y=-ScreenOffSet;
+                    Allobject[i].position.Y = -ScreenOffSet;
                 }
                 else if (Allobject[i].position.Y < -ScreenOffSet)
                 {
-                    Allobject[i].position.Y=ScreenY + ScreenOffSet;
+                    Allobject[i].position.Y = ScreenY + ScreenOffSet;
+                }
+
+
+                if (Allobject[i] is Projectile)
+                {
+                    if (Allobject[i].health <= 0)
+                    {
+                        Allobject.RemoveAt(i);
+                    }
+                }
+
+
+            }
+
+            //Collisiont system
+            for (int i = 1; i < Allobject.Count; i++)
+            {
+                if (Allobject[0].Intersects(Allobject[i]))
+                {
+                    Allobject[0].OnCollide(Allobject[i]);
                 }
             }
 
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                System.Console.WriteLine(Allobject.Count);
+                projectile.Spawn(ship.GetPlayer(),Allobject);
+            }
+
+            
+
             base.Update(gameTime);
         }
+
+
 
 
 
@@ -114,12 +162,17 @@ namespace DEMO_ONe
 
             //makes the background a color
             GraphicsDevice.Clear(new Color(20, 24, 28, 255));
-            float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
+
 
 
             spriteBatch.Begin();
 
-            ship.Draw(spriteBatch,gameTime);
+            for (int i = 0; i < Allobject.Count; i++)
+            {
+                Allobject[i].Draw(spriteBatch);
+            }
+
+
 
             spriteBatch.End();
 
