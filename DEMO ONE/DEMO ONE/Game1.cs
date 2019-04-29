@@ -97,10 +97,7 @@ namespace DEMO_ONe
 
 
                 Allobject[i].Update(gameTime);
-
-
-
-
+                
 
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
@@ -122,25 +119,26 @@ namespace DEMO_ONe
                 }
 
 
-                if (Allobject[i] is Projectile)
+                /*if (Allobject[i] is Projectile)
                 {
                     if (Allobject[i].health <= 0)
                     {
                         Allobject.RemoveAt(i);
                     }
                 }
-
+                */
 
             }
 
             //Collisiont system
+            /*
             for (int i = 1; i < Allobject.Count; i++)
             {
                 if (Allobject[0].Intersects(Allobject[i]))
                 {
                     Allobject[0].OnCollide(Allobject[i]);
                 }
-            }
+            }*/
 
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {

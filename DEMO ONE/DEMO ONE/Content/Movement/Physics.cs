@@ -14,14 +14,19 @@ namespace DEMO_ONe.Content.Movement
        
         public void Mover(Player player, bool[] Direction, GameTime gameTime)
         {
+
+            double PlayerCosine = -Math.Cos(Convert.ToDouble(player.angle) * player.acceleration);
+            double PlayerSin = -PlayerCosine + .707110678118;
+
+
             // player.position.X = Math.Sin(player.angle)+(player.acceleration*);
             if (Direction[0] == true)
             {
                 //player.velocity.X = 1;
                 //player.acceleration = 1;
 
-                player.velocity.X = (Convert.ToSingle(Math.Sin(Convert.ToDouble(player.angle))) * player.acceleration) * (gameTime.ElapsedGameTime.Milliseconds /100.0f);
-                player.velocity.Y = -((Convert.ToSingle(Math.Cos(Convert.ToDouble(player.angle))) * player.acceleration) * (gameTime.ElapsedGameTime.Milliseconds /100.0f));
+                player.velocity.X = (Convert.ToSingle(PlayerSin) * (gameTime.ElapsedGameTime.Milliseconds /100.0f));
+                player.velocity.Y = -(Convert.ToSingle(PlayerCosine) * (gameTime.ElapsedGameTime.Milliseconds /100.0f));
 
                 if (player.acceleration > player.maxSpeed)
                 {
@@ -65,7 +70,7 @@ namespace DEMO_ONe.Content.Movement
             {
                 player.angle += player.rotationSpeed * (gameTime.ElapsedGameTime.Milliseconds) / 100;
             }
-            double PlayerCosine = Math.Cos(player.angle);
+
         }
     }
 }
