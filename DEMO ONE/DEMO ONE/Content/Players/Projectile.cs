@@ -12,12 +12,9 @@ namespace DEMO_ONe.Content.Players
         public int damage;
         public Color Colour = Color.White;
 
-
         public Projectile(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
         {
-            velocity.X = 50;
-            velocity.Y = 50;
             health = 5;
         }
 
@@ -42,17 +39,23 @@ namespace DEMO_ONe.Content.Players
             IsRemoved = true;
         }
 
-        
+
 
 
         public override void Update(GameTime gameTime)
         {
             health -= (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
-            //if (health >= 0)
-            //{
-                position.X += 5;
-                position.Y += 5;
-            //}
+            if (health >= 0)
+            {
+                position.X += velocity.X;
+                position.Y += velocity.Y;
+            }
+        }
+
+        public void setVel(float velX, float velY)
+        {
+            velocity.X = velX;
+            velocity.Y = velY;
         }
     }
 }
