@@ -24,7 +24,7 @@ namespace DEMO_ONe.Content.Players
         public int level;
         int collisions;
 
-        Animation animation;
+        public Animation animation;
 
         Projectile projectile = new Projectile();
 

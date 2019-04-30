@@ -27,16 +27,16 @@ namespace DEMO_ONe.Content.States
         }
 
 
-        public void Spawn(Player player,List<Sprite> Obj)
+        public void Spawn(Player player, List<Sprite> Obj, GameTime gameTime)
         {
             if (player.Fire() == true)
             {
                 Projectile projectile = new Projectile(player.position.X, player.position.Y, image, 1);
-                projectile.angle = player.angle;
                 projectile.damage = player.damage;
                 lazer.Add(projectile);
                 Obj.Add(projectile);
-                projectile.velocity.X = float(Math.Cos(player.angle));
+                projectile.velocity.X = Convert.ToSingle(Math.Sin(player.angle)) * 10;
+                projectile.velocity.Y = Convert.ToSingle(-Math.Cos(player.angle)) * 10;
             }
             
         }

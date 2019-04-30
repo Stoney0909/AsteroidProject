@@ -55,7 +55,7 @@ namespace DEMO_ONe
 
 
             //SHIP IMPIMINTATION
-            Texture2D Ship = Content.Load<Texture2D>("Ship");
+            Texture2D Ship = Content.Load<Texture2D>("Singleplayer");
             ship.Load(300, 300, 2, 2, Ship, 100);
             //END SHIP IMP
 
@@ -138,7 +138,7 @@ namespace DEMO_ONe
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 System.Console.WriteLine(Allobject.Count);
-                projectile.Spawn(ship.GetPlayer(),Allobject);
+                projectile.Spawn(ship.GetPlayer(),Allobject, gameTime);
                 
             }
 
