@@ -36,6 +36,7 @@ namespace DEMO_ONe.Content.States
                 projectile.damage = player.damage;
                 lazer.Add(projectile);
                 Obj.Add(projectile);
+                projectile.velocity.X = float(Math.Cos(player.angle));
             }
             
         }

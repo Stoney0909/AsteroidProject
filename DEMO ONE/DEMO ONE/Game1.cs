@@ -146,6 +146,7 @@ namespace DEMO_ONe
             {
                 System.Console.WriteLine(Allobject.Count);
                 projectile.Spawn(ship.GetPlayer(),Allobject);
+                
             }
 
             
