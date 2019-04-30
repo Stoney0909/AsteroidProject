@@ -39,7 +39,7 @@ namespace DEMO_ONe.Content.Players
             IsRemoved = true;
         }
 
-        
+
 
 
         public override void Update(GameTime gameTime)

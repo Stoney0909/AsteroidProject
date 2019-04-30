@@ -218,4 +218,5 @@ C:\Users\timjd\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\
 C:\Users\timjd\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile.xnb
 D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile clone (5).xnb
-D:\GIT\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile clone (5).xnb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
