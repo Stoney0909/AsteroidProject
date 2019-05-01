@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_3.png</SourceFile>
-  <SourceTime>2019-04-30T17:45:04-04:00</SourceTime>
-  <DestFile>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Small_Asteroid_3.xnb</DestFile>
-  <DestTime>2019-05-01T05:43:40.3259686-04:00</DestTime>
+  <SourceFile>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_3.png</SourceFile>
+  <SourceTime>2019-04-30T17:45:04.6239172-04:00</SourceTime>
+  <DestFile>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Small_Asteroid_3.xnb</DestFile>
+  <DestTime>2019-05-01T11:06:54.3346405-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

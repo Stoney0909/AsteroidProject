@@ -40,7 +40,7 @@ namespace DEMO_ONe.Content.States
         }
         public void lose(string playername)//loads the end screen and closes the game
         {
-            Save_Load playersave = new Save_Load(playername, score);
+            Save_Load playersave = new Save_Load(playername, GetPlayer().score);
             ENDGAME endGame = new ENDGAME(playersave);
 
             endGame.ShowDialog();

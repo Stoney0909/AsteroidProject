@@ -119,7 +119,6 @@ C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\
 C:\Users\samue\Documents\GitHub\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
-C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
@@ -302,3 +301,5 @@ F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEM
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources

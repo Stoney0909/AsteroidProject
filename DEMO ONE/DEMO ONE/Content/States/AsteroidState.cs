@@ -75,7 +75,7 @@ namespace DEMO_ONe.Content.States
                 case 3:
                 {
                     asteroidPositionX = rnd.Range(-screenOffset, screenX + screenOffset);
-                    asteroidPositionY = -screenOffset;
+                    asteroidPositionY = screenY + screenOffset;
                     break;
                 }
                 default:

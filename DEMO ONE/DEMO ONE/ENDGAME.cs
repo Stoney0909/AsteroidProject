@@ -43,6 +43,7 @@ namespace DEMO_ONe
             keepPlaying = false;
             this.Hide();
             this.Close();
+            this.Close();
         }
     }
 }
