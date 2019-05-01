@@ -46,8 +46,8 @@ namespace DEMO_ONe
         {
             graphics.PreferredBackBufferWidth = ScreenX;
             graphics.PreferredBackBufferHeight = ScreenY;
-            Thread thread = new Thread(new ThreadStart(TestColide));
-            thread.Start();
+            //Thread thread = new Thread(new ThreadStart(TestColide));
+            //thread.Start();
             this.IsMouseVisible = true;
             graphics.ApplyChanges();
             base.Initialize();
@@ -103,18 +103,25 @@ namespace DEMO_ONe
 
             ship.Update(gameTime);
 
+            for (int i = 0; i < Allobject.Count; i++)
+            {
+                if (Allobject[i] is Projectile)
+                {
+                    if (Allobject[i].health <= 0)
+                    {
+                        Allobject.RemoveAt(i);
+                    }
+                }
+            }
+
             //updates code
             for (int i = 0; i < Allobject.Count; i++)
             {
-                if(Allobject.Count > 2)
-                Console.WriteLine(Allobject[0].position.X + " | " + Allobject[0].position.Y + " | " +Allobject[2].position.X + " | " + Allobject[2].position.Y + " | "+ newState.X + " | " + newState.Y);
 
+
+                
                 Allobject[i].Update(gameTime);
 
-                if (Allobject[i] is Projectile)
-                {
-                    projectile.Update(Allobject[0] as Player, Allobject[i] as Projectile);
-                }
 
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
@@ -136,16 +143,11 @@ namespace DEMO_ONe
                 }
 
 
-                /*if (Allobject[i] is Projectile)
-                {
-                    if (Allobject[i].health <= 0)
-                    {
-                        Allobject.RemoveAt(i);
-                    }
-                }
-                */
+
+                
 
             }
+
 
   
 
@@ -166,6 +168,17 @@ namespace DEMO_ONe
             //Collisiont system
             while (true)
             {
+                for (int i = 0; i < Allobject.Count; i++)
+                {
+                    if (Allobject[i] is Projectile)
+                    {
+                        if (Allobject[i].health <= 0)
+                        {
+                            Allobject.RemoveAt(i);
+                        }
+                    }
+                }
+
                 for (int i = 1; i < Allobject.Count; i++)
                 {
                     if (Allobject[0].Intersects(Allobject[i]))
@@ -173,6 +186,8 @@ namespace DEMO_ONe
                         Allobject[0].OnCollide(Allobject[i]);
                     }
                 }
+
+
             }
         }
 
