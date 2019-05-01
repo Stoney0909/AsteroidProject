@@ -13,7 +13,7 @@ namespace DEMO_ONe
     {
         List<Save_Load> listOfPlayers= new List<Save_Load> { };
         Save_Load player;
-
+        public bool keepPlaying;
         public ENDGAME(Save_Load player)
         {
             this.player = player;
@@ -33,12 +33,15 @@ namespace DEMO_ONe
 
         private void button1_Click(object sender, EventArgs e) // main menu
         {
-
+            keepPlaying = true;
+            this.Hide();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e) //top ten
         {
-
+            keepPlaying = false;
+            this.Close();
         }
     }
 }

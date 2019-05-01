@@ -32,5 +32,10 @@ namespace DEMO_ONe
             Form1.ShowDialog();
             this.Close();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

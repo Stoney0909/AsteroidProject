@@ -15,6 +15,7 @@ namespace DEMO_ONe
         private string name;
         private double score;
         private bool game = false;
+        public bool keepPlaying;
         public Form1(string newName = "NONAME", double newScore=0)
         {
             name = newName;
@@ -42,7 +43,7 @@ namespace DEMO_ONe
             {
                 game = true;
                 this.Hide();
-                this.Close();
+                
             }
         }
 
@@ -65,6 +66,13 @@ namespace DEMO_ONe
         public bool startGame()
         {
             return game;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Close();
+            keepPlaying = false;
         }
     }
 }

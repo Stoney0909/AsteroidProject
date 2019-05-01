@@ -4,19 +4,19 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Boss_1.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Boss_1_Projectile.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Large_Asteroid.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Medium_Asteroid_1.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Medium_Asteroid_2.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile clone (5).png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/SinglePlayer.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_1.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_2.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_3.png</File>
-    <File>C:/Users/kaven/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_4.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Boss_1.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Boss_1_Projectile.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/dont.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Large_Asteroid.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Medium_Asteroid_1.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Medium_Asteroid_2.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/PlayerProjectile clone (5).png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Ship.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/SinglePlayer.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_1.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_2.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_3.png</File>
+    <File>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Small_Asteroid_4.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
