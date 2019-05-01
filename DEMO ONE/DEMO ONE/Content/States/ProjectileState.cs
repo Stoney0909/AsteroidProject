@@ -56,8 +56,8 @@ namespace DEMO_ONe.Content.States
 
                 projectile.damage = player.damage;
 
-                projectile.velocity.X = Convert.ToSingle(Math.Sin(player.angle)) * 10;
-                projectile.velocity.Y = Convert.ToSingle(-Math.Cos(player.angle)) * 10;
+                projectile.velocity.X = Convert.ToSingle(Math.Sin(player.angle)) * 20;
+                projectile.velocity.Y = Convert.ToSingle(-Math.Cos(player.angle)) * 20;
                 Obj.Add(projectile);
             }
 

@@ -152,6 +152,7 @@ namespace DEMO_ONe
             {
                 addAmountofPro.Show();
             }
+            moneylabel.Text = money.ToString();
             NextLevel();
 
         }
