@@ -34,8 +34,6 @@ namespace DEMO_ONe.Content.Sprites
 
         public Sprite()
         {
-            position.X = 300;
-            position.Y = 300;
             Children = new List<Sprite>();
 
         }

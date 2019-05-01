@@ -26,7 +26,7 @@ namespace DEMO_ONe.Content.Movement
                 //player.acceleration = 1;
 
                 player.velocity.X = (Convert.ToSingle(PlayerSin) * (gameTime.ElapsedGameTime.Milliseconds /100.0f));
-                player.velocity.Y = -(Convert.ToSingle(PlayerCosine) * (gameTime.ElapsedGameTime.Milliseconds /100.0f));
+                player.velocity.Y = (Convert.ToSingle(PlayerCosine) * (gameTime.ElapsedGameTime.Milliseconds /100.0f));
 
                 if (player.acceleration > player.maxSpeed)
                 {
