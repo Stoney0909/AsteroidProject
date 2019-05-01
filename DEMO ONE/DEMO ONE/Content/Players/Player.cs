@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace DEMO_ONe.Content.Players
 {
-     public class Player : Sprite
+    public class Player : Sprite
     {
         public string name;
         public int damage;
@@ -23,7 +23,6 @@ namespace DEMO_ONe.Content.Players
         public double money;
         public float speedUpRate, slowDownRate;
         public int level;
-        int collisions;
 
         public Animation animation;
 
@@ -60,11 +59,22 @@ namespace DEMO_ONe.Content.Players
 
 
 
+        public override void SAFCCollision(Sprite sprite)
+        {
+            base.SAFCCollision(sprite);
+        }
+
+
+
+
+
+
+
         public override void Update(GameTime gameTime)
         {
 
-            position.X += velocity.X ;
-            position.Y += velocity.Y ;
+            position.X += velocity.X;
+            position.Y += velocity.Y;
 
 
             if (moving)
@@ -94,7 +104,7 @@ namespace DEMO_ONe.Content.Players
 
         public bool Fire()
         {
-            if(timer >= coolDown)
+            if (timer >= coolDown)
             {
                 timer = 0;
                 return true;
@@ -115,9 +125,6 @@ namespace DEMO_ONe.Content.Players
             money = characterupgrade.money;
 
         }
-
-        
-
 
     }
 }

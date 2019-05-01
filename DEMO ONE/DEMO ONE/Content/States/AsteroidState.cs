@@ -86,10 +86,26 @@ namespace DEMO_ONe.Content.States
             }
 
             int size = rnd.Range(0, AsteroidSize.Count);
+            int Asize;
 
-            Asteroid Asteroid = new Asteroid(asteroidPositionX, asteroidPositionY, size, newAngle, AsteroidSize.ElementAt(size));
+            if (AsteroidSize.ElementAt(size).Name[0] == 'S')
+            {
+                Asize = 0;
+            }
+            else if (AsteroidSize.ElementAt(size).Name[0] == 'M')
+            {
+                Asize = 1;
+            }
+            else
+            {
+                Asize = 2;
+            }
+
+            asteroid = new Asteroid(asteroidPositionX, asteroidPositionY, Asize, newAngle, AsteroidSize.ElementAt(size));
+           
+            
             asteroid.angle = newAngle;
-            asteroids.Add(Asteroid);
+            asteroids.Add(asteroid);
         }
 
 

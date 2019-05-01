@@ -78,7 +78,6 @@ F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEM
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
 F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
@@ -282,3 +281,23 @@ D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.cspro
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1.png.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1_Projectile.png.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Large_Asteroid.png.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_1.png.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_2.png.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Score.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1_Projectile.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Large_Asteroid.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_1.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_2.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile clone (5).xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\SinglePlayer.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_1.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_2.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_3.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_4.xnb
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources
+F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
