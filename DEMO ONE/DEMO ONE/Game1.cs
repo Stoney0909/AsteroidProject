@@ -40,7 +40,7 @@ namespace DEMO_ONe
 
         string playerName;
         public bool keepPlaying = true;
-        
+
         public Game1(string playerName)
         {
             this.playerName = playerName;
@@ -95,7 +95,7 @@ namespace DEMO_ONe
             {
                 asteroid.Spawn();//spawn Asteroids
             }
-            
+
 
             Allobject.Add(ship.GetPlayer());
 
@@ -107,11 +107,13 @@ namespace DEMO_ONe
 
         }
 
+
+
         public List<Sprite> GetAllobj()
         {
             return Allobject;
         }
-       
+
 
 
         protected override void Update(GameTime gameTime)
@@ -136,7 +138,7 @@ namespace DEMO_ONe
                 onetime = false;
                 ship.lose(playerName);
                 this.Exit();
-                               
+
             }
 
 
@@ -172,14 +174,18 @@ namespace DEMO_ONe
                     {
                         continue;
                     }
-                        Allobject.RemoveAt(i);
-                        ship.money += 10;
+                    if (Allobject[i] is Asteroid)
+                    {
                         ship.score += 10;
+                        ship.money += 10;
+                        asteroid.SpawnCheck(Allobject[i] as Asteroid, Allobject);
+                    }
+                        Allobject.RemoveAt(i);
                 }
             }
 
             //CHECKS size of astriod
-            
+
 
 
 
@@ -188,7 +194,7 @@ namespace DEMO_ONe
             {
                 Allobject[i].Update(gameTime);
 
-                
+
                 //LOOPS ALL OBJS
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
@@ -208,7 +214,7 @@ namespace DEMO_ONe
                 {
                     Allobject[i].position.Y = ScreenY + ScreenOffSet;
                 }
-                
+
             }
 
             int count = 0;
@@ -219,7 +225,7 @@ namespace DEMO_ONe
             }
             if (count == 0)
             {
-               
+
                     for (int i = 0; i < 15; i++)
                     {
                         asteroid.Spawn();//spawn Asteroids
@@ -234,7 +240,7 @@ namespace DEMO_ONe
             base.Update(gameTime);
         }
 
-        
+
 
         protected override void Draw(GameTime gameTime)
         {
@@ -253,6 +259,7 @@ namespace DEMO_ONe
 
             spriteBatch.DrawString(font, "Score: " +Convert.ToString(ship.score), new Vector2(0, 0), Color.White);
             spriteBatch.DrawString(font, "Money: " + Convert.ToString(ship.money), new Vector2(0, 20), Color.White);
+            spriteBatch.DrawString(font, "Lives: " + Convert.ToString(ship.GetPlayer().health), new Vector2(0, 40), Color.White);
 
             spriteBatch.End();
 

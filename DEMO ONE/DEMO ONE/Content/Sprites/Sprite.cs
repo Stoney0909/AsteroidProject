@@ -51,7 +51,7 @@ namespace DEMO_ONe.Content.Sprites
 
         public virtual void SAFCCollision(Sprite sprite)
         {
-            if (sprite is Player || sprite is Projectile)
+           /* if (sprite is Player || sprite is Projectile)
             {
                 double dx = (sprite.position.X - this.position.X);
                 double dy = (sprite.position.Y - this.position.Y);
@@ -63,7 +63,7 @@ namespace DEMO_ONe.Content.Sprites
                 }
             }
             else
-                return;
+                return;*/
         }
 
         public virtual void Draw(SpriteBatch spriteBatch)
