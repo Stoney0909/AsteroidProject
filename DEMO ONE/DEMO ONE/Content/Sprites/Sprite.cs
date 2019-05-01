@@ -1,4 +1,5 @@
 ﻿using DEMO_ONe.Content.Enemy;
+using DEMO_ONe.Content.Players;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace DEMO_ONe.Content.Sprites
         public bool hit = false;
 
         public Sprite Parent;
-        protected float radius;
+        public float radius;
         public Vector2 velocity;
         public Vector2 position;
         public Vector2 Origin;
@@ -49,7 +50,21 @@ namespace DEMO_ONe.Content.Sprites
         }
 
         public virtual void SAFCCollision(Sprite sprite)
-        { }
+        {
+            if (sprite is Player || sprite is Projectile)
+            {
+                double dx = (sprite.position.X - this.position.X);
+                double dy = (sprite.position.Y - this.position.Y);
+                float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
+                if (distance < this.radius)
+                {
+                    hit = true;
+                    sprite.hit = true;
+                }
+            }
+            else
+                return;
+        }
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {

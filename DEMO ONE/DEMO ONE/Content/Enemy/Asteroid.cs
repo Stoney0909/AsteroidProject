@@ -31,36 +31,31 @@ namespace DEMO_ONe.Content.Enemy
             
             health = 1;
             rotationSpeed = .05f;
-            maxSpeed = 0;
+            maxSpeed = 15;
             image = newImage;
         }
+
+
 
         public Asteroid(Texture2D newImage)
         {
             image = newImage;
-
         }
+
+
 
         public override void Update(GameTime gameTime)
         {
             movement.Move(this, gameTime);
-
-
-
-
             Origin.X = image.Width / (2);
             Origin.Y = image.Height / (2);
 
 
             rotation += rotationSpeed;
-                //position.X += velocity.X;
-                //position.Y += velocity.Y;
 
 
             position.X += velocity.X;
             position.Y += velocity.Y;
-
-
         }
 
 

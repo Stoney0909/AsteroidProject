@@ -1,6 +1,6 @@
 ﻿using DEMO_ONe.Content.Sprites;
 using DEMO_ONe.Content.Movement;
-//using DEMO_ONe.Content.
+using DEMO_ONe.Content.Enemy;
 
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
@@ -19,21 +19,30 @@ namespace DEMO_ONe.Content.Players
         public Projectile(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
         {
-            baseX = newX;
-            baseY = newY;
+
         }
 
-        public Projectile(float x = 0, float y = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float vel = 0, float accelX = 0, float accelY = 0)
+
+        
+        public override void SAFCCollision(Sprite sprite)
         {
-            position.X = x;
-            position.Y = y;
-            image = newImage;
-            this.damage = damage;
+            
+            if (sprite is Asteroid)
+            {
+                double dx = (sprite.position.X  - this.position.X);
+                double dy = (sprite.position.Y - this.position.Y);
+                float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
+                if (distance < this.radius)
+                {
+                    hit = true;
+                    sprite.hit = true;
+                }
+            }
+            else
+                return;
+
         }
-
-
-
-
+        
 
 
         public override void Update(GameTime gameTime)
@@ -47,17 +56,18 @@ namespace DEMO_ONe.Content.Players
             }
      
         }
-
-        public void setVel(float velX, float velY)
-        {
-            velocity.X = velX;
-            velocity.Y = velY;
-        }
+        
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(image, new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height), null, Color.White, angle, Origin, SpriteEffects.None, 0);
             spriteBatch.Draw(image, position, Color.White);
+        }
+        public Projectile(float x = 0, float y = 0, int fireRate = 0, int coolDown = 0, Texture2D newImage = null, int damage = 0, float vel = 0, float accelX = 0, float accelY = 0)
+        {
+            position.X = x;
+            position.Y = y;
+            image = newImage;
+            this.damage = damage;
         }
 
 

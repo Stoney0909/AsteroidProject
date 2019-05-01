@@ -23,7 +23,6 @@ namespace DEMO_ONe
         public const int ScreenX = 1200;
         public const int ScreenY = 800;
         public const int ScreenOffSet = 50;
-        string name = "hi";
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -123,35 +122,58 @@ namespace DEMO_ONe
 
         protected override void Update(GameTime gameTime)
         {
-            if (ship.Dead())
+            //Reject code from input
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                projectile.Spawn(ship.GetPlayer(), Allobject, gameTime);
+
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.U))
+            {
+                ship.CU();
+            }
+
+
+            //Checks if ship is dead
+            /*if (ship.Dead())
             {
                 ship.lose(playerName);
                 keepPlaying = ship.keepPlaying;
                 this.Exit();
-            }
+            }*/
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+
 
             newState = Mouse.GetState();
 
 
 
-            ship.Update(gameTime);
 
+            //CHECKS COLLISON with player
             for (int i = 1; i < Allobject.Count; i++)
             {
                 Allobject[0].SAFCCollision(Allobject[i]);
             }
 
+            ship.Update(gameTime);
+
+            //Checks if porjectile did a thing
+            for (int i = 1; i < Allobject.Count; i++)
+            {
+                for (int j = 0; j < Allobject.Count; j++)
+                {
+                    Allobject[i].SAFCCollision(Allobject[j]);
+                }
+            }
+
+            //Deletes stuff
             for (int i = 0; i < Allobject.Count; i++)
             {
-                if (Allobject[i] is Projectile)
+                if ((Allobject[i].hit == true || Allobject[i].health <=0))
                 {
-                    if (Allobject[i].health <= 0)
-                    {
                         Allobject.RemoveAt(i);
-                    }
                 }
             }
 
@@ -159,12 +181,10 @@ namespace DEMO_ONe
             //updates code
             for (int i = 0; i < Allobject.Count; i++)
             {
-
-
-
                 Allobject[i].Update(gameTime);
 
-
+                
+                //LOOPS ALL OBJS
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
                     Allobject[i].position.X = -ScreenOffSet;
@@ -183,26 +203,12 @@ namespace DEMO_ONe
                 {
                     Allobject[i].position.Y = ScreenY + ScreenOffSet;
                 }
-
-
-
-
-
+                
             }
 
 
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
-            {
-                //System.Console.WriteLine(Allobject.Count);
-                projectile.Spawn(ship.GetPlayer(),Allobject, gameTime);
 
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.U))
-            {
-                ship.CU();
-
-            }
 
 
 
@@ -226,8 +232,8 @@ namespace DEMO_ONe
             {
                 Allobject[i].Draw(spriteBatch);
             }
+            
 
-            spriteBatch.DrawString(font,("Name"+name),new Vector2(100,100),Color.Black);
 
             spriteBatch.End();
 

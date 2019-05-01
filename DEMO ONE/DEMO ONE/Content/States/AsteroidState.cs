@@ -102,8 +102,7 @@ namespace DEMO_ONe.Content.States
             }
 
             asteroid = new Asteroid(asteroidPositionX, asteroidPositionY, Asize, newAngle, AsteroidSize.ElementAt(size));
-           
-            
+            asteroid.radius = AsteroidSize.ElementAt(size).Height;
             asteroid.angle = newAngle;
             asteroids.Add(asteroid);
         }

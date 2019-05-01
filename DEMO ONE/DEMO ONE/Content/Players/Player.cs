@@ -64,6 +64,7 @@ namespace DEMO_ONe.Content.Players
                 if (distance < this.radius)
                 {
                     hit = true;
+                    sprite.hit = true;
                 }
             }
             else
@@ -83,7 +84,7 @@ namespace DEMO_ONe.Content.Players
 
             if (hit == true)
             {
-                Console.WriteLine(hitcount++);
+                health -= 1;
                 hit = false;
             }
 

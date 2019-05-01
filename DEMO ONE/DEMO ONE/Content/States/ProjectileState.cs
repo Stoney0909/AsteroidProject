@@ -38,7 +38,7 @@ namespace DEMO_ONe.Content.States
             if (player.Fire() == true)
             {
 
-                projectile = new Projectile(player.position.X-(player.image.Width/player.animation.Columns), (player.position.Y-(player.image.Height/player.animation.Rows)), image, 5);
+                projectile = new Projectile(player.position.X-(player.image.Width/player.animation.Columns), (player.position.Y-(player.image.Height/player.animation.Rows)), image, 10);
 
 
                 projectile.Origin.X = (player.image.Width / (player.animation.Columns*13));
@@ -48,7 +48,8 @@ namespace DEMO_ONe.Content.States
                 projectile.angle = player.angle;
                 projectile.damage = player.damage;
                 projectile.maxSpeed = player.maxSpeed * 3f;
-
+                projectile.hit = false;
+                projectile.radius = 15;
                 Obj.Add(projectile);
             }
 
