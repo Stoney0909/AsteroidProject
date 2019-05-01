@@ -52,12 +52,6 @@
     </Compile>
     <Compile Include="Collision.cs" />
     <Compile Include="Component.cs" />
-    <Compile Include="Content\Players\character.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Content\Players\character.Designer.cs">
-      <DependentUpon>character.cs</DependentUpon>
-    </Compile>
     <Compile Include="Content\States\ProjectileState.cs" />
     <Compile Include="ENDGAME.cs">
       <SubType>Form</SubType>
