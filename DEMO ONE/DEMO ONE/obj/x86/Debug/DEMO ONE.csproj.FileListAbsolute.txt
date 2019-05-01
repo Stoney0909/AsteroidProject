@@ -234,22 +234,51 @@ C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_2.xnb
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_3.xnb
 C:\Users\kaven\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_4.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1.png.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1_Projectile.png.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Large_Asteroid.png.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_1.png.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_2.png.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1_Projectile.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Large_Asteroid.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_1.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_2.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile clone (5).xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\SinglePlayer.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_1.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_2.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_3.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_4.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Score.xnb
-F:\programs\onedrive\OneDrive - SNHU\cs-114\Project\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1.png.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1_Projectile.png.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\dont.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Large_Asteroid.png.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_1.png.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_2.png.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\PlayerProjectile clone (5).xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Ship.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\SinglePlayer.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Boss_1_Projectile.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Large_Asteroid.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_1.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Medium_Asteroid_2.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_1.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_2.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_3.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Small_Asteroid_4.xnb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.exe
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\DEMO ONe.pdb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Form1.resources
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Properties.Resources.resources
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.GenerateResource.cache
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CoreCompileInputs.cache
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources

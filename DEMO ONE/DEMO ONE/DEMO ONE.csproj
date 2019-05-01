@@ -44,15 +44,15 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CharacterUpgrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterUpgrade.Designer.cs">
+      <DependentUpon>CharacterUpgrade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Collision.cs" />
     <Compile Include="Component.cs" />
     <Compile Include="Content\States\ProjectileState.cs" />
-    <Compile Include="CU.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CU.Designer.cs">
-      <DependentUpon>CU.cs</DependentUpon>
-    </Compile>
     <Compile Include="ENDGAME.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,8 +128,8 @@
     <Folder Include="Content\Images\Ship\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CU.resx">
-      <DependentUpon>CU.cs</DependentUpon>
+    <EmbeddedResource Include="CharacterUpgrade.resx">
+      <DependentUpon>CharacterUpgrade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ENDGAME.resx">
       <DependentUpon>ENDGAME.cs</DependentUpon>

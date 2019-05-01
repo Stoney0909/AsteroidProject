@@ -106,20 +106,14 @@ namespace DEMO_ONe.Content.Players
         }
         public void PlayerUpgrade()
         {
-            Player playercopy = new Player();//sends another player through
-            playercopy.health = health;
-            playercopy.damage = damage;
-            playercopy.coolDown = coolDown;
-            playercopy.money = money;
 
-            CU characterupgrade = new CU(playercopy);
+            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, money);//spawn in the charcter upgrade screen
             characterupgrade.ShowDialog();
 
-            health = playercopy.health;// change this player stats
-            damage = playercopy.damage;
-            coolDown = playercopy.coolDown;
-            money = playercopy.money;
-            //level++;
+            health = characterupgrade.health;// change this player stats
+            coolDown = characterupgrade.coolDown;
+            money = characterupgrade.money;
+
         }
 
         

@@ -38,8 +38,12 @@ namespace DEMO_ONe
         SpriteFont font;
 
 
-        public Game1()
+        string playerName;
+        public bool keepPlaying;
+        
+        public Game1(string playerName)
         {
+            this.playerName = playerName;
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
@@ -63,7 +67,7 @@ namespace DEMO_ONe
 
             //SHIP IMPIMINTATION
             Texture2D Ship = Content.Load<Texture2D>("ship");
-            ship.Load(300, 300, 2, 2, Ship, 100);
+            ship.Load(300, 300, 2, 2, Ship, 30);
             //END SHIP IMP
 
             //Player Projectile
@@ -118,6 +122,13 @@ namespace DEMO_ONe
 
         protected override void Update(GameTime gameTime)
         {
+            if (ship.Dead())
+            {
+                ship.lose(playerName);
+                keepPlaying = ship.keepPlaying;
+                this.Exit();
+            }
+
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
@@ -181,6 +192,12 @@ namespace DEMO_ONe
                 projectile.Spawn(ship.GetPlayer(),Allobject, gameTime);
 
             }
+            if (Keyboard.GetState().IsKeyDown(Keys.U))
+            {
+                ship.CU();
+
+            }
+
 
 
 

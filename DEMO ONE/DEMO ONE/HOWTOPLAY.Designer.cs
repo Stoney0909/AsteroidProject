@@ -58,11 +58,13 @@
             "you must destroy them to progress. Bosses will spawn periodically,",
             "these are stronger, more powerful enemies that want to take you out.",
             "",
-            "Controls: w,a,d keys are used to move the ship. Spacebar fires the laser cannon"});
+            "Controls: w,a,d keys are used to move the ship. Spacebar fires the laser cannon",
+            " U is to access the character upgrade Screen."});
             this.listBox1.Location = new System.Drawing.Point(193, 253);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(665, 136);
+            this.listBox1.Size = new System.Drawing.Size(665, 158);
             this.listBox1.TabIndex = 1;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 

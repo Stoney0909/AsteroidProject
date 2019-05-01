@@ -12,13 +12,13 @@ namespace DEMO_ONe.Content.States
     {
         Player player = new Player();
         Input input = new Input();
-
+        public bool keepPlaying;
 
         public PlayerState()
         { }
 
 
-        public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)
+        public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)//constructor
         {
             player = new Player(newX, newY, newimage, newHealth, Rows, Columns);
         }
@@ -31,11 +31,28 @@ namespace DEMO_ONe.Content.States
 
         }
 
-        
-
         public Player GetPlayer()
         {
             return player;
+        }
+        public void lose(string playername)//loads the end screen and closes the game
+        {
+            Save_Load playersave = new Save_Load(playername, this.player.score);
+            ENDGAME endGame = new ENDGAME(playersave);
+            endGame.ShowDialog();
+            keepPlaying = endGame.keepPlaying;
+        }
+        public bool Dead()//Checks to see if there is health left
+        {
+            if (player.health == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public void CU()
+        {
+            player.PlayerUpgrade();
         }
     }
 }

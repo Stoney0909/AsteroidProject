@@ -49,12 +49,16 @@ namespace DEMO_ONe
         public void organize (List<Save_Load> rankScores) //orders the top ten scores
         {
             Save_Load player = new Save_Load(name, score);
-            for(int i = 0; i < 11; i++)
+            for(int i = 0; i < 10; i++)
             {
                 if (score > rankScores[i].score)
                 {
                     rankScores.Insert(i, player);
                     break;
+                }
+                else
+                {
+                    continue;
                 }
             }
         }
