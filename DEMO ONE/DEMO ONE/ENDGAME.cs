@@ -7,12 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace DEMO_ONe
 {
     public partial class ENDGAME : Form
     {
-        List<Save_Load> listOfPlayers;
+        List<Save_Load> listOfPlayers= new List<Save_Load> { };
         Save_Load player;
 
         public ENDGAME(Save_Load player)
@@ -21,13 +20,14 @@ namespace DEMO_ONe
             InitializeComponent();
             for (int i = 0; i < 10; i++)
             {
-                Save_Load account = new Save_Load("top scores", i);
+                Save_Load account = new Save_Load("top scores.txt", i);
                 listOfPlayers.Insert(i, account);
             }
             this.player.organize(listOfPlayers);
+            this.player.clearFile("top scores.txt");
             for (int i = 0; i < listOfPlayers.Count; i++)
             {
-                listOfPlayers.ElementAt(i).saveFile("top scores");
+                listOfPlayers.ElementAt(i).saveFile("top scores.txt");
             }
         }
 

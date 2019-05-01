@@ -1,5 +1,5 @@
 ﻿using System;
-
+using DEMO_ONe.Content.Players;
 namespace DEMO_ONe
 {
 #if WINDOWS || LINUX
@@ -15,20 +15,19 @@ namespace DEMO_ONe
         static void Main()
         {
 
-
             //TO DO
             //uncomment the code DO NOT DELETE THIS
-            //Form1 Form1 = new Form1();
-            //Form1.ShowDialog();
+            Form1 Form1 = new Form1();
+            Form1.ShowDialog();
 
-            //if (Form1.startGame())
-            //{
+            if (Form1.startGame())
+            {
                 using (var game = new Game1())
-                game.Run();
-            //}
-           
-               
-           
+                    game.Run();
+            }
+
+
+
         }
     }
 #endif

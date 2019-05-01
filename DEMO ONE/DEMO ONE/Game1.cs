@@ -57,7 +57,7 @@ namespace DEMO_ONe
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            
+
 
             //SHIP IMPIMINTATION
             Texture2D Ship = Content.Load<Texture2D>("ship");
@@ -98,7 +98,7 @@ namespace DEMO_ONe
                 Exit();
 
             newState = Mouse.GetState();
-            
+
 
 
             ship.Update(gameTime);
@@ -119,7 +119,7 @@ namespace DEMO_ONe
             {
 
 
-                
+
                 Allobject[i].Update(gameTime);
 
 
@@ -144,21 +144,20 @@ namespace DEMO_ONe
 
 
 
-                
+
 
             }
 
 
-  
 
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 //System.Console.WriteLine(Allobject.Count);
                 projectile.Spawn(ship.GetPlayer(),Allobject, gameTime);
-                
+
             }
 
-            
+
 
             base.Update(gameTime);
         }

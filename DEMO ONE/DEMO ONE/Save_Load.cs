@@ -17,8 +17,9 @@ namespace DEMO_ONe
         {
             string[] lines;
             lines = File.ReadAllLines(path);
-            name = lines[account].Split(' ')[0];
-            score = int.Parse(lines[account].Split(' ')[1]);
+            name = lines[account].Split(':')[0];
+            string inputscore = lines[account].Split(':')[1];
+            score = double.Parse(inputscore);
         }
 
         public Save_Load(string name, double score) //constructor:
@@ -35,24 +36,25 @@ namespace DEMO_ONe
 
         public void saveFile (string path) //save file
         {
-            string[] lines = { name + " " + score };
+            string[] lines = { name + ":" + score };
             File.AppendAllLines(path, lines);
         }
 
         public void clearFile (string path) //clear file
         {
-            string[] empty = null;
+            string[] empty = {};
             File.WriteAllLines(path, empty);
         }
 
         public void organize (List<Save_Load> rankScores) //orders the top ten scores
         {
             Save_Load player = new Save_Load(name, score);
-            for(int i = 0; i < rankScores.Count; i++)
+            for(int i = 0; i < 11; i++)
             {
                 if (score > rankScores[i].score)
                 {
                     rankScores.Insert(i, player);
+                    break;
                 }
             }
         }

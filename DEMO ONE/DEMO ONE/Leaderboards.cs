@@ -12,16 +12,36 @@ namespace DEMO_ONe
 {
     public partial class Leaderboards : Form
     {
-        List<Save_Load> topScoreList;
+        List<Save_Load> topScoreList = new List<Save_Load> { };
         public Leaderboards()
         {
             InitializeComponent();
             for (int i = 0; i < 10; i++)
             {
-                Save_Load account = new Save_Load("top scores", i);
+                Save_Load account = new Save_Load("top scores.txt", i);
                 topScoreList.Insert(i, account);
                 
             }
+            name1.Text = topScoreList[0].name;
+            name2.Text = topScoreList[1].name;
+            name3.Text = topScoreList[2].name;
+            name4.Text = topScoreList[3].name;
+            name5.Text = topScoreList[4].name;
+            name6.Text = topScoreList[5].name;
+            name7.Text = topScoreList[6].name;
+            name8.Text = topScoreList[7].name;
+            name9.Text = topScoreList[8].name;
+            name10.Text = topScoreList[9].name;
+            score1.Text = topScoreList[0].score.ToString();
+            score2.Text = topScoreList[1].score.ToString();
+            score3.Text = topScoreList[2].score.ToString();
+            score4.Text = topScoreList[3].score.ToString();
+            score5.Text = topScoreList[4].score.ToString();
+            score6.Text = topScoreList[5].score.ToString();
+            score7.Text = topScoreList[6].score.ToString();
+            score8.Text = topScoreList[7].score.ToString();
+            score9.Text = topScoreList[8].score.ToString();
+            score10.Text = topScoreList[9].score.ToString();
 
             //topScoreList.elementat(i).score
 

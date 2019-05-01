@@ -43,6 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.moneylabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // minusProDamage
@@ -204,6 +205,15 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Damage";
             // 
+            // moneylabel
+            // 
+            this.moneylabel.AutoSize = true;
+            this.moneylabel.Location = new System.Drawing.Point(174, 62);
+            this.moneylabel.Name = "moneylabel";
+            this.moneylabel.Size = new System.Drawing.Size(58, 17);
+            this.moneylabel.TabIndex = 19;
+            this.moneylabel.Text = "Money: ";
+            // 
             // CU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -212,6 +222,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(807, 505);
+            this.Controls.Add(this.moneylabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -249,5 +260,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label moneylabel;
     }
 }
