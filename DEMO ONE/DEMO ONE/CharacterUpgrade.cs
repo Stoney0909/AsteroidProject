@@ -20,10 +20,7 @@ namespace DEMO_ONe
             this.health = health;
             this.coolDown = coolDown;
             this.money = money;
-            HealthTextBox.Text = health.ToString();
-            ProTextBox.Text = coolDown.ToString();
-            totalmoney.Text = money.ToString();
-            updateButtons();
+            Updateboxes();
             InitializeComponent();
         }
 
@@ -35,7 +32,7 @@ namespace DEMO_ONe
                 minusHealth.Show();
                 money -= 20;
             }
-            updateButtons();
+            Updateboxes();
         }
 
         private void addcoolDown_Click(object sender, EventArgs e)
@@ -46,7 +43,7 @@ namespace DEMO_ONe
                 minusAmountofPro.Show();
                 money -= 20;
             }
-            updateButtons();
+            Updateboxes();
         }
 
         private void minusHealth_Click(object sender, EventArgs e)
@@ -56,9 +53,8 @@ namespace DEMO_ONe
             if (health == 1)
             {
                 minusHealth.Hide();
-                updateButtons();
             }
-            updateButtons();
+            Updateboxes();
         }
 
         private void minusAmountofPro_Click(object sender, EventArgs e)
@@ -68,40 +64,28 @@ namespace DEMO_ONe
                 coolDown -= 10;
                 addcoolDown.Show();
                 money -= 20;
-                updateButtons();
+                Updateboxes();
             }
         }
 
         private void continuebutton_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+        private void healthbox_TextChanged(object sender, EventArgs e)
+        {
 
         }
-        private void updateButtons()
+        private void Updateboxes()
         {
-            //HealthTextBox.Text = health.ToString();
+            HealthTextBox.Text = " ";
             //ProTextBox.Text = coolDown.ToString();
             //totalmoney.Text = money.ToString();
-            //if (health == 1)
-            //{
-            //    minusHealth.Hide();
-            //}
-            //else
-            //{
-            //    minusHealth.Show();
-            //}
-
-            //if (coolDown == 10)
-            //{
-            //    addcoolDown.Hide();
-            //}
-            //else
-            //{
-            //    minusHealth.Show();
-            //}
-            //totalmoney.Text = money.ToString();
-  
-
         }
 
+        private void CharacterUpgrade_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
