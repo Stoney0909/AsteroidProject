@@ -13,6 +13,7 @@ namespace DEMO_ONe.Content.States
         Player player = new Player();
         Input input = new Input();
         public bool keepPlaying;
+        public int score,money;
 
         public PlayerState()
         { }

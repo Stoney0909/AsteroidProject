@@ -105,8 +105,10 @@ namespace DEMO_ONe.Content.States
             asteroid.radius = AsteroidSize.ElementAt(size).Height;
             asteroid.angle = newAngle;
             asteroids.Add(asteroid);
+            
         }
-
+        
+        
 
         public void Update(GameTime gameTime)
         {
@@ -132,6 +134,7 @@ namespace DEMO_ONe.Content.States
             {
                 sprites.Add(c);
             }
+            asteroids.Clear();
             return sprites;
         }
     }

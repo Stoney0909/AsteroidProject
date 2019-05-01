@@ -66,7 +66,7 @@ namespace DEMO_ONe
 
             //SHIP IMPIMINTATION
             Texture2D Ship = Content.Load<Texture2D>("ship");
-            ship.Load(300, 300, 2, 2, Ship, 30);
+            ship.Load(300, 300, 2, 2, Ship, 3);
             //END SHIP IMP
 
             //Player Projectile
@@ -166,9 +166,17 @@ namespace DEMO_ONe
             {
                 if ((Allobject[i].hit == true || Allobject[i].health <=0))
                 {
+                    if (Allobject[i] is Player)
+                    {
+                        continue;
+                    }
                         Allobject.RemoveAt(i);
                 }
             }
+
+            //CHECKS size of astriod
+            
+
 
 
             //updates code
@@ -207,19 +215,19 @@ namespace DEMO_ONe
             }
             if (count == 0)
             {
-               
-                    for (int i = 0; i < 10; i++)
-                    {
-                        asteroid.Spawn();//spawn Asteroids
-                    }
+
+                for (int i = 0; i < 10; i++)
+                {
+                    asteroid.Spawn();//spawn Asteroids
+                }
 
 
-                    Allobject.Add(ship.GetPlayer());
+                 //   Allobject.Add(ship.GetPlayer());
 
-                    foreach (var obj in asteroid.GetSprite())
-                    {
-                        Allobject.Add(obj);
-                    }
+                foreach (var obj in asteroid.GetSprite())
+                {
+                    Allobject.Add(obj);
+                }
             }
 
 
@@ -246,8 +254,9 @@ namespace DEMO_ONe
             {
                 Allobject[i].Draw(spriteBatch);
             }
-            
 
+            spriteBatch.DrawString(font, "Score: " +Convert.ToString(ship.score), new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(font, "Money: " + Convert.ToString(ship.money), new Vector2(0, 20), Color.White);
 
             spriteBatch.End();
 

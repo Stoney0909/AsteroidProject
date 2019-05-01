@@ -59,6 +59,9 @@ namespace DEMO_ONe.Content.Enemy
         }
 
 
+
+
+
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, position, new Rectangle(0, 0, image.Width, image.Height), Color.White, rotation, scale:new Vector2(3, 3), origin:Origin, effects:SpriteEffects.None, layerDepth:1);

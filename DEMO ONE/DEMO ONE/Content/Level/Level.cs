@@ -30,16 +30,8 @@ namespace DEMO_ONe.Content.Level
                 allObjects.Add(asteroid);
             }
         }
-        //public void load(List<Texture2D> Asteroid picture)
-        //{
-        //    asteroid.Load(LargeAstriod);
-        //    asteroid.Load(MediumAstriod1);
-        //    asteroid.Load(MediumAstriod2);
-        //    asteroid.Load(SmallAstriod1);
-        //    asteroid.Load(SmallAstriod2);
-        //    asteroid.Load(SmallAstriod3);
-        //    asteroid.Load(SmallAstriod4);
-        //}
+
+
 
         public void Update(List<Sprite> allObjects)
         {
