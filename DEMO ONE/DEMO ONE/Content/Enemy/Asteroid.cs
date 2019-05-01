@@ -25,11 +25,13 @@ namespace DEMO_ONe.Content.Enemy
         public Asteroid(float newX, float newY,int newSize, int newAngle, Texture2D newImage)
             :base(newX,newY,newImage)
         {
+            position.X = newX;
+            position.Y = newY;
+            Size = newSize;
+            
             health = 1;
             rotationSpeed = .05f;
             maxSpeed = 15;
-            position.X = newX;
-            position.Y = newY;
             image = newImage;
         }
 

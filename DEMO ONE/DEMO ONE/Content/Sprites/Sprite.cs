@@ -39,7 +39,7 @@ namespace DEMO_ONe.Content.Sprites
 
         }
 
-            public Sprite(float newX, float newY, Texture2D newImage, int newHealth)
+        public Sprite(float newX, float newY, Texture2D newImage, int newHealth)
         {
             position.X = newX;
             position.Y = newY;
@@ -47,7 +47,15 @@ namespace DEMO_ONe.Content.Sprites
             health = newHealth;
         }
 
+        public virtual void SAFCCollision(Sprite sprite)
+        {
+            double dx = sprite.position.X - this.position.X;
+            double dy = sprite.position.Y - this.position.Y;
+            float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
+            //return (distance < this->radius);
 
+            
+        }
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
@@ -58,10 +66,8 @@ namespace DEMO_ONe.Content.Sprites
         {
 
         }
-
-
-
         
+
 
         public void SetPostionX(float newX)
         {

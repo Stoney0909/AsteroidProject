@@ -23,7 +23,7 @@ namespace DEMO_ONe
         public const int ScreenX = 1200;
         public const int ScreenY = 800;
         public const int ScreenOffSet = 50;
-
+        string name = "hi";
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -118,6 +118,7 @@ namespace DEMO_ONe
         {
             return Allobject;
         }
+
 
 
         protected override void Update(GameTime gameTime)
@@ -221,7 +222,7 @@ namespace DEMO_ONe
                 Allobject[i].Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(font," g",new Vector2(100,100),Color.Black);
+            spriteBatch.DrawString(font,("Name"+name),new Vector2(100,100),Color.Black);
 
             spriteBatch.End();
 

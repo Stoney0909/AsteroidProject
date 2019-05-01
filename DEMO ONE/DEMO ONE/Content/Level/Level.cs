@@ -17,7 +17,7 @@ namespace DEMO_ONe.Content.Level
 
         }
 
-        public
+        //public
 
 
         void SpawnAsteroid()
