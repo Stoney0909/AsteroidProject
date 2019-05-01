@@ -10,7 +10,7 @@ namespace DEMO_ONe.Content.Players
     class Projectile : Sprite
     {
         public int damage;
-        public Color Colour = Color.White;
+        
 
         public Projectile(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)
@@ -49,6 +49,7 @@ namespace DEMO_ONe.Content.Players
                 position.X += velocity.X;
                 position.Y += velocity.Y;
             }
+
         }
 
         public void setVel(float velX, float velY)
@@ -56,5 +57,13 @@ namespace DEMO_ONe.Content.Players
             velocity.X = velX;
             velocity.Y = velY;
         }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            //spriteBatch.Draw(image, new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height), null, Color.White, angle, Origin, SpriteEffects.None, 0);
+            spriteBatch.Draw(image, position, Color.White);
+        }
+
+
     }
 }

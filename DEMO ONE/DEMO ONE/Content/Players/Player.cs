@@ -37,8 +37,9 @@ namespace DEMO_ONe.Content.Players
             slowDownRate = 0.5f;
             maxSpeed = 50;
             acceleration = 1;
-            coolDown = 50;
+            coolDown = 10;
             animation = new Animation(newImage, Rows, Columns);
+
             Origin.X = image.Width / (animation.Columns * 2);
             Origin.Y = image.Height / (animation.Rows * 2);
         }
@@ -65,7 +66,7 @@ namespace DEMO_ONe.Content.Players
             position.X += velocity.X ;
             position.Y += velocity.Y ;
             
-
+            
             if (moving)
             {
                 animation.Update(this, gameTime);
@@ -75,10 +76,10 @@ namespace DEMO_ONe.Content.Players
                 animation.SetCurrentFrame(0);
             }
  
-
+ 
             Origin.X = image.Width / (animation.Columns * 2);
             Origin.Y = image.Height / (animation.Rows * 2);
-
+            
 
             timer += 1;
         }
@@ -88,6 +89,7 @@ namespace DEMO_ONe.Content.Players
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, animation.GetDestinationRectangle(position), animation.GetSourceRectangle(), Color.White, angle, Origin, SpriteEffects.None, 1);
+            //spriteBatch.Draw(image, position, Color.White);
         }
 
         public bool Fire()

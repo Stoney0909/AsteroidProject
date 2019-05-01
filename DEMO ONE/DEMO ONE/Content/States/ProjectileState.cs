@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework.Input;
+
+
 
 namespace DEMO_ONe.Content.States
 {
@@ -16,7 +19,10 @@ namespace DEMO_ONe.Content.States
     {
         //Projectile projectile = new Projectile();
         List<Projectile> lazer = new List<Projectile> { };
-        
+
+        MouseState newState;
+        Projectile projectile;
+
         LinearMover linearMover;
         public Texture2D image;
 
@@ -29,17 +35,43 @@ namespace DEMO_ONe.Content.States
 
         public void Spawn(Player player, List<Sprite> Obj, GameTime gameTime)
         {
+
+            newState = Mouse.GetState();
+            Console.WriteLine(player.position.X + " | " + player.position.Y + " | " + newState.X + " | " + newState.Y);
+
             if (player.Fire() == true)
             {
-                Projectile projectile = new Projectile(player.position.X, player.position.Y, image, 1);
+                
+                projectile = new Projectile(player.position.X-(player.image.Width/player.animation.Columns), (player.position.Y-(player.image.Height/player.animation.Rows)), image, 1);
+
+                
+                projectile.position = player.position;
+                projectile.Origin.X = (player.image.Width / (player.animation.Columns))-14.5f;
+                projectile.Origin.Y = (player.image.Height / (player.animation.Rows))+14;
+
+                projectile.position -= projectile.Origin;
+
+               
+
+
                 projectile.damage = player.damage;
-                lazer.Add(projectile);
-                Obj.Add(projectile);
                 projectile.velocity.X = Convert.ToSingle(Math.Sin(player.angle)) * 10;
-                projectile.velocity.Y = Convert.ToSingle(-Math.Cos(player.angle)) * 10;
+                projectile.velocity.Y = -Convert.ToSingle(Math.Cos(player.angle)) * 10;
+              
+                Obj.Add(projectile);
             }
             
         }
+
+
+
+        public void Update(Player player, Projectile projectile)
+        {
+            //projectile.Origin.X = player.image.Width / (player.animation.Columns * 2);
+            //projectile.Origin.Y = player.image.Height / (player.animation.Rows * 2);
+        }
+
+
 
         /*
         public void Update(GameTime gameTime)

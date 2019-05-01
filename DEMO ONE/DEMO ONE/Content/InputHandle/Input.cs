@@ -13,7 +13,7 @@ namespace DEMO_ONe.Content.InputHandle
 {
     class Input
     {
-        MouseState newState;
+        
         
         Physics physics= new Physics();
         
@@ -30,7 +30,7 @@ namespace DEMO_ONe.Content.InputHandle
 
         public void KeyDown(Player player,GameTime gameTime)
         {
-            newState = Mouse.GetState();
+            
 
             if (Keyboard.GetState().IsKeyDown(Keys.W))
             {
@@ -58,7 +58,8 @@ namespace DEMO_ONe.Content.InputHandle
             {
                 Direction[2] = false;
             }
-            
+           
+
             Movement(player,gameTime);
         }
 

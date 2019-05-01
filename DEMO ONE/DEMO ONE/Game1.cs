@@ -11,11 +11,15 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using System.Threading;
 
+using System;
+
 
 namespace DEMO_ONe
 {
     public class Game1 : Game
     {
+        MouseState newState;
+
         public const int ScreenX = 1200;
         public const int ScreenY = 800;
         public const int ScreenOffSet = 50;
@@ -53,9 +57,10 @@ namespace DEMO_ONe
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            
 
             //SHIP IMPIMINTATION
-            Texture2D Ship = Content.Load<Texture2D>("Singleplayer");
+            Texture2D Ship = Content.Load<Texture2D>("ship");
             ship.Load(300, 300, 2, 2, Ship, 100);
             //END SHIP IMP
 
@@ -92,15 +97,24 @@ namespace DEMO_ONe
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            newState = Mouse.GetState();
+            
+
+
             ship.Update(gameTime);
 
             //updates code
             for (int i = 0; i < Allobject.Count; i++)
             {
-
+                if(Allobject.Count > 2)
+                Console.WriteLine(Allobject[0].position.X + " | " + Allobject[0].position.Y + " | " +Allobject[2].position.X + " | " + Allobject[2].position.Y + " | "+ newState.X + " | " + newState.Y);
 
                 Allobject[i].Update(gameTime);
-                
+
+                if (Allobject[i] is Projectile)
+                {
+                    projectile.Update(Allobject[0] as Player, Allobject[i] as Projectile);
+                }
 
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
@@ -137,7 +151,7 @@ namespace DEMO_ONe
 
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
-                System.Console.WriteLine(Allobject.Count);
+                //System.Console.WriteLine(Allobject.Count);
                 projectile.Spawn(ship.GetPlayer(),Allobject, gameTime);
                 
             }
