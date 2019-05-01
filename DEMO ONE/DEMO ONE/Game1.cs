@@ -173,8 +173,8 @@ namespace DEMO_ONe
                     }
                     if (Allobject[i] is Asteroid)
                     {
-                        ship.score += 10;
-                        ship.money += 10;
+                        ship.GetPlayer().score += 10;
+                        ship.GetPlayer().money += 10;
                         asteroid.SpawnCheck(Allobject[i] as Asteroid, Allobject);
                     }
                         Allobject.RemoveAt(i);
@@ -254,8 +254,8 @@ namespace DEMO_ONe
                 Allobject[i].Draw(spriteBatch);
             }
 
-            spriteBatch.DrawString(font, "Score: " +Convert.ToString(ship.score), new Vector2(0, 0), Color.White);
-            spriteBatch.DrawString(font, "Money: " + Convert.ToString(ship.money), new Vector2(0, 20), Color.White);
+            spriteBatch.DrawString(font, "Score: " +Convert.ToString(ship.GetPlayer().score), new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(font, "Money: " + Convert.ToString(ship.GetPlayer().money), new Vector2(0, 20), Color.White);
             spriteBatch.DrawString(font, "Lives: " + Convert.ToString(ship.GetPlayer().health), new Vector2(0, 40), Color.White);
 
             spriteBatch.End();

@@ -25,6 +25,7 @@ namespace DEMO_ONe.Content.Players
         public int level;
         float hitTimer=0;
 
+
         public Animation animation;
 
         Projectile projectile = new Projectile();
@@ -113,7 +114,7 @@ namespace DEMO_ONe.Content.Players
         public void PlayerUpgrade()
         {
 
-            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, money);//spawn in the charcter upgrade screen
+            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, money);//spawn in the charcter upgrade screem
             characterupgrade.Show();
 
             health = characterupgrade.health;// change this player stats
