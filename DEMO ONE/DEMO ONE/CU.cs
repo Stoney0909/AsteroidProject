@@ -16,12 +16,13 @@ namespace DEMO_ONe
     {
         int upgrades;
         Player player;
+        public float money;
         public CU(Player player)
         {
             InitiliazeComponent();
 
 
-            /*this.player = player;
+            this.player = player;
             upgrades += 2;
 
             
@@ -29,20 +30,8 @@ namespace DEMO_ONe
             healthTextBox.Text = player.health.ToString();
             damageTextBox.Text = player.damage.ToString();
             ProTextBox.Text = player.coolDown.ToString();
-
-            if(player.health == 1)
-            {
-                minusHealth.Hide();
-            }
-            if(player.damage == 10)
-            {
-                minusProDamage.Hide();
-            }
-            if (player.coolDown == 10)
-            {
-                addAmountofPro.Hide();
-            }
-            NextLevel();*/
+            moneylabel.Text = player.money.ToString();
+            updateButtons();
         }
         private void addHeatlh_Click(object sender, EventArgs e)
         {
@@ -50,41 +39,29 @@ namespace DEMO_ONe
             {
                 player.health++;
                 minusHealth.Show();
-                upgrades--;
+                money -= 20;
                 NextLevel();
             }
         }
 
-        private void addSpeed_Click(object sender, EventArgs e)
-        {
-            player.coolDown -= 5;
-            upgrades++;
-            if (player.coolDown == 2)
-            {
-                addAmountofPro.Hide();
-                            
-            }
-            NextLevel();
-        }
-
         private void addDamage_Click(object sender, EventArgs e)
         {
-            if (upgrades > 0)
+            if (money > 20)
             {
                 player.health += 10;
                 minusProDamage.Show();
-                upgrades--;
+                money -= 10;
                 NextLevel();
             }
         }
 
         private void addAmountofPro_Click(object sender, EventArgs e)
         {
-            if (upgrades > 0)
+            if (money > 20)
             {
                player.coolDown -= 10;
                minusAmountOfPro.Show();
-               upgrades--;
+               money -=20;
                NextLevel();
             }
          
@@ -93,10 +70,11 @@ namespace DEMO_ONe
         private void minusHealth_Click(object sender, EventArgs e)
         {
                 player.health -= 1;
-                upgrades++;
+                money += 10;
             if (player.health == 1)
             {
                 minusHealth.Hide();
+                updateButtons();
             }
             NextLevel();
         }
@@ -109,36 +87,30 @@ namespace DEMO_ONe
         private void minusProDamage_Click(object sender, EventArgs e)
         {
             player.damage -= 10;
-            upgrades++;
+            money += 10;
             if (player.damage == 10)
             {
                 minusProDamage.Hide();
-               
+                updateButtons();
             }
             NextLevel();
         }
 
         private void minusAmountOfPro_Click(object sender, EventArgs e)
         {
-            if (upgrades > 0)
+            if (money > 20)
             {
                 player.coolDown -= 10;
                 addAmountofPro.Show();
-                upgrades--;
+                money -= 20;
                 NextLevel();
+                updateButtons();
             }
            
         }
         private void NextLevel()
-        {
-            if (upgrades == 0)
-            {
+        { 
                 nextlev.Show();
-            }
-            else
-            {
-                nextlev.Hide();
-            }
         }
 
         private void nextlev_Click(object sender, EventArgs e)
@@ -155,6 +127,32 @@ namespace DEMO_ONe
             this.ClientSize = new System.Drawing.Size(861, 513);
             this.Name = "CU";
             this.ResumeLayout(false);
+
+        }
+        private void updateButtons()
+        {
+            if (player.health == 1)
+            {
+                minusHealth.Hide();
+            }
+            else
+            {
+                minusHealth.Show();
+            }
+            if (player.damage == 10)
+            {
+                minusProDamage.Hide();
+            }
+            
+            if (player.coolDown == 10)
+            {
+                addAmountofPro.Hide();
+            }
+            else
+            {
+                addAmountofPro.Show();
+            }
+            NextLevel();
 
         }
     }

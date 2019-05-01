@@ -33,10 +33,10 @@ namespace DEMO_ONe.Content.States
             {
                 Projectile projectile = new Projectile(player.position.X, player.position.Y, image, 1);
                 projectile.damage = player.damage;
-                lazer.Add(projectile);
-                Obj.Add(projectile);
+                
                 projectile.velocity.X = Convert.ToSingle(Math.Sin(player.angle)) * 10;
                 projectile.velocity.Y = Convert.ToSingle(-Math.Cos(player.angle)) * 10;
+                Obj.Add(projectile);
             }
             
         }

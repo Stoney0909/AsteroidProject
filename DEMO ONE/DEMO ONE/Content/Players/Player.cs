@@ -15,6 +15,7 @@ namespace DEMO_ONe.Content.Players
 {
      public class Player : Sprite
     {
+        public string name;
         public int damage;
         public int coolDown;
         public int timer;
@@ -27,7 +28,7 @@ namespace DEMO_ONe.Content.Players
         public Animation animation;
 
         Projectile projectile = new Projectile();
-
+        private Vector2? origin;
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth, int Rows, int Columns)
             : base(newX, newY, newImage, newHealth)
@@ -64,7 +65,7 @@ namespace DEMO_ONe.Content.Players
 
             position.X += velocity.X ;
             position.Y += velocity.Y ;
-            
+
 
             if (moving)
             {
@@ -74,7 +75,7 @@ namespace DEMO_ONe.Content.Players
             {
                 animation.SetCurrentFrame(0);
             }
- 
+
 
             Origin.X = image.Width / (animation.Columns * 2);
             Origin.Y = image.Height / (animation.Rows * 2);
@@ -88,6 +89,7 @@ namespace DEMO_ONe.Content.Players
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, animation.GetDestinationRectangle(position), animation.GetSourceRectangle(), Color.White, angle, Origin, SpriteEffects.None, 1);
+            
         }
 
         public bool Fire()
@@ -108,6 +110,7 @@ namespace DEMO_ONe.Content.Players
             playercopy.health = health;
             playercopy.damage = damage;
             playercopy.coolDown = coolDown;
+            playercopy.money = money;
 
             CU characterupgrade = new CU(playercopy);
             characterupgrade.ShowDialog();
@@ -115,6 +118,7 @@ namespace DEMO_ONe.Content.Players
             health = playercopy.health;// change this player stats
             damage = playercopy.damage;
             coolDown = playercopy.coolDown;
+            money = playercopy.money;
             //level++;
         }
 
