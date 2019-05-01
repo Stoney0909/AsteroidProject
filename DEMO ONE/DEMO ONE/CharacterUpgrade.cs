@@ -12,9 +12,9 @@ namespace DEMO_ONe
 {
     public partial class CharacterUpgrade : Form
     {
-        public float health = 0;
-        public int coolDown = 0;
-        public double money = 0;
+        public float health;
+        public int coolDown;
+        public double money;
         public CharacterUpgrade(float health, int coolDown, double money)
         {
             this.health = health;
@@ -28,9 +28,8 @@ namespace DEMO_ONe
         {
             if (money >= 300)
             {
-                health++;
-
-                money -= 20;
+                health+=1;
+                money -= 300;
             }
             else
             {
@@ -44,8 +43,7 @@ namespace DEMO_ONe
             if (money >= 300)
             {
                 coolDown -= 10;
-                addcoolDown.Show();
-                money -= 20;
+                money -= 300;
             }
             else
             {

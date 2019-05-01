@@ -12,8 +12,9 @@ namespace DEMO_ONe.Content.States
     {
         Player player = new Player();
         Input input = new Input();
-        public bool keepPlaying;
-
+        public bool keepPlaying = true;
+        public double score;
+        public double money;
         public PlayerState()
         {
 
@@ -39,7 +40,7 @@ namespace DEMO_ONe.Content.States
         }
         public void lose(string playername)//loads the end screen and closes the game
         {
-            Save_Load playersave = new Save_Load(playername, GetPlayer().score);
+            Save_Load playersave = new Save_Load(playername, score);
             ENDGAME endGame = new ENDGAME(playersave);
 
             endGame.ShowDialog();
@@ -55,7 +56,9 @@ namespace DEMO_ONe.Content.States
         }
         public void CU()
         {
-            player.PlayerUpgrade();
+            player.money = money;
+            player.PlayerUpgrade(money);
+            money = player.money;
         }
     }
 }

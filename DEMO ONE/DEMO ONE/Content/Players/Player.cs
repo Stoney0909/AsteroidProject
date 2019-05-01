@@ -38,7 +38,7 @@ namespace DEMO_ONe.Content.Players
             slowDownRate = 0.5f;
             maxSpeed = 50;
             acceleration = 1;
-            coolDown = 10;
+            coolDown = 40;
             animation = new Animation(newImage, Rows, Columns);
 
             radius = 70;
@@ -108,18 +108,15 @@ namespace DEMO_ONe.Content.Players
                 return false;
             }
         }
-
-
-
-        public void PlayerUpgrade()
+        public void PlayerUpgrade(double money)
         {
-
-            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, money);//spawn in the charcter upgrade screem
+            this.money = money;
+            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, this.money);//spawn in the charcter upgrade screen
             characterupgrade.Show();
 
             health = characterupgrade.health;// change this player stats
             coolDown = characterupgrade.coolDown;
-            money = characterupgrade.money;
+            this.money = characterupgrade.money;
 
         }
 

@@ -27,6 +27,7 @@ namespace DEMO_ONe
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        bool onetime = true;
 
         List<Sprite> Allobject= new List<Sprite> { };
 
@@ -38,8 +39,8 @@ namespace DEMO_ONe
         Level level = new Level();
 
         string playerName;
-        public bool keepPlaying;
-        
+        public bool keepPlaying = true;
+
         public Game1(string playerName)
         {
             this.playerName = playerName;
@@ -94,7 +95,7 @@ namespace DEMO_ONe
             {
                 asteroid.Spawn();//spawn Asteroids
             }
-            
+
 
             Allobject.Add(ship.GetPlayer());
 
@@ -112,7 +113,7 @@ namespace DEMO_ONe
         {
             return Allobject;
         }
-       
+
 
 
         protected override void Update(GameTime gameTime)
@@ -131,12 +132,14 @@ namespace DEMO_ONe
             }
 
             //Checks if ship is dead
-            /*if (ship.Dead())
+            if (ship.Dead() && onetime)
             {
-                ship.lose(playerName);
                 keepPlaying = ship.keepPlaying;
+                onetime = false;
+                ship.lose(playerName);
                 this.Exit();
-            }*/
+
+            }
 
 
 
@@ -182,7 +185,7 @@ namespace DEMO_ONe
             }
 
             //CHECKS size of astriod
-            
+
 
 
 
@@ -191,7 +194,7 @@ namespace DEMO_ONe
             {
                 Allobject[i].Update(gameTime);
 
-                
+
                 //LOOPS ALL OBJS
                 if (Allobject[i].position.X > ScreenX + ScreenOffSet)
                 {
@@ -211,7 +214,7 @@ namespace DEMO_ONe
                 {
                     Allobject[i].position.Y = ScreenY + ScreenOffSet;
                 }
-                
+
             }
 
             int count = 0;
@@ -222,7 +225,7 @@ namespace DEMO_ONe
             }
             if (count == 0)
             {
-               
+
                     for (int i = 0; i < 15; i++)
                     {
                         asteroid.Spawn();//spawn Asteroids
@@ -237,7 +240,7 @@ namespace DEMO_ONe
             base.Update(gameTime);
         }
 
-        
+
 
         protected override void Draw(GameTime gameTime)
         {

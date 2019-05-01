@@ -12,7 +12,7 @@ namespace DEMO_ONe
 {
     public partial class Form1 : Form
     {
-        private string name;
+        public string name;
         private double score;
         private bool game = false;
         public bool keepPlaying;
