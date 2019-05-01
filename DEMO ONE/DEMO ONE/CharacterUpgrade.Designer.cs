@@ -29,30 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharacterUpgrade));
-            this.minusHealth = new System.Windows.Forms.Button();
             this.continuebutton = new System.Windows.Forms.Button();
             this.addcoolDown = new System.Windows.Forms.Button();
             this.addhealth = new System.Windows.Forms.Button();
-            this.minusAmountofPro = new System.Windows.Forms.Button();
             this.ProTextBox = new System.Windows.Forms.Label();
-            this.totalmoney = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.HealthTextBox = new System.Windows.Forms.Label();
+            this.error = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // minusHealth
-            // 
-            this.minusHealth.BackColor = System.Drawing.Color.Black;
-            this.minusHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minusHealth.ForeColor = System.Drawing.Color.White;
-            this.minusHealth.Location = new System.Drawing.Point(118, 126);
-            this.minusHealth.Name = "minusHealth";
-            this.minusHealth.Size = new System.Drawing.Size(116, 57);
-            this.minusHealth.TabIndex = 0;
-            this.minusHealth.Text = "-";
-            this.minusHealth.UseVisualStyleBackColor = false;
-            this.minusHealth.Click += new System.EventHandler(this.minusHealth_Click);
             // 
             // continuebutton
             // 
@@ -93,19 +78,6 @@
             this.addhealth.UseVisualStyleBackColor = false;
             this.addhealth.Click += new System.EventHandler(this.addhealth_Click);
             // 
-            // minusAmountofPro
-            // 
-            this.minusAmountofPro.BackColor = System.Drawing.Color.Black;
-            this.minusAmountofPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minusAmountofPro.ForeColor = System.Drawing.Color.White;
-            this.minusAmountofPro.Location = new System.Drawing.Point(118, 187);
-            this.minusAmountofPro.Name = "minusAmountofPro";
-            this.minusAmountofPro.Size = new System.Drawing.Size(116, 57);
-            this.minusAmountofPro.TabIndex = 5;
-            this.minusAmountofPro.Text = "-";
-            this.minusAmountofPro.UseVisualStyleBackColor = false;
-            this.minusAmountofPro.Click += new System.EventHandler(this.minusAmountofPro_Click);
-            // 
             // ProTextBox
             // 
             this.ProTextBox.AutoSize = true;
@@ -114,33 +86,9 @@
             this.ProTextBox.ForeColor = System.Drawing.Color.White;
             this.ProTextBox.Location = new System.Drawing.Point(251, 189);
             this.ProTextBox.Name = "ProTextBox";
-            this.ProTextBox.Size = new System.Drawing.Size(207, 46);
+            this.ProTextBox.Size = new System.Drawing.Size(218, 46);
             this.ProTextBox.TabIndex = 7;
             this.ProTextBox.Text = "Cool Down";
-            // 
-            // totalmoney
-            // 
-            this.totalmoney.AutoSize = true;
-            this.totalmoney.BackColor = System.Drawing.Color.Black;
-            this.totalmoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalmoney.ForeColor = System.Drawing.Color.White;
-            this.totalmoney.Location = new System.Drawing.Point(190, 59);
-            this.totalmoney.Name = "totalmoney";
-            this.totalmoney.Size = new System.Drawing.Size(71, 25);
-            this.totalmoney.TabIndex = 8;
-            this.totalmoney.Text = "Money";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(113, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 25);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Money:";
             // 
             // label2
             // 
@@ -148,7 +96,7 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(267, 42);
+            this.label2.Location = new System.Drawing.Point(182, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(358, 46);
             this.label2.TabIndex = 10;
@@ -166,41 +114,60 @@
             this.HealthTextBox.TabIndex = 11;
             this.HealthTextBox.Text = "Health";
             // 
+            // error
+            // 
+            this.error.AutoSize = true;
+            this.error.BackColor = System.Drawing.Color.Black;
+            this.error.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.error.ForeColor = System.Drawing.Color.DarkRed;
+            this.error.Location = new System.Drawing.Point(177, 387);
+            this.error.Name = "error";
+            this.error.Size = new System.Drawing.Size(335, 29);
+            this.error.TabIndex = 12;
+            this.error.Text = "You don\'t have enough money";
+            this.error.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 29);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "300 per a Purchase";
+            // 
             // CharacterUpgrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.error);
             this.Controls.Add(this.HealthTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.totalmoney);
             this.Controls.Add(this.ProTextBox);
-            this.Controls.Add(this.minusAmountofPro);
             this.Controls.Add(this.addhealth);
             this.Controls.Add(this.addcoolDown);
             this.Controls.Add(this.continuebutton);
-            this.Controls.Add(this.minusHealth);
             this.Name = "CharacterUpgrade";
             this.Text = "CharacterUpgrade";
-            this.Load += new System.EventHandler(this.CharacterUpgrade_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button minusHealth;
         private System.Windows.Forms.Button continuebutton;
         private System.Windows.Forms.Button addcoolDown;
         private System.Windows.Forms.Button addhealth;
-        private System.Windows.Forms.Button minusAmountofPro;
         private System.Windows.Forms.Label ProTextBox;
-        private System.Windows.Forms.Label totalmoney;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label HealthTextBox;
+        private System.Windows.Forms.Label error;
+        private System.Windows.Forms.Label label1;
     }
 }

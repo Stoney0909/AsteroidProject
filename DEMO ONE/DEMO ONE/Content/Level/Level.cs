@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using DEMO_ONe.Content.Sprites;
+using DEMO_ONe.Content.Enemy;
 
 namespace DEMO_ONe.Content.Level
 {
@@ -20,14 +22,37 @@ namespace DEMO_ONe.Content.Level
         //public
 
 
-        void SpawnAsteroid()
+        public void SpawnAsteroid(List<Sprite> allObjects, int numAsteroids)
         {
-            totalAsteroids++;
+            for (int i = 0; i < numAsteroids; i++)
+            {
+                Asteroid asteroid = new Asteroid();
+                allObjects.Add(asteroid);
+            }
         }
+        //public void load(List<Texture2D> Asteroid picture)
+        //{
+        //    asteroid.Load(LargeAstriod);
+        //    asteroid.Load(MediumAstriod1);
+        //    asteroid.Load(MediumAstriod2);
+        //    asteroid.Load(SmallAstriod1);
+        //    asteroid.Load(SmallAstriod2);
+        //    asteroid.Load(SmallAstriod3);
+        //    asteroid.Load(SmallAstriod4);
+        //}
 
-        void Update()
+        public void Update(List<Sprite> allObjects)
         {
-
+            int count = 0;
+            for (int i = 1; i < allObjects.Count; i++)
+            {
+                if (allObjects[i] is Asteroid)
+                    count++;
+            }
+            if (count == 0)
+            {
+                SpawnAsteroid(allObjects, 14);
+            }
         }
 
         public void Draw(GraphicsDevice screen)

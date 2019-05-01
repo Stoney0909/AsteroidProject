@@ -3,7 +3,7 @@ using DEMO_ONe.Content.Players;
 using DEMO_ONe.Content.Animations;
 using DEMO_ONe.Content.Sprites;
 using DEMO_ONe.Content.Enemy;
-
+using DEMO_ONe.Content.Level;
 using DEMO_ONe.Content.InputHandle;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -35,7 +35,7 @@ namespace DEMO_ONe
         ProjectileState projectile = new ProjectileState();
 
         SpriteFont font;
-
+        Level level = new Level();
 
         string playerName;
         public bool keepPlaying;
@@ -82,7 +82,7 @@ namespace DEMO_ONe
             Texture2D SmallAstriod3 = Content.Load<Texture2D>("Small_Asteroid_3");
             Texture2D SmallAstriod4 = Content.Load<Texture2D>("Small_Asteroid_4");
 
-            asteroid.Load(LargeAstriod);
+            asteroid.Load(LargeAstriod);//load pictures of asteroids
             asteroid.Load(MediumAstriod1);
             asteroid.Load(MediumAstriod2);
             asteroid.Load(SmallAstriod1);
@@ -90,18 +90,11 @@ namespace DEMO_ONe
             asteroid.Load(SmallAstriod3);
             asteroid.Load(SmallAstriod4);
 
-            asteroid.Spawn();
-            asteroid.Spawn();
-            asteroid.Spawn();
-            asteroid.Spawn();
-            asteroid.Spawn();
-            asteroid.Spawn();
-            asteroid.Spawn();
-            asteroid.Spawn();
-
-
-
-
+            for (int i = 0; i < 10; i++)
+            {
+                asteroid.Spawn();//spawn Asteroids
+            }
+            
 
             Allobject.Add(ship.GetPlayer());
 
@@ -206,7 +199,28 @@ namespace DEMO_ONe
                 
             }
 
+            int count = 0;
+            for (int i = 1; i < Allobject.Count; i++)//spawn more asteroids when there is none left
+            {
+                if (Allobject[i] is Asteroid)
+                    count++;
+            }
+            if (count == 0)
+            {
+               
+                    for (int i = 0; i < 10; i++)
+                    {
+                        asteroid.Spawn();//spawn Asteroids
+                    }
 
+
+                    Allobject.Add(ship.GetPlayer());
+
+                    foreach (var obj in asteroid.GetSprite())
+                    {
+                        Allobject.Add(obj);
+                    }
+            }
 
 
 
