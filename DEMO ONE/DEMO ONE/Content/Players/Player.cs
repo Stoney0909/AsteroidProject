@@ -23,6 +23,7 @@ namespace DEMO_ONe.Content.Players
         public double money;
         public float speedUpRate, slowDownRate;
         public int level;
+        int hitcount;
 
         public Animation animation;
 
@@ -39,32 +40,36 @@ namespace DEMO_ONe.Content.Players
             coolDown = 10;
             animation = new Animation(newImage, Rows, Columns);
 
+            radius = 70;
             Origin.X = image.Width / (animation.Columns * 2);
             Origin.Y = image.Height / (animation.Rows * 2);
         }
 
-        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 5000, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
-        {
-            position.X = x;
-            position.Y = y;
-            this.coolDown = coolDown;
-            this.angle = angle;
-            image = newImage;
-            this.damage = damage;
-            //velocity = vel;
-            //acceleration = accel;
-            timer = 0;
-            level = newlevel;
-        }
 
 
 
         public override void SAFCCollision(Sprite sprite)
         {
-            base.SAFCCollision(sprite);
+
+            Origin.X = (image.Width / (animation.Columns * 13));
+            Origin.Y = (image.Height / (animation.Rows * 13));
+
+            position = position - projectile.Origin;
+
+            if (sprite is Asteroid)
+            {
+                double dx = (sprite.position.X - (image.Width / (animation.Columns * 13))) - this.position.X;
+                double dy = (sprite.position.Y - (image.Height / (animation.Rows * 13))) - this.position.Y;
+                float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
+                if (distance < this.radius)
+                {
+                    hit = true;
+                }
+            }
+            else
+                return;
+
         }
-
-
 
 
 
@@ -76,6 +81,11 @@ namespace DEMO_ONe.Content.Players
             position.X += velocity.X;
             position.Y += velocity.Y;
 
+            if (hit == true)
+            {
+                Console.WriteLine(hitcount++);
+                hit = false;
+            }
 
             if (moving)
             {
@@ -124,6 +134,19 @@ namespace DEMO_ONe.Content.Players
             coolDown = characterupgrade.coolDown;
             money = characterupgrade.money;
 
+        }
+        public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 5000, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
+        {
+            position.X = x;
+            position.Y = y;
+            this.coolDown = coolDown;
+            this.angle = angle;
+            image = newImage;
+            this.damage = damage;
+            //velocity = vel;
+            //acceleration = accel;
+            timer = 0;
+            level = newlevel;
         }
 
     }

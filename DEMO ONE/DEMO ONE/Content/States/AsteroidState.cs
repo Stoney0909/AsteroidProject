@@ -47,7 +47,7 @@ namespace DEMO_ONe.Content.States
         public void Spawn()
         {
 
-            int newAngle = rnd.Range(0, 360);//FIX ME
+            int newAngle = rnd.Range(0, 360);
             int side = rnd.Range(0, 4);
 
             
