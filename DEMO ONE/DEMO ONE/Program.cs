@@ -14,25 +14,27 @@ namespace DEMO_ONe
         [STAThread]
         static void Main()
         {
-            bool keepPlaying = true;
-            while (keepPlaying)
-            {
-                //TO DO
-                //uncomment the code DO NOT DELETE THIS
+            CharacterUpgrade yup = new CharacterUpgrade(5.0f, 10, 20);
+            yup.ShowDialog();
+            //bool keepPlaying = true;
+            //while (keepPlaying)
+            //{
+            //    //TO DO
+            //    //uncomment the code DO NOT DELETE THIS
 
-                Form1 Form1 = new Form1();
-                Form1.ShowDialog();
-                keepPlaying = Form1.keepPlaying;
+            //    Form1 Form1 = new Form1();
+            //    Form1.ShowDialog();
+            //    keepPlaying = Form1.keepPlaying;
 
-                if (Form1.startGame())
-                {
-                    using (var game = new Game1(Form1.Name))
-                    {
-                        game.Run();
-                        keepPlaying = game.keepPlaying; 
-                    }
-                }
-            }
+            //    if (Form1.startGame())
+            //    {
+            //        using (var game = new Game1(Form1.Name))
+            //        {
+            //            game.Run();
+            //            keepPlaying = game.keepPlaying; 
+            //        }
+            //    }
+            //}
 
         }
     }

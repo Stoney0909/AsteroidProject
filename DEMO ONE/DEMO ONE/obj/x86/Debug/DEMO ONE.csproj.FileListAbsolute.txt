@@ -282,3 +282,4 @@ D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.cspro
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\Content\Score.xnb

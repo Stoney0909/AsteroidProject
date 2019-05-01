@@ -108,7 +108,7 @@ namespace DEMO_ONe.Content.Players
         {
 
             CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, money);//spawn in the charcter upgrade screen
-            characterupgrade.ShowDialog();
+            characterupgrade.Show();
 
             health = characterupgrade.health;// change this player stats
             coolDown = characterupgrade.coolDown;
