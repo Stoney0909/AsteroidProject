@@ -23,7 +23,7 @@ namespace DEMO_ONe.Content.Players
         public double money;
         public float speedUpRate, slowDownRate;
         public int level;
-        int hitcount;
+        float hitTimer=0;
 
         public Animation animation;
 
@@ -47,45 +47,26 @@ namespace DEMO_ONe.Content.Players
 
 
 
-
-        public override void SAFCCollision(Sprite sprite)
-        {
-
-            Origin.X = (image.Width / (animation.Columns * 13));
-            Origin.Y = (image.Height / (animation.Rows * 13));
-
-            position = position - projectile.Origin;
-
-            if (sprite is Asteroid)
-            {
-                double dx = (sprite.position.X - (image.Width / (animation.Columns * 13))) - this.position.X;
-                double dy = (sprite.position.Y - (image.Height / (animation.Rows * 13))) - this.position.Y;
-                float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
-                if (distance < this.radius)
-                {
-                    hit = true;
-                    sprite.hit = true;
-                }
-            }
-            else
-                return;
-
-        }
-
-
-
-
-
         public override void Update(GameTime gameTime)
         {
 
             position.X += velocity.X;
             position.Y += velocity.Y;
 
+            if (hitTimer !=0)
+            {
+                hitTimer -= (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
+            }
+            if (hitTimer <0)
+            {
+                hitTimer = 0;
+            }
+
             if (hit == true)
             {
                 health -= 1;
                 hit = false;
+                hitTimer = 10;
             }
 
             if (moving)
@@ -110,8 +91,9 @@ namespace DEMO_ONe.Content.Players
         public override void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(image, animation.GetDestinationRectangle(position), animation.GetSourceRectangle(), Color.White, angle, Origin, SpriteEffects.None, 1);
-            //spriteBatch.Draw(image, position, Color.White);
         }
+
+
 
         public bool Fire()
         {
@@ -125,6 +107,9 @@ namespace DEMO_ONe.Content.Players
                 return false;
             }
         }
+
+
+
         public void PlayerUpgrade()
         {
 
@@ -136,6 +121,9 @@ namespace DEMO_ONe.Content.Players
             money = characterupgrade.money;
 
         }
+
+
+
         public Player(float x = 0, float y = 0, float angle = 0, int coolDown = 5000, Texture2D newImage = null, int damage = 0, float vel = 0, float accel = 1, int newlevel = 1)
         {
             position.X = x;
@@ -148,6 +136,30 @@ namespace DEMO_ONe.Content.Players
             //acceleration = accel;
             timer = 0;
             level = newlevel;
+        }
+        public override void SAFCCollision(Sprite sprite)
+        {
+
+            Origin.X = (image.Width / (animation.Columns * 13));
+            Origin.Y = (image.Height / (animation.Rows * 13));
+
+            position = position - projectile.Origin;
+            if (hitTimer <= 0)
+            {
+                if (sprite is Asteroid)
+                {
+                    double dx = (sprite.position.X - (image.Width / (animation.Columns * 13))) - this.position.X;
+                    double dy = (sprite.position.Y - (image.Height / (animation.Rows * 13))) - this.position.Y;
+                    float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
+                    if (distance < this.radius)
+                    {
+                        hit = true;
+                        sprite.hit = true;
+                    }
+                }
+            }
+            else
+                return;
         }
 
     }

@@ -27,7 +27,7 @@ namespace DEMO_ONe
 
                 if (Form1.startGame())
                     //{
-                    using (var game = new Game1(/*Form1.Name*/"pop"))
+                    using (var game = new Game1(Form1.Name))
                     {
                         game.Run();
                         keepPlaying = game.keepPlaying;

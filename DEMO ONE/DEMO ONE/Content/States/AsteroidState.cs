@@ -107,10 +107,50 @@ namespace DEMO_ONe.Content.States
             asteroids.Add(asteroid);
             
         }
-        
-        
 
-        public void Update(GameTime gameTime)
+        public void SpawnCheck(Asteroid obj, List<Sprite> objList)
+        {
+            if (obj.Size > 0)
+            {
+                Spawn(obj, objList);
+            }
+        }
+
+        public void Spawn(Asteroid obj,List<Sprite>objList)
+        {
+            int newAngle = rnd.Range(0, 360);
+            int size, size2;
+            int Asize;
+
+            if (obj.Size == 2)
+            {
+                size = rnd.Range(1, 2);
+                size2 = rnd.Range(1, 2);
+                Asize = 1;
+            }
+            else
+            {
+                size = rnd.Range(3, 6);
+                size2 = rnd.Range(1, 2);
+                Asize = 0;
+            }
+
+            asteroid = new Asteroid(obj.position.X, obj.position.Y, Asize, newAngle, AsteroidSize.ElementAt(size));
+            asteroid.radius = AsteroidSize.ElementAt(size).Height;
+            asteroid.angle = -obj.angle-15;
+
+            objList.Add(asteroid);
+
+            asteroid = new Asteroid(obj.position.X, obj.position.Y, Asize, newAngle, AsteroidSize.ElementAt(size2));
+            asteroid.radius = AsteroidSize.ElementAt(size).Height;
+            asteroid.angle = -obj.angle+15;
+
+            objList.Add(asteroid);
+
+        }
+
+
+            public void Update(GameTime gameTime)
         {
             //DELETE FROM LIST
 

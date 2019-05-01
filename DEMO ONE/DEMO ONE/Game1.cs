@@ -106,6 +106,8 @@ namespace DEMO_ONe
 
         }
 
+
+
         public List<Sprite> GetAllobj()
         {
             return Allobject;
@@ -129,12 +131,12 @@ namespace DEMO_ONe
             }
 
             //Checks if ship is dead
-            if (ship.Dead())
+            /*if (ship.Dead())
             {
                 ship.lose(playerName);
                 keepPlaying = ship.keepPlaying;
                 this.Exit();
-            }
+            }*/
 
 
 
@@ -169,9 +171,13 @@ namespace DEMO_ONe
                     {
                         continue;
                     }
-                        Allobject.RemoveAt(i);
-                        ship.money += 10;
+                    if (Allobject[i] is Asteroid)
+                    {
                         ship.score += 10;
+                        ship.money += 10;
+                        asteroid.SpawnCheck(Allobject[i] as Asteroid, Allobject);
+                    }
+                        Allobject.RemoveAt(i);
                 }
             }
 
@@ -250,6 +256,7 @@ namespace DEMO_ONe
 
             spriteBatch.DrawString(font, "Score: " +Convert.ToString(ship.score), new Vector2(0, 0), Color.White);
             spriteBatch.DrawString(font, "Money: " + Convert.ToString(ship.money), new Vector2(0, 20), Color.White);
+            spriteBatch.DrawString(font, "Lives: " + Convert.ToString(ship.GetPlayer().health), new Vector2(0, 40), Color.White);
 
             spriteBatch.End();
 
