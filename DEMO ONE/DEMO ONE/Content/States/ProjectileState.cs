@@ -22,8 +22,7 @@ namespace DEMO_ONe.Content.States
 
         MouseState newState;
         Projectile projectile;
-
-        LinearMover linearMover;
+        
         public Texture2D image;
 
 
@@ -45,19 +44,17 @@ namespace DEMO_ONe.Content.States
                 projectile = new Projectile(player.position.X-(player.image.Width/player.animation.Columns), (player.position.Y-(player.image.Height/player.animation.Rows)), image, 1);
 
 
-                projectile.position = player.position;
-                projectile.Origin.X = (player.image.Width / (player.animation.Columns))-14.5f;
-                projectile.Origin.Y = (player.image.Height / (player.animation.Rows))+14;
+                projectile.Origin.X = (player.image.Width / (player.animation.Columns*13));
+                projectile.Origin.Y = (player.image.Height / (player.animation.Rows*13));
 
-                projectile.position -= projectile.Origin;
-
-
-
+                projectile.position = player.position - projectile.Origin;
+                
 
                 projectile.damage = player.damage;
 
                 projectile.velocity.X = Convert.ToSingle(Math.Sin(player.angle)) * 25;
                 projectile.velocity.Y = Convert.ToSingle(-Math.Cos(player.angle)) * 25;
+
                 Obj.Add(projectile);
             }
 

@@ -15,19 +15,19 @@ namespace DEMO_ONe.Content.Enemy
         Random rnd = new Random();
         LinearMover movement = new LinearMover();
         public float rotation;
-        public Rectangle sourceRectangle, destinationRectangle;
+        public int Size;
 
         public Asteroid()
         {
 
         }
 
-        public Asteroid(float newX, float newY, Texture2D newImage)
+        public Asteroid(float newX, float newY,int newSize, int newAngle, Texture2D newImage)
             :base(newX,newY,newImage)
         {
             health = 1;
             rotationSpeed = .05f;
-            maxSpeed = 5;
+            maxSpeed = 15;
             position.X = newX;
             position.Y = newY;
             image = newImage;
@@ -64,7 +64,7 @@ namespace DEMO_ONe.Content.Enemy
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(image, position, new Rectangle(0,0,image.Width,image.Height), Color.White, rotation, Origin, 1.0f, SpriteEffects.None, 1);
+            spriteBatch.Draw(image, position, new Rectangle(0, 0, image.Width, image.Height), Color.White, rotation, scale:new Vector2(3, 3), origin:Origin, effects:SpriteEffects.None, layerDepth:1);
         }
 
     }

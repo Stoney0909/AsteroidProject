@@ -22,9 +22,9 @@ namespace DEMO_ONe.Content.Movement
             //obj.position.Y += (obj.velocity.Y * Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle)))) * (gameTime.ElapsedGameTime.Milliseconds/100.0f);
 
             
-
             obj.velocity.X = (Convert.ToSingle(Math.Sin(Convert.ToDouble(obj.angle))) * obj.maxSpeed) * (gameTime.ElapsedGameTime.Milliseconds / 100.0f);
             obj.velocity.Y = -((Convert.ToSingle(Math.Cos(Convert.ToDouble(obj.angle))) * obj.maxSpeed) * (gameTime.ElapsedGameTime.Milliseconds / 100.0f));
+
         }
     }
 }

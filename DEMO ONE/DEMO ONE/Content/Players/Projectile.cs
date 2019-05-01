@@ -26,17 +26,7 @@ namespace DEMO_ONe.Content.Players
             this.damage = damage;
         }
 
-        public override void OnCollide(Sprite sprite)
-        {
-            if (sprite == this.Parent)
-                return;
 
-            // Bullets don't collide with eachother
-            if (sprite is Projectile)
-                return;
-
-            IsRemoved = true;
-        }
 
 
 

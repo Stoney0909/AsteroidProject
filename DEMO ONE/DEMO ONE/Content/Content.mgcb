@@ -97,6 +97,13 @@
 /processorParam:TextureFormat=Color
 /build:PlayerProjectile clone (5).png
 
+#begin Score.spritefont
+/importer:FontDescriptionImporter
+/processor:LocalizedFontProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Score.spritefont
+
 #begin Ship.png
 /importer:TextureImporter
 /processor:TextureProcessor

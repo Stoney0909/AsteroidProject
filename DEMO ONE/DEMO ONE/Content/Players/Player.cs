@@ -28,7 +28,6 @@ namespace DEMO_ONe.Content.Players
         public Animation animation;
 
         Projectile projectile = new Projectile();
-        private Vector2? origin;
 
         public Player(float newX, float newY, Texture2D newImage, int newHealth, int Rows, int Columns)
             : base(newX, newY, newImage, newHealth)
@@ -123,17 +122,7 @@ namespace DEMO_ONe.Content.Players
             //level++;
         }
 
-
-
-        public override void OnCollide(Sprite sprite)
-        {
-            if (sprite is Asteroid)
-            {
-                Console.WriteLine("Frick" + collisions);
-                collisions++;
-            }
-
-        }
+        
 
 
     }

@@ -24,15 +24,19 @@ namespace DEMO_ONe
         public const int ScreenY = 800;
         public const int ScreenOffSet = 50;
 
+
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
 
         List<Sprite> Allobject= new List<Sprite> { };
 
         PlayerState ship = new PlayerState();
         AsteroidState asteroid = new AsteroidState(ScreenX,ScreenY,ScreenOffSet);
-
         ProjectileState projectile = new ProjectileState();
+
+        SpriteFont font;
+
 
         public Game1()
         {
@@ -46,8 +50,6 @@ namespace DEMO_ONe
         {
             graphics.PreferredBackBufferWidth = ScreenX;
             graphics.PreferredBackBufferHeight = ScreenY;
-            //Thread thread = new Thread(new ThreadStart(TestColide));
-            //thread.Start();
             this.IsMouseVisible = true;
             graphics.ApplyChanges();
             base.Initialize();
@@ -57,7 +59,7 @@ namespace DEMO_ONe
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-
+            font = Content.Load<SpriteFont>("Score");
 
             //SHIP IMPIMINTATION
             Texture2D Ship = Content.Load<Texture2D>("ship");
@@ -69,9 +71,31 @@ namespace DEMO_ONe
             projectile.image = PlayerLazer;
 
             //loads astriod
-            Texture2D delete = Content.Load<Texture2D>("Large_Asteroid");
-            asteroid.Load(delete);
+            Texture2D LargeAstriod = Content.Load<Texture2D>("Large_Asteroid");
+            Texture2D MediumAstriod1 = Content.Load<Texture2D>("Medium_Asteroid_1");
+            Texture2D MediumAstriod2 = Content.Load<Texture2D>("Medium_Asteroid_2");
+            Texture2D SmallAstriod1 = Content.Load<Texture2D>("Small_Asteroid_1");
+            Texture2D SmallAstriod2 = Content.Load<Texture2D>("Small_Asteroid_2");
+            Texture2D SmallAstriod3 = Content.Load<Texture2D>("Small_Asteroid_3");
+            Texture2D SmallAstriod4 = Content.Load<Texture2D>("Small_Asteroid_4");
+
+            asteroid.Load(LargeAstriod);
+            asteroid.Load(MediumAstriod1);
+            asteroid.Load(MediumAstriod2);
+            asteroid.Load(SmallAstriod1);
+            asteroid.Load(SmallAstriod2);
+            asteroid.Load(SmallAstriod3);
+            asteroid.Load(SmallAstriod4);
+
             asteroid.Spawn();
+            asteroid.Spawn();
+            asteroid.Spawn();
+            asteroid.Spawn();
+            asteroid.Spawn();
+            asteroid.Spawn();
+            asteroid.Spawn();
+            asteroid.Spawn();
+
 
 
 
@@ -113,6 +137,7 @@ namespace DEMO_ONe
                     }
                 }
             }
+
 
             //updates code
             for (int i = 0; i < Allobject.Count; i++)
@@ -162,37 +187,7 @@ namespace DEMO_ONe
             base.Update(gameTime);
         }
 
-        protected void TestColide()
-        {
-            //Collisiont system
-            while (true)
-            {
-                for (int i = 0; i < Allobject.Count; i++)
-                {
-                    if (Allobject[i] is Projectile)
-                    {
-                        if (Allobject[i].health <= 0)
-                        {
-                            Allobject.RemoveAt(i);
-                        }
-                    }
-                }
-
-                for (int i = 1; i < Allobject.Count; i++)
-                {
-                    if (Allobject[0].Intersects(Allobject[i]))
-                    {
-                        Allobject[0].OnCollide(Allobject[i]);
-                    }
-                }
-
-
-            }
-        }
-
-
-
-
+        
 
         protected override void Draw(GameTime gameTime)
         {
@@ -209,7 +204,7 @@ namespace DEMO_ONe
                 Allobject[i].Draw(spriteBatch);
             }
 
-
+            spriteBatch.DrawString(font," g",new Vector2(100,100),Color.Black);
 
             spriteBatch.End();
 

@@ -12,6 +12,14 @@ namespace DEMO_ONe.Content.Level
     {
         int totalAsteroids;
 
+        public Level()
+        {
+
+        }
+
+        public
+
+
         void SpawnAsteroid()
         {
             totalAsteroids++;

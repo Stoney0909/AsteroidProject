@@ -17,7 +17,7 @@ namespace DEMO_ONe.Content.States
         Asteroid asteroid = new Asteroid();
         Rnd rnd = new Rnd();
 
-        Texture2D[] AsteroidSize = new Texture2D[6];
+        List<Texture2D> AsteroidSize = new List<Texture2D> { };
 
         List<Asteroid> asteroids = new List<Asteroid> { };
 
@@ -41,13 +41,13 @@ namespace DEMO_ONe.Content.States
 
         public void Load(Texture2D newimage)
         {
-            asteroid = new Asteroid(newimage);
-
+            AsteroidSize.Add(newimage);
         }
 
         public void Spawn()
         {
-            float newAngle = rnd.Range(0, 360);//FIX ME
+
+            int newAngle = rnd.Range(0, 360);//FIX ME
             int side = rnd.Range(0, 4);
 
             
@@ -85,7 +85,9 @@ namespace DEMO_ONe.Content.States
                 }
             }
 
-            Asteroid Asteroid = new Asteroid(300,300,asteroid.image);
+            int size = rnd.Range(0, AsteroidSize.Count);
+
+            Asteroid Asteroid = new Asteroid(asteroidPositionX, asteroidPositionY, size, newAngle, AsteroidSize.ElementAt(size));
             asteroid.angle = newAngle;
             asteroids.Add(Asteroid);
         }
