@@ -107,14 +107,14 @@ namespace DEMO_ONe.Content.Players
         }
         public void PlayerUpgrade()
         {
-          
-            CU characterupgrade = new CU(health, coolDown, money);//spawn in the charcter upgrade screen
+
+            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, money);//spawn in the charcter upgrade screen
             characterupgrade.ShowDialog();
 
             health = characterupgrade.health;// change this player stats
             coolDown = characterupgrade.coolDown;
             money = characterupgrade.money;
-           
+
         }
 
 

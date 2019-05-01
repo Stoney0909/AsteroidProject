@@ -273,7 +273,6 @@ D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpD
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\bin\Windows\x86\Debug\SharpDX.XInput.xml
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csprojAssemblyReference.cache
-D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CU.resources
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.ENDGAME.resources
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.HowToPlay.resources
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.Leaderboards.resources
@@ -284,3 +283,4 @@ D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.cspro
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONE.csproj.CopyComplete
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.exe
 D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO ONe.pdb
+D:\GIT\otherAster\AsteroidProject\DEMO ONE\DEMO ONe\obj\x86\Debug\DEMO_ONe.CharacterUpgrade.resources
