@@ -24,15 +24,16 @@ namespace DEMO_ONe
                 Form1 Form1 = new Form1();
                 Form1.ShowDialog();
                 keepPlaying = Form1.keepPlaying;
+                string name = Form1.name;
 
                 if (Form1.startGame())
-                    //{
-                    using (var game = new Game1(/*Form1.Name*/"pop"))
+                {
+                    using (var game = new Game1(name))
                     {
                         game.Run();
                         keepPlaying = game.keepPlaying;
                     }
-                //}
+                }
             }
 
         }

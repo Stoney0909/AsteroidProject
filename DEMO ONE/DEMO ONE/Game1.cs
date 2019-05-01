@@ -27,6 +27,7 @@ namespace DEMO_ONe
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        bool onetime = true;
 
         List<Sprite> Allobject= new List<Sprite> { };
 
@@ -38,7 +39,7 @@ namespace DEMO_ONe
         Level level = new Level();
 
         string playerName;
-        public bool keepPlaying;
+        public bool keepPlaying = true;
         
         public Game1(string playerName)
         {
@@ -129,11 +130,13 @@ namespace DEMO_ONe
             }
 
             //Checks if ship is dead
-            if (ship.Dead())
+            if (ship.Dead() && onetime)
             {
-                ship.lose(playerName);
                 keepPlaying = ship.keepPlaying;
+                onetime = false;
+                ship.lose(playerName);
                 this.Exit();
+                               
             }
 
 
