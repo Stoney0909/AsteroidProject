@@ -26,20 +26,16 @@ namespace DEMO_ONe.Content.Enemy
             :base(newX,newY,newImage)
         {
             health = 1;
-            rotationSpeed = .1f;
+            rotationSpeed = .05f;
             maxSpeed = 5;
             position.X = newX;
             position.Y = newY;
             image = newImage;
-            sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
-            destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
         }
 
         public Asteroid(Texture2D newImage)
         {
             image = newImage;
-            sourceRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
-            destinationRectangle = new Rectangle((int)position.X, (int)position.Y, image.Width, image.Height);
 
         }
 
@@ -68,7 +64,7 @@ namespace DEMO_ONe.Content.Enemy
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(image, position, sourceRectangle, Color.White, rotation, Origin, 1.0f, SpriteEffects.None, 1);
+            spriteBatch.Draw(image, position, new Rectangle(0,0,image.Width,image.Height), Color.White, rotation, Origin, 1.0f, SpriteEffects.None, 1);
         }
 
     }
