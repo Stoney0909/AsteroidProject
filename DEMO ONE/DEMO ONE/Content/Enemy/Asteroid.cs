@@ -31,7 +31,7 @@ namespace DEMO_ONe.Content.Enemy
             
             health = 1;
             rotationSpeed = .05f;
-            maxSpeed = 15;
+            maxSpeed = 0;
             image = newImage;
         }
 

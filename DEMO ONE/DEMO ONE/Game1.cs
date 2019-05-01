@@ -139,6 +139,11 @@ namespace DEMO_ONe
 
             ship.Update(gameTime);
 
+            for (int i = 1; i < Allobject.Count; i++)
+            {
+                Allobject[0].SAFCCollision(Allobject[i]);
+            }
+
             for (int i = 0; i < Allobject.Count; i++)
             {
                 if (Allobject[i] is Projectile)

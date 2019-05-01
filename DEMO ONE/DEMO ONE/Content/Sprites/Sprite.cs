@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DEMO_ONe.Content.Enemy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,10 @@ namespace DEMO_ONe.Content.Sprites
      public class Sprite
     {
         public bool moving = false;
-        public bool IsRemoved = false;
+        public bool hit = false;
 
         public Sprite Parent;
-
+        protected float radius;
         public Vector2 velocity;
         public Vector2 position;
         public Vector2 Origin;
@@ -48,14 +49,7 @@ namespace DEMO_ONe.Content.Sprites
         }
 
         public virtual void SAFCCollision(Sprite sprite)
-        {
-            double dx = sprite.position.X - this.position.X;
-            double dy = sprite.position.Y - this.position.Y;
-            float distance = Convert.ToSingle(Math.Sqrt((dx * dx) + (dy * dy)));
-            //return (distance < this->radius);
-
-            
-        }
+        { }
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
