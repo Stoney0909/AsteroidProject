@@ -69,7 +69,7 @@ namespace DEMO_ONe
             projectile.image = PlayerLazer;
 
             //loads astriod
-            Texture2D delete = Content.Load<Texture2D>("dont");
+            Texture2D delete = Content.Load<Texture2D>("Large_Asteroid");
             asteroid.Load(delete);
             asteroid.Spawn();
 
