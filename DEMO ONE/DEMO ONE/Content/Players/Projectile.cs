@@ -14,7 +14,6 @@ namespace DEMO_ONe.Content.Players
     {
         public int damage;
         LinearMover movement = new LinearMover();
-        float baseX, baseY;
 
         public Projectile(float newX, float newY, Texture2D newImage, int newHealth)
             : base(newX, newY, newImage, newHealth)

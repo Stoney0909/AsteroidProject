@@ -136,13 +136,13 @@ namespace DEMO_ONe.Content.States
             }
 
             asteroid = new Asteroid(obj.position.X, obj.position.Y, Asize, newAngle, AsteroidSize.ElementAt(size));
-            asteroid.radius = AsteroidSize.ElementAt(size).Height;
+            asteroid.radius = AsteroidSize.ElementAt(size).Width+50;
             asteroid.angle = -obj.angle-15;
 
             objList.Add(asteroid);
 
             asteroid = new Asteroid(obj.position.X, obj.position.Y, Asize, newAngle, AsteroidSize.ElementAt(size2));
-            asteroid.radius = AsteroidSize.ElementAt(size).Height;
+            asteroid.radius = AsteroidSize.ElementAt(size).Width+50;
             asteroid.angle = -obj.angle+15;
 
             objList.Add(asteroid);

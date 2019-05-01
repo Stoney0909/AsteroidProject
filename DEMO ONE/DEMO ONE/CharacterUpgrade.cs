@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DEMO_ONe.Content.Players;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,12 @@ namespace DEMO_ONe
         public float health;
         public int coolDown;
         public double money;
-        public CharacterUpgrade(float health, int coolDown, double money)
+
+        public CharacterUpgrade(Player player)
         {
-            this.health = health;
-            this.coolDown = coolDown;
-            this.money = money;
+            health = player.health;
+            coolDown = player.coolDown;
+            money = player.money;
 
             InitializeComponent();
         }
@@ -55,6 +57,7 @@ namespace DEMO_ONe
 
         private void continuebutton_Click(object sender, EventArgs e)
         {
+            
             this.Close();
         }
 

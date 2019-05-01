@@ -44,12 +44,13 @@ namespace DEMO_ONe.Content.States
                 projectile.Origin.X = (player.image.Width / (player.animation.Columns*13));
                 projectile.Origin.Y = (player.image.Height / (player.animation.Rows*13));
 
+
                 projectile.position = player.position - projectile.Origin;
                 projectile.angle = player.angle;
                 projectile.damage = player.damage;
                 projectile.maxSpeed = player.maxSpeed * 3f;
                 projectile.hit = false;
-                projectile.radius = 15;
+                projectile.radius = image.Width+15;
                 Obj.Add(projectile);
             }
 

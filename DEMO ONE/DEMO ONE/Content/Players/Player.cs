@@ -111,7 +111,7 @@ namespace DEMO_ONe.Content.Players
         public void PlayerUpgrade(double money)
         {
             this.money = money;
-            CharacterUpgrade characterupgrade = new CharacterUpgrade(health, coolDown, this.money);//spawn in the charcter upgrade screen
+            CharacterUpgrade characterupgrade = new CharacterUpgrade(this);//spawn in the charcter upgrade screen
             characterupgrade.Show();
 
             health = characterupgrade.health;// change this player stats
@@ -119,6 +119,7 @@ namespace DEMO_ONe.Content.Players
             this.money = characterupgrade.money;
 
         }
+
 
 
 
