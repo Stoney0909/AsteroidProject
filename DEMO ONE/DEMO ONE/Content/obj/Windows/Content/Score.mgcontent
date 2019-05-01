@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/Score.spritefont</SourceFile>
-  <SourceTime>2019-04-30T23:45:39.0315423-04:00</SourceTime>
-  <DestFile>F:/programs/onedrive/OneDrive - SNHU/cs-114/Project/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Score.xnb</DestFile>
-  <DestTime>2019-05-01T02:12:29.4710377-04:00</DestTime>
+  <SourceFile>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/Score.spritefont</SourceFile>
+  <SourceTime>2019-05-01T00:03:40.1204649-04:00</SourceTime>
+  <DestFile>D:/GIT/otherAster/AsteroidProject/DEMO ONE/DEMO ONe/Content/bin/Windows/Content/Score.xnb</DestFile>
+  <DestTime>2019-05-01T03:25:27.9882478-04:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>LocalizedFontProcessor</Processor>

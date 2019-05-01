@@ -13,9 +13,13 @@ namespace DEMO_ONe.Content.States
         Player player = new Player();
         Input input = new Input();
         public bool keepPlaying;
-
+        public double score;
+        public double money;
         public PlayerState()
-        { }
+        {
+            score = player.score;
+            money = player.money;
+        }
 
 
         public void Load(float newX , float newY,int Rows,int Columns,Texture2D newimage, int newHealth)//constructor

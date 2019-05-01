@@ -90,7 +90,7 @@ namespace DEMO_ONe
             asteroid.Load(SmallAstriod3);
             asteroid.Load(SmallAstriod4);
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 15; i++)
             {
                 asteroid.Spawn();//spawn Asteroids
             }
@@ -110,7 +110,7 @@ namespace DEMO_ONe
         {
             return Allobject;
         }
-
+       
 
 
         protected override void Update(GameTime gameTime)
@@ -128,14 +128,13 @@ namespace DEMO_ONe
                 ship.CU();
             }
 
-
             //Checks if ship is dead
-            /*if (ship.Dead())
+            if (ship.Dead())
             {
                 ship.lose(playerName);
                 keepPlaying = ship.keepPlaying;
                 this.Exit();
-            }*/
+            }
 
 
 
@@ -152,7 +151,7 @@ namespace DEMO_ONe
 
             ship.Update(gameTime);
 
-            //Checks if porjectile did a thing
+            //Checks if projectile did a thing
             for (int i = 1; i < Allobject.Count; i++)
             {
                 for (int j = 0; j < Allobject.Count; j++)
@@ -167,6 +166,8 @@ namespace DEMO_ONe
                 if ((Allobject[i].hit == true || Allobject[i].health <=0))
                 {
                         Allobject.RemoveAt(i);
+                        ship.money += 10;
+                        ship.score += 10;
                 }
             }
 
@@ -208,24 +209,16 @@ namespace DEMO_ONe
             if (count == 0)
             {
                
-                    for (int i = 0; i < 10; i++)
+                    for (int i = 0; i < 15; i++)
                     {
                         asteroid.Spawn();//spawn Asteroids
                     }
-
-
-                    Allobject.Add(ship.GetPlayer());
 
                     foreach (var obj in asteroid.GetSprite())
                     {
                         Allobject.Add(obj);
                     }
             }
-
-
-
-
-
 
             base.Update(gameTime);
         }
