@@ -1,10 +1,11 @@
 Sam:890
+Sam2:510
 asdfas:470
+Sam3:430
 asdf:370
 Sam:320
 dwad:300
+Sam:250
 wad:220
 dwa:200
 54+64:190
-jhk:170
-oumar:170
