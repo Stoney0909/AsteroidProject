@@ -20,7 +20,7 @@ namespace DEMO_ONe.Content.Players
         public int coolDown;
         public int timer;
         public double score;
-        public double money = 500;
+        public double money;
         public float speedUpRate, slowDownRate;
         public int level;
         float hitTimer=0;
