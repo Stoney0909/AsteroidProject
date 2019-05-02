@@ -38,7 +38,7 @@ namespace DEMO_ONe.Content.Players
             slowDownRate = 0.5f;
             maxSpeed = 50;
             acceleration = 1;
-            coolDown = 40;
+            coolDown = 20;
             animation = new Animation(newImage, Rows, Columns);
 
             radius = 70;
