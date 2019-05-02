@@ -13,25 +13,21 @@ namespace DEMO_ONe
 {
     public partial class CharacterUpgrade : Form
     {
-        public float health;
-        public int coolDown;
-        public double money;
+        Player player;
 
         public CharacterUpgrade(Player player)
         {
-            health = player.health;
-            coolDown = player.coolDown;
-            money = player.money;
+            this.player = player;
 
             InitializeComponent();
         }
 
         private void addhealth_Click(object sender, EventArgs e)
         {
-            if (money >= 300)
+            if (player.money >= 300)
             {
-                health+=1;
-                money -= 300;
+                player.health += 1;
+                player.money -= 300;
             }
             else
             {
@@ -42,10 +38,10 @@ namespace DEMO_ONe
 
         private void addcoolDown_Click(object sender, EventArgs e)
         {
-            if (money >= 300)
+            if (player.money >= 300)
             {
-                coolDown -= 10;
-                money -= 300;
+                player.coolDown -= 10;
+                player.money -= 300;
             }
             else
             {
@@ -59,6 +55,7 @@ namespace DEMO_ONe
         {
             
             this.Close();
+            
         }
 
     }

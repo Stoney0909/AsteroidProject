@@ -20,7 +20,7 @@ namespace DEMO_ONe.Content.Players
         public int coolDown;
         public int timer;
         public double score;
-        public double money;
+        public double money = 500;
         public float speedUpRate, slowDownRate;
         public int level;
         float hitTimer=0;
@@ -108,16 +108,10 @@ namespace DEMO_ONe.Content.Players
                 return false;
             }
         }
-        public void PlayerUpgrade(double money)
+        public void PlayerUpgrade()
         {
-            this.money = money;
             CharacterUpgrade characterupgrade = new CharacterUpgrade(this);//spawn in the charcter upgrade screen
             characterupgrade.Show();
-
-            health = characterupgrade.health;// change this player stats
-            coolDown = characterupgrade.coolDown;
-            this.money = characterupgrade.money;
-
         }
 
 

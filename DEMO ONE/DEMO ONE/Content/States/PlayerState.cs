@@ -13,8 +13,7 @@ namespace DEMO_ONe.Content.States
         Player player = new Player();
         Input input = new Input();
         public bool keepPlaying = true;
-        public double score;
-        public double money;
+
         public PlayerState()
         {
 
@@ -56,9 +55,8 @@ namespace DEMO_ONe.Content.States
         }
         public void CU()
         {
-            player.money = money;
-            player.PlayerUpgrade(money);
-            money = player.money;
+            player.PlayerUpgrade();
+
         }
     }
 }
